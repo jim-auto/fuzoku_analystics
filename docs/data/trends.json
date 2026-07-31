@@ -1,48 +1,61 @@
 {
   "dates": [
+    "2026-07-31",
     "2026-07-31"
   ],
   "series": {
     "tokyo": {
       "shop_count": [
+        983,
         983
       ],
       "girl_count": [
-        83978
+        84004,
+        84007
       ],
       "median_price": [
+        14000,
         14000
       ],
       "median_reviews": [
-        518
+        527,
+        461
       ]
     },
     "aichi": {
       "shop_count": [
+        463,
         463
       ],
       "girl_count": [
-        24702
+        24702,
+        24695
       ],
       "median_price": [
+        13000,
         13000
       ],
       "median_reviews": [
-        1008
+        1008,
+        981
       ]
     },
     "osaka": {
       "shop_count": [
+        460,
         460
       ],
       "girl_count": [
-        29479
+        29477,
+        29480
       ],
       "median_price": [
-        13000
+        13000,
+        12000
       ],
       "median_reviews": [
-        577
+        558,
+        545
       ]
     }
   }

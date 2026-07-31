@@ -114,6 +114,17 @@ function renderChanges(data) {
                    .join("")}</ul>`
               : ""
           }
+          ${
+            (c.rank_changes || []).length
+              ? `<h4 style="margin:0.75rem 0 0.35rem;font-size:0.85rem;color:var(--muted)">ランキング変動</h4>
+                 <ul class="shop-list">${c.rank_changes
+                   .map(
+                     (m) =>
+                       `<li><div><a href="${m.url}" target="_blank" rel="noopener">${m.name}</a></div><div class="shop-meta">${m.label}${m.rank_delta != null ? ` (${m.rank_delta > 0 ? "+" : ""}${m.rank_delta})` : ""}</div></li>`
+                   )
+                   .join("")}</ul>`
+              : ""
+          }
         </article>`
         )
         .join("")}
@@ -182,6 +193,63 @@ function renderTrendCharts(trends) {
       },
     },
   });
+}
+
+function renderBakusai(data) {
+  const root = document.getElementById("bakusai-content");
+  const bakusai = data.bakusai;
+  const cross = data.bakusai_cross || [];
+  if (!bakusai?.regions?.length) {
+    root.innerHTML = "<p class='shop-meta'>データなし</p>";
+    return;
+  }
+
+  root.innerHTML = bakusai.regions
+    .map((region) => {
+      const crossRegion = cross.find((c) => c.slug === region.slug) || {};
+      const topThreads = (region.top_by_responses || [])
+        .slice(0, 8)
+        .map(
+          (t) =>
+            `<li><div><a href="${t.url}" target="_blank" rel="noopener">${t.title}</a><div class="shop-meta">${t.area || ""}</div></div><div class="shop-meta">レス ${fmt(t.responses)} · 閲覧 ${fmt(t.views)}</div></li>`
+        )
+        .join("");
+
+      const matched = (crossRegion.matched || [])
+        .map(
+          (m) =>
+            `<li><div>${m.name}</div><div class="shop-meta">CH ${fmt(m.heaven_reviews)} 件 / 爆サイ ${fmt(m.bakusai_responses)} レス</div></li>`
+        )
+        .join("");
+
+      const areaStats = (region.area_stats || [])
+        .slice(0, 5)
+        .map(
+          (a) =>
+            `<tr><td>${a.area}</td><td>${fmt(a.thread_count)}</td><td>${fmt(a.total_responses)}</td><td>${fmt(a.median_responses)}</td></tr>`
+        )
+        .join("");
+
+      return `
+      <article class="region-block">
+        <h3>${region.name} <a href="${region.board_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:var(--muted)">掲示板↗</a></h3>
+        <div class="stat-grid">
+          <div class="stat-box"><div class="stat-box__label">スレ数</div><div class="stat-box__value">${fmt(region.thread_count)}</div></div>
+          <div class="stat-box"><div class="stat-box__label">総レス数</div><div class="stat-box__value">${fmt(region.total_responses)}</div></div>
+          <div class="stat-box"><div class="stat-box__label">CH突合</div><div class="stat-box__value">${fmt(crossRegion.matched_count)} 店</div></div>
+        </div>
+        <h4>レス数トップ（話題店）</h4>
+        <ul class="shop-list">${topThreads || "<li>なし</li>"}</ul>
+        <h4>エリア別盛り上がり</h4>
+        ${renderDataTable(["エリア", "スレ数", "総レス", "レス中央値"], areaStats)}
+        ${
+          matched
+            ? `<h4>City Heaven × 爆サイ 一致店</h4><ul class="shop-list">${matched}</ul>`
+            : ""
+        }
+      </article>`;
+    })
+    .join("");
 }
 
 function renderMetroInsights(data) {
@@ -502,6 +570,7 @@ async function main() {
   renderMetroInsights(data);
   renderChanges(data);
   renderTrendCharts(data.trends);
+  renderBakusai(data);
   renderSummaryCards(data);
   renderComparisonTable(data);
   renderCharts(data);

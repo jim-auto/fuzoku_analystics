@@ -1,4 +1,4 @@
-"""Entry point: fetch City Heaven stats and write public JSON."""
+"""Entry point: fetch City Heaven + Bakusai stats and write public JSON."""
 
 from __future__ import annotations
 
@@ -7,12 +7,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pipeline.aggregate import aggregate
+from pipeline.bakusai_match import cross_reference
 from pipeline.history import (
     append_snapshot,
     build_trends,
     compact_snapshot,
     compute_changes,
 )
+from scraper.bakusai import fetch_all_bakusai
 from scraper.client import HeavenClient
 from scraper.fetch import fetch_all
 
@@ -26,6 +28,7 @@ def main() -> None:
     client = HeavenClient()
     try:
         raw = fetch_all(client)
+        bakusai = fetch_all_bakusai(client)
     finally:
         client.close()
 
@@ -34,6 +37,7 @@ def main() -> None:
     snapshots = append_snapshot(HISTORY_PATH, snapshot)
     changes = compute_changes(snapshot, snapshots)
     trends = build_trends(snapshots)
+    bakusai_cross = cross_reference(aggregated.get("regions", []), bakusai)
 
     payload = {
         "updated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
@@ -43,6 +47,8 @@ def main() -> None:
         **aggregated,
         "changes": changes,
         "trends": trends,
+        "bakusai": bakusai,
+        "bakusai_cross": bakusai_cross,
     }
 
     outputs = {

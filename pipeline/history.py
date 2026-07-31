@@ -10,8 +10,8 @@ from typing import Any
 MAX_SNAPSHOTS = 52
 
 
-def _today_str() -> str:
-    return date.today().isoformat()
+def _capture_id() -> str:
+    return datetime.now().replace(microsecond=0).isoformat()
 
 
 def compact_snapshot(aggregated: dict[str, Any]) -> dict[str, Any]:
@@ -39,7 +39,8 @@ def compact_snapshot(aggregated: dict[str, Any]) -> dict[str, Any]:
             "top_shops": top_shops,
         }
     return {
-        "date": _today_str(),
+        "captured_at": _capture_id(),
+        "date": date.today().isoformat(),
         "metro_median_price": aggregated.get("metro_overview", {})
         .get("metro_price_stats", {})
         .get("median"),
@@ -65,7 +66,6 @@ def save_history(path: Path, snapshots: list[dict[str, Any]]) -> None:
 
 def append_snapshot(path: Path, snapshot: dict[str, Any]) -> list[dict[str, Any]]:
     snapshots = load_history(path)
-    snapshots = [s for s in snapshots if s.get("date") != snapshot["date"]]
     snapshots.append(snapshot)
     save_history(path, snapshots)
     return snapshots[-MAX_SNAPSHOTS:]
@@ -102,6 +102,42 @@ def _review_movers(
     return movers[:limit]
 
 
+def _rank_changes(
+    current_shops: list[dict],
+    previous_shops: list[dict],
+    limit: int = 5,
+) -> list[dict[str, Any]]:
+    prev_rank = {s["url"]: i + 1 for i, s in enumerate(previous_shops)}
+    changes = []
+    for i, shop in enumerate(current_shops[:10]):
+        new_rank = i + 1
+        old_rank = prev_rank.get(shop["url"])
+        if old_rank is None:
+            changes.append(
+                {
+                    "name": shop["name"],
+                    "url": shop["url"],
+                    "new_rank": new_rank,
+                    "old_rank": None,
+                    "rank_delta": None,
+                    "label": "新規ランクイン",
+                }
+            )
+        elif old_rank != new_rank:
+            changes.append(
+                {
+                    "name": shop["name"],
+                    "url": shop["url"],
+                    "new_rank": new_rank,
+                    "old_rank": old_rank,
+                    "rank_delta": old_rank - new_rank,
+                    "label": f"{old_rank}位→{new_rank}位",
+                }
+            )
+    changes.sort(key=lambda c: (c.get("rank_delta") is not None, c.get("rank_delta") or 0), reverse=True)
+    return changes[:limit]
+
+
 def compute_changes(
     current: dict[str, Any],
     snapshots: list[dict[str, Any]],
@@ -110,15 +146,15 @@ def compute_changes(
         return None
 
     previous = snapshots[-2]
-    if previous.get("date") == current.get("date"):
-        previous = snapshots[-3] if len(snapshots) >= 3 else None
-    if not previous:
-        return None
 
     try:
-        since = datetime.strptime(previous["date"], "%Y-%m-%d").date()
-        until = datetime.strptime(current["date"], "%Y-%m-%d").date()
+        prev_date = previous.get("date") or previous.get("captured_at", "")[:10]
+        cur_date = current.get("date") or current.get("captured_at", "")[:10]
+        since = datetime.strptime(prev_date, "%Y-%m-%d").date()
+        until = datetime.strptime(cur_date, "%Y-%m-%d").date()
         days = (until - since).days
+        if days == 0:
+            days = 1
     except ValueError:
         days = None
 
@@ -138,11 +174,15 @@ def compute_changes(
                     cur.get("top_shops", []),
                     prev.get("top_shops", []),
                 ),
+                "rank_changes": _rank_changes(
+                    cur.get("top_shops", []),
+                    prev.get("top_shops", []),
+                ),
             }
         )
 
     return {
-        "since": previous["date"],
+        "since": previous.get("captured_at") or previous.get("date"),
         "days": days,
         "metro_median_price_delta": _delta(
             current.get("metro_median_price"),
@@ -157,7 +197,7 @@ def build_trends(snapshots: list[dict[str, Any]]) -> dict[str, Any]:
     if not snapshots:
         return {"dates": [], "series": {}}
 
-    dates = [s["date"] for s in snapshots]
+    dates = [s.get("date") or (s.get("captured_at", "")[:10]) for s in snapshots]
     series: dict[str, dict[str, list]] = {
         slug: {
             "shop_count": [],

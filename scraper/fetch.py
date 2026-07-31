@@ -1,3 +1,5 @@
+import httpx
+
 from scraper.client import HeavenClient
 from scraper.config import BASE_URL, GENRES, REGIONS, Region
 from scraper.parse import (
@@ -38,7 +40,10 @@ def fetch_genre_shops(client: HeavenClient, region: Region, biz_id: str, pref_ht
     list_paths = collect_area_list_paths(client, region.slug, biz_id, pref_html, BASE_URL)
 
     for path in list_paths:
-        html = client.get(f"{BASE_URL}{path}")
+        try:
+            html = client.get(f"{BASE_URL}{path}")
+        except httpx.HTTPStatusError:
+            continue
         result = parse_shop_list(html, region.slug)
         _merge_shops(shops_by_url, result.shops)
 
