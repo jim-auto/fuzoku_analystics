@@ -10,13 +10,13 @@
   <script src="assets/js/app.js" defer></script>
 </head>
 <body>
-  <div id="age-gate" class="age-gate" hidden>
+  <div id="age-gate" class="age-gate is-open" aria-hidden="false">
     <div class="age-gate__panel">
       <h1>18歳未満の方はご利用いただけません</h1>
       <p>本サイトは風俗店舗の<strong>統計情報</strong>を客目線で整理した非公式分析サイトです。画像・口コミ本文は掲載していません。</p>
       <div class="age-gate__actions">
-        <button id="age-yes" class="btn btn--primary">18歳以上です</button>
-        <button id="age-no" class="btn btn--ghost">退出する</button>
+        <button type="button" id="age-yes" class="btn btn--primary">18歳以上です</button>
+        <button type="button" id="age-no" class="btn btn--ghost">退出する</button>
       </div>
     </div>
   </div>

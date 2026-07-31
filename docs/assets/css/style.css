@@ -137,10 +137,13 @@ th { color: var(--muted); font-weight: 600; }
   position: fixed;
   inset: 0;
   background: rgba(8, 10, 16, 0.92);
-  display: grid;
+  display: none;
   place-items: center;
   z-index: 100;
   padding: 1rem;
+}
+.age-gate.is-open {
+  display: grid;
 }
 .age-gate__panel {
   max-width: 480px;

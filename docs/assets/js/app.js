@@ -10,18 +10,55 @@ function fmtYen(n) {
   return `${n.toLocaleString("ja-JP")}円`;
 }
 
+function isAgeVerified() {
+  try {
+    return localStorage.getItem("ageVerified") === "1" || sessionStorage.getItem("ageVerified") === "1";
+  } catch {
+    return false;
+  }
+}
+
+function markAgeVerified() {
+  try {
+    localStorage.setItem("ageVerified", "1");
+  } catch {
+    try {
+      sessionStorage.setItem("ageVerified", "1");
+    } catch {
+      /* storage blocked — still allow entry */
+    }
+  }
+}
+
+function closeAgeGate() {
+  const gate = document.getElementById("age-gate");
+  gate.classList.remove("is-open");
+  gate.setAttribute("aria-hidden", "true");
+}
+
 function setupAgeGate() {
   const gate = document.getElementById("age-gate");
-  if (localStorage.getItem("ageVerified") === "1") return;
+  const yesBtn = document.getElementById("age-yes");
+  const noBtn = document.getElementById("age-no");
 
-  gate.hidden = false;
-  document.getElementById("age-yes").onclick = () => {
-    localStorage.setItem("ageVerified", "1");
-    gate.hidden = true;
-  };
-  document.getElementById("age-no").onclick = () => {
+  if (isAgeVerified()) {
+    closeAgeGate();
+    return;
+  }
+
+  gate.classList.add("is-open");
+  gate.setAttribute("aria-hidden", "false");
+
+  yesBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    markAgeVerified();
+    closeAgeGate();
+  });
+
+  noBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     location.href = "https://www.google.com/";
-  };
+  });
 }
 
 function renderSummaryCards(data) {
@@ -165,9 +202,10 @@ function renderRegionSections(data) {
   });
 }
 
+setupAgeGate();
+
 async function main() {
-  setupAgeGate();
-  const res = await fetch("data/summary.json");
+  const res = await fetch(new URL("data/summary.json", document.baseURI).href);
   const data = await res.json();
 
   document.getElementById("updated-at").textContent = `更新: ${data.updated_at ?? "—"}`;
