@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T19:15:43+09:00",
+  "updated_at": "2026-07-31T19:29:55+09:00",
   "source": "https://www.cityheaven.net/",
   "disclaimer": "非公式の統計サイト。数値のみを集計し、画像・文章は転載していません。",
   "regions_target": [
@@ -7,13 +7,32 @@
     "aichi",
     "osaka"
   ],
+  "metro_overview": {
+    "total_official_shops": 1906,
+    "total_sampled_shops": 682,
+    "metro_price_stats": {
+      "count": 656,
+      "min": 1900,
+      "max": 250000,
+      "mean": 15176.6,
+      "median": 14000,
+      "stdev": 11942.8,
+      "p25": 10000,
+      "p75": 17000
+    },
+    "insights": [
+      "相場最安は名古屋（中央値 13,000円）、最高は東京（15,000円）",
+      "在籍/店舗比は東京が最大（85.4 人/店）→ 選択肢の厚み",
+      "3都市合計 1,906 店中 682 店を統計分析に使用"
+    ]
+  },
   "regions": [
     {
       "slug": "tokyo",
       "name": "東京都",
       "short": "東京",
       "shop_count": 983,
-      "girl_count": 83972,
+      "girl_count": 83975,
       "girl_per_shop": 85.4,
       "genres": [
         {
@@ -39,21 +58,307 @@
         {
           "id": "biz7",
           "name": "エステ",
-          "shop_count": 31
+          "shop_count": 32
         }
       ],
+      "coverage": {
+        "official": 983,
+        "sampled": 308,
+        "pct": 31.3
+      },
       "price_stats": {
-        "count": 302,
+        "count": 298,
         "min": 1900,
+        "max": 250000,
+        "mean": 17094.9,
         "median": 15000,
+        "stdev": 16400.0,
         "p25": 11000,
-        "p75": 18700,
-        "max": 250000
+        "p75": 18700
+      },
+      "price_per_minute_stats": {
+        "count": 298,
+        "min": 99.33333333333333,
+        "max": 2777.777777777778,
+        "mean": 293.5,
+        "median": 266,
+        "stdev": 181.1,
+        "p25": 228,
+        "p75": 316
       },
       "review_stats": {
-        "count": 313,
-        "median": 1033,
-        "max": 41912
+        "count": 308,
+        "min": 1,
+        "max": 41912,
+        "mean": 2271.8,
+        "median": 1048,
+        "stdev": 4084.8,
+        "p25": 235,
+        "p75": 2790
+      },
+      "price_histogram": [
+        {
+          "label": "〜1万円",
+          "count": 42,
+          "pct": 14.1
+        },
+        {
+          "label": "1〜1.5万",
+          "count": 101,
+          "pct": 33.9
+        },
+        {
+          "label": "1.5〜2万",
+          "count": 94,
+          "pct": 31.5
+        },
+        {
+          "label": "2〜3万",
+          "count": 36,
+          "pct": 12.1
+        },
+        {
+          "label": "3〜5万",
+          "count": 21,
+          "pct": 7.0
+        },
+        {
+          "label": "5万円〜",
+          "count": 4,
+          "pct": 1.3
+        }
+      ],
+      "review_histogram": [
+        {
+          "label": "〜100",
+          "count": 53,
+          "pct": 17.2
+        },
+        {
+          "label": "100〜500",
+          "count": 54,
+          "pct": 17.5
+        },
+        {
+          "label": "500〜2千",
+          "count": 103,
+          "pct": 33.4
+        },
+        {
+          "label": "2千〜1万",
+          "count": 94,
+          "pct": 30.5
+        },
+        {
+          "label": "1万〜",
+          "count": 4,
+          "pct": 1.3
+        }
+      ],
+      "genre_analysis": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "listed_count": 32,
+          "sampled_count": 30,
+          "sample_pct": 9.7,
+          "median_price": 8250,
+          "median_reviews": 842,
+          "median_ppm": 266.7
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "listed_count": 12,
+          "sampled_count": 12,
+          "sample_pct": 3.9,
+          "median_price": 19000,
+          "median_reviews": 1374,
+          "median_ppm": 357.1
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "listed_count": 31,
+          "sampled_count": 30,
+          "sample_pct": 9.7,
+          "median_price": 12250,
+          "median_reviews": 1131,
+          "median_ppm": 255.0
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "listed_count": 207,
+          "sampled_count": 206,
+          "sample_pct": 66.9,
+          "median_price": 16000,
+          "median_reviews": 949,
+          "median_ppm": 266.7
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "listed_count": 32,
+          "sampled_count": 0,
+          "sample_pct": 0.0,
+          "median_price": null,
+          "median_reviews": null,
+          "median_ppm": null
+        }
+      ],
+      "area_analysis": [
+        {
+          "name": "池袋北口・西口",
+          "count": 62,
+          "pct": 20.1,
+          "median_price": 14000,
+          "median_reviews": 1849,
+          "mean_price": 13988.0
+        },
+        {
+          "name": "新宿・歌舞伎町",
+          "count": 42,
+          "pct": 13.6,
+          "median_price": 14000,
+          "median_reviews": 1562,
+          "mean_price": 14762.0
+        },
+        {
+          "name": "五反田",
+          "count": 42,
+          "pct": 13.6,
+          "median_price": 16000,
+          "median_reviews": 1597,
+          "mean_price": 15402.0
+        },
+        {
+          "name": "渋谷",
+          "count": 38,
+          "pct": 12.3,
+          "median_price": 19000,
+          "median_reviews": 795,
+          "mean_price": 20980.0
+        },
+        {
+          "name": "新橋・汐留",
+          "count": 23,
+          "pct": 7.5,
+          "median_price": 12000,
+          "median_reviews": 69,
+          "mean_price": 11782.0
+        },
+        {
+          "name": "鶯谷",
+          "count": 21,
+          "pct": 6.8,
+          "median_price": 13500,
+          "median_reviews": 1186,
+          "mean_price": 13575
+        },
+        {
+          "name": "上野",
+          "count": 21,
+          "pct": 6.8,
+          "median_price": 15400,
+          "median_reviews": 344,
+          "mean_price": 16981.0
+        },
+        {
+          "name": "品川",
+          "count": 21,
+          "pct": 6.8,
+          "median_price": 18000,
+          "median_reviews": 238,
+          "mean_price": 20257.0
+        },
+        {
+          "name": "銀座",
+          "count": 9,
+          "pct": 2.9,
+          "median_price": 40000,
+          "median_reviews": 49,
+          "mean_price": 66889.0
+        },
+        {
+          "name": "錦糸町",
+          "count": 4,
+          "pct": 1.3,
+          "median_price": 13000,
+          "median_reviews": 2123,
+          "mean_price": 13000
+        }
+      ],
+      "subgenre_analysis": [
+        {
+          "name": "スタンダード",
+          "count": 84,
+          "pct": 27.3,
+          "median_price": 14500,
+          "median_reviews": 1978,
+          "mean_price": 14207.0
+        },
+        {
+          "name": "人妻",
+          "count": 54,
+          "pct": 17.5,
+          "median_price": 15000,
+          "median_reviews": 838,
+          "mean_price": 14150.0
+        },
+        {
+          "name": "高級",
+          "count": 36,
+          "pct": 11.7,
+          "median_price": 34000,
+          "median_reviews": 111,
+          "mean_price": 40789.0
+        },
+        {
+          "name": "出張エステ",
+          "count": 28,
+          "pct": 9.1,
+          "median_price": 16250,
+          "median_reviews": 1502,
+          "mean_price": 16346.0
+        },
+        {
+          "name": "学園系",
+          "count": 20,
+          "pct": 6.5,
+          "median_price": 14000,
+          "median_reviews": 1889,
+          "mean_price": 13320
+        },
+        {
+          "name": "激安",
+          "count": 19,
+          "pct": 6.2,
+          "median_price": 11500,
+          "median_reviews": 973,
+          "mean_price": 12421.0
+        },
+        {
+          "name": "ホテヘル＆デリヘル",
+          "count": 15,
+          "pct": 4.9,
+          "median_price": 14000,
+          "median_reviews": 1416,
+          "mean_price": 14757.0
+        },
+        {
+          "name": "M性感",
+          "count": 12,
+          "pct": 3.9,
+          "median_price": 14000,
+          "median_reviews": 782,
+          "mean_price": 13692.0
+        }
+      ],
+      "market_concentration": {
+        "top5_share_pct": 17.8,
+        "top10_share_pct": 24.4,
+        "total_reviews": 699703
       },
       "top_by_reviews": [
         {
@@ -71,22 +376,6 @@
           "review_count": 40069,
           "min_minutes": 70,
           "min_price": 17000
-        },
-        {
-          "name": "ハニーコレクション",
-          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
-          "genre": "ソープ(激安/吉原)",
-          "review_count": 26862,
-          "min_minutes": 50,
-          "min_price": 14800
-        },
-        {
-          "name": "アイドル研究生",
-          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
-          "genre": "ソープ(スタンダード/吉原)",
-          "review_count": 17652,
-          "min_minutes": 70,
-          "min_price": 23000
         },
         {
           "name": "HYPER TOKYO",
@@ -135,6 +424,22 @@
           "review_count": 9467,
           "min_minutes": 45,
           "min_price": 14000
+        },
+        {
+          "name": "ウルトラプラチナム",
+          "url": "https://www.cityheaven.net/tokyo/A1304/A130401/ug-platinum/",
+          "genre": "デリヘル(スタンダード/新宿・歌舞伎町)",
+          "review_count": 8970,
+          "min_minutes": 60,
+          "min_price": 16000
+        },
+        {
+          "name": "エピソード",
+          "url": "https://www.cityheaven.net/tokyo/A1315/A131503/episode/",
+          "genre": "デリヘル(学園系/品川)",
+          "review_count": 8728,
+          "min_minutes": 60,
+          "min_price": 18000
         }
       ],
       "top_by_value": [
@@ -144,7 +449,8 @@
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
           "review_count": 41912,
           "min_minutes": 60,
-          "min_price": 17000
+          "min_price": 17000,
+          "price_per_minute": 283.3
         },
         {
           "name": "Chloe五反田本店　S級素人清楚系デリヘル",
@@ -152,15 +458,8 @@
           "genre": "デリヘル(スタンダード/五反田)",
           "review_count": 40069,
           "min_minutes": 70,
-          "min_price": 17000
-        },
-        {
-          "name": "ハニーコレクション",
-          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
-          "genre": "ソープ(激安/吉原)",
-          "review_count": 26862,
-          "min_minutes": 50,
-          "min_price": 14800
+          "min_price": 17000,
+          "price_per_minute": 242.9
         },
         {
           "name": "HYPER TOKYO",
@@ -168,7 +467,8 @@
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
           "review_count": 17305,
           "min_minutes": 45,
-          "min_price": 10000
+          "min_price": 10000,
+          "price_per_minute": 222.2
         },
         {
           "name": "池袋パラダイス",
@@ -176,7 +476,8 @@
           "genre": "ホテヘル(学園系/池袋北口・西口)",
           "review_count": 15476,
           "min_minutes": 50,
-          "min_price": 14000
+          "min_price": 14000,
+          "price_per_minute": 280.0
         },
         {
           "name": "華椿",
@@ -184,7 +485,8 @@
           "genre": "ヘルス(スタンダード/巣鴨・駒込・白山)",
           "review_count": 8623,
           "min_minutes": 30,
-          "min_price": 8000
+          "min_price": 8000,
+          "price_per_minute": 266.7
         },
         {
           "name": "ウルトラグレイス24",
@@ -192,15 +494,8 @@
           "genre": "デリヘル(スタンダード/新宿・歌舞伎町)",
           "review_count": 8129,
           "min_minutes": 50,
-          "min_price": 10000
-        },
-        {
-          "name": "アイドル研究生",
-          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
-          "genre": "ソープ(スタンダード/吉原)",
-          "review_count": 17652,
-          "min_minutes": 70,
-          "min_price": 23000
+          "min_price": 10000,
+          "price_per_minute": 200.0
         },
         {
           "name": "池袋　にゃんだ☆FULL☆MIX",
@@ -208,16 +503,44 @@
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
           "review_count": 7493,
           "min_minutes": 30,
-          "min_price": 10000
+          "min_price": 10000,
+          "price_per_minute": 333.3
         },
         {
-          "name": "池袋　にゃんだ☆FULL☆MIX",
-          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/nyandaful/",
+          "name": "ファインモーション",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
-          "review_count": 7493,
-          "min_minutes": 30,
-          "min_price": 10000
+          "review_count": 9467,
+          "min_minutes": 45,
+          "min_price": 14000,
+          "price_per_minute": 311.1
+        },
+        {
+          "name": "STELLA NEXT－ステラネクスト－",
+          "url": "https://www.cityheaven.net/tokyo/A1304/A130401/stella_next/",
+          "genre": "デリヘル(スタンダード/新宿・歌舞伎町)",
+          "review_count": 8453,
+          "min_minutes": 60,
+          "min_price": 13000,
+          "price_per_minute": 216.7
+        },
+        {
+          "name": "五反田ウルトラファンタジー",
+          "url": "https://www.cityheaven.net/tokyo/A1317/A131703/ultrafantasy/",
+          "genre": "デリヘル(コスプレ/五反田)",
+          "review_count": 5996,
+          "min_minutes": 40,
+          "min_price": 10000,
+          "price_per_minute": 250.0
         }
+      ],
+      "insights": [
+        "公式掲載 983 店のうち 308 店をサンプリング（31.3%）",
+        "最低コース相場は3都市平均より 1,000円高め（中央値 15,000円）",
+        "サンプル内ではデリヘルが最多（206店・66.9%）",
+        "エリア別では「池袋北口・西口」の店舗密度が最高（62店・中央値 14000円）",
+        "口コミ件数の上位5店で全体の 17.8% を占有（集中度指標）",
+        "口コミ件数の中央値は 1,048 件（レビュー厚みの目安）"
       ]
     },
     {
@@ -225,7 +548,7 @@
       "name": "愛知県",
       "short": "名古屋",
       "shop_count": 463,
-      "girl_count": 24699,
+      "girl_count": 24700,
       "girl_per_shop": 53.3,
       "genres": [
         {
@@ -251,21 +574,307 @@
         {
           "id": "biz7",
           "name": "エステ",
-          "shop_count": 31
+          "shop_count": 32
         }
       ],
+      "coverage": {
+        "official": 463,
+        "sampled": 196,
+        "pct": 42.3
+      },
       "price_stats": {
-        "count": 209,
+        "count": 196,
         "min": 2200,
+        "max": 40000,
+        "mean": 12904.0,
         "median": 13000,
+        "stdev": 4615.4,
         "p25": 10000,
-        "p75": 16000,
-        "max": 40000
+        "p75": 16000
+      },
+      "price_per_minute_stats": {
+        "count": 196,
+        "min": 100.0,
+        "max": 480.0,
+        "mean": 231.3,
+        "median": 228,
+        "stdev": 69.3,
+        "p25": 175,
+        "p75": 280
       },
       "review_stats": {
-        "count": 209,
-        "median": 1542,
-        "max": 46190
+        "count": 196,
+        "min": 1,
+        "max": 46190,
+        "mean": 2519.6,
+        "median": 1430,
+        "stdev": 4156.7,
+        "p25": 440,
+        "p75": 3373
+      },
+      "price_histogram": [
+        {
+          "label": "〜1万円",
+          "count": 46,
+          "pct": 23.5
+        },
+        {
+          "label": "1〜1.5万",
+          "count": 78,
+          "pct": 39.8
+        },
+        {
+          "label": "1.5〜2万",
+          "count": 64,
+          "pct": 32.7
+        },
+        {
+          "label": "2〜3万",
+          "count": 6,
+          "pct": 3.1
+        },
+        {
+          "label": "3〜5万",
+          "count": 2,
+          "pct": 1.0
+        },
+        {
+          "label": "5万円〜",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "review_histogram": [
+        {
+          "label": "〜100",
+          "count": 26,
+          "pct": 13.3
+        },
+        {
+          "label": "100〜500",
+          "count": 24,
+          "pct": 12.2
+        },
+        {
+          "label": "500〜2千",
+          "count": 71,
+          "pct": 36.2
+        },
+        {
+          "label": "2千〜1万",
+          "count": 69,
+          "pct": 35.2
+        },
+        {
+          "label": "1万〜",
+          "count": 6,
+          "pct": 3.1
+        }
+      ],
+      "genre_analysis": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "listed_count": 32,
+          "sampled_count": 32,
+          "sample_pct": 16.3,
+          "median_price": 13500,
+          "median_reviews": 3979,
+          "median_ppm": 300.0
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "listed_count": 9,
+          "sampled_count": 7,
+          "sample_pct": 3.6,
+          "median_price": 8000,
+          "median_reviews": 1786,
+          "median_ppm": 150.0
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "listed_count": 3,
+          "sampled_count": 1,
+          "sample_pct": 0.5,
+          "median_price": 20000,
+          "median_reviews": 5273,
+          "median_ppm": 400.0
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "listed_count": 134,
+          "sampled_count": 126,
+          "sample_pct": 64.3,
+          "median_price": 13500,
+          "median_reviews": 981,
+          "median_ppm": 216.6
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "listed_count": 32,
+          "sampled_count": 0,
+          "sample_pct": 0.0,
+          "median_price": null,
+          "median_reviews": null,
+          "median_ppm": null
+        }
+      ],
+      "area_analysis": [
+        {
+          "name": "錦・栄・矢場町",
+          "count": 31,
+          "pct": 15.8,
+          "median_price": 14000,
+          "median_reviews": 2716,
+          "mean_price": 13468.0
+        },
+        {
+          "name": "一宮・稲沢",
+          "count": 26,
+          "pct": 13.3,
+          "median_price": 10000,
+          "median_reviews": 811,
+          "mean_price": 10558.0
+        },
+        {
+          "name": "名古屋駅周辺",
+          "count": 25,
+          "pct": 12.8,
+          "median_price": 12000,
+          "median_reviews": 1983,
+          "mean_price": 12323.0
+        },
+        {
+          "name": "安城",
+          "count": 22,
+          "pct": 11.2,
+          "median_price": 13000,
+          "median_reviews": 294,
+          "mean_price": 12491.0
+        },
+        {
+          "name": "豊橋",
+          "count": 22,
+          "pct": 11.2,
+          "median_price": 13000,
+          "median_reviews": 636,
+          "mean_price": 12718.0
+        },
+        {
+          "name": "新栄・東新町",
+          "count": 17,
+          "pct": 8.7,
+          "median_price": 15000,
+          "median_reviews": 3986,
+          "mean_price": 16418.0
+        },
+        {
+          "name": "岡崎",
+          "count": 13,
+          "pct": 6.6,
+          "median_price": 18000,
+          "median_reviews": 768,
+          "mean_price": 16692.0
+        },
+        {
+          "name": "千種・今池・池下",
+          "count": 8,
+          "pct": 4.1,
+          "median_price": 10000,
+          "median_reviews": 3438,
+          "mean_price": 12025
+        },
+        {
+          "name": "大須・金山・鶴舞",
+          "count": 8,
+          "pct": 4.1,
+          "median_price": 12000,
+          "median_reviews": 743,
+          "mean_price": 11875
+        },
+        {
+          "name": "豊田・三好",
+          "count": 6,
+          "pct": 3.1,
+          "median_price": 13000,
+          "median_reviews": 201,
+          "mean_price": 12833.0
+        }
+      ],
+      "subgenre_analysis": [
+        {
+          "name": "スタンダード",
+          "count": 63,
+          "pct": 32.1,
+          "median_price": 14000,
+          "median_reviews": 1847,
+          "mean_price": 13527.0
+        },
+        {
+          "name": "人妻",
+          "count": 58,
+          "pct": 29.6,
+          "median_price": 14000,
+          "median_reviews": 992,
+          "mean_price": 13310.0
+        },
+        {
+          "name": "店舗型エステ",
+          "count": 23,
+          "pct": 11.7,
+          "median_price": 12000,
+          "median_reviews": 1539,
+          "mean_price": 11556.0
+        },
+        {
+          "name": "激安",
+          "count": 11,
+          "pct": 5.6,
+          "median_price": 8000,
+          "median_reviews": 1281,
+          "mean_price": 8000
+        },
+        {
+          "name": "ぽっちゃり",
+          "count": 8,
+          "pct": 4.1,
+          "median_price": 8000,
+          "median_reviews": 2253,
+          "mean_price": 7375
+        },
+        {
+          "name": "熟女",
+          "count": 7,
+          "pct": 3.6,
+          "median_price": 16000,
+          "median_reviews": 78,
+          "mean_price": 14571.0
+        },
+        {
+          "name": "出張エステ",
+          "count": 7,
+          "pct": 3.6,
+          "median_price": 12000,
+          "median_reviews": 1370,
+          "mean_price": 12514.0
+        },
+        {
+          "name": "学園系",
+          "count": 5,
+          "pct": 2.6,
+          "median_price": 13000,
+          "median_reviews": 3986,
+          "mean_price": 12600
+        }
+      ],
+      "market_concentration": {
+        "top5_share_pct": 21.0,
+        "top10_share_pct": 29.7,
+        "total_reviews": 493837
       },
       "top_by_reviews": [
         {
@@ -291,14 +900,6 @@
           "review_count": 16945,
           "min_minutes": 50,
           "min_price": 24000
-        },
-        {
-          "name": "ドMな逆バニーちゃん 　栄・東新町店",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
-          "genre": "ヘルス(スタンダード/新栄・東新町)",
-          "review_count": 11088,
-          "min_minutes": 50,
-          "min_price": 14000
         },
         {
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
@@ -347,6 +948,14 @@
           "review_count": 7515,
           "min_minutes": 70,
           "min_price": 16000
+        },
+        {
+          "name": "AVANCE",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
+          "genre": "デリヘル(人妻/錦・栄・矢場町)",
+          "review_count": 7310,
+          "min_minutes": 70,
+          "min_price": 16000
         }
       ],
       "top_by_value": [
@@ -356,7 +965,8 @@
           "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
           "review_count": 46190,
           "min_minutes": 45,
-          "min_price": 14000
+          "min_price": 14000,
+          "price_per_minute": 311.1
         },
         {
           "name": "甘サド美少女、お貸しします。名古屋錦店〜E＋Group〜",
@@ -364,7 +974,8 @@
           "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
           "review_count": 18745,
           "min_minutes": 45,
-          "min_price": 14000
+          "min_price": 14000,
+          "price_per_minute": 311.1
         },
         {
           "name": "TEXX",
@@ -372,7 +983,8 @@
           "genre": "ヘルス(手コキ・オナクラ/新栄・東新町)",
           "review_count": 5932,
           "min_minutes": 30,
-          "min_price": 5000
+          "min_price": 5000,
+          "price_per_minute": 166.7
         },
         {
           "name": "愛知豊橋豊川ちゃんこ",
@@ -380,7 +992,8 @@
           "genre": "デリヘル(ぽっちゃり/豊橋)",
           "review_count": 4998,
           "min_minutes": 50,
-          "min_price": 5000
+          "min_price": 5000,
+          "price_per_minute": 100.0
         },
         {
           "name": "ドMな奥様　名古屋・錦店",
@@ -388,7 +1001,8 @@
           "genre": "ヘルス(人妻/錦・栄・矢場町)",
           "review_count": 8169,
           "min_minutes": 30,
-          "min_price": 9000
+          "min_price": 9000,
+          "price_per_minute": 300.0
         },
         {
           "name": "人妻in誘惑スイートルーム名古屋錦店～E＋Group～",
@@ -396,7 +1010,8 @@
           "genre": "ヘルス(人妻/錦・栄・矢場町)",
           "review_count": 10503,
           "min_minutes": 45,
-          "min_price": 12000
+          "min_price": 12000,
+          "price_per_minute": 266.7
         },
         {
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
@@ -404,15 +1019,8 @@
           "genre": "ヘルス(スタンダード/新栄・東新町)",
           "review_count": 11088,
           "min_minutes": 50,
-          "min_price": 14000
-        },
-        {
-          "name": "ドMな逆バニーちゃん 　栄・東新町店",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
-          "genre": "ヘルス(スタンダード/新栄・東新町)",
-          "review_count": 11088,
-          "min_minutes": 50,
-          "min_price": 14000
+          "min_price": 14000,
+          "price_per_minute": 280.0
         },
         {
           "name": "愛知弥富津島愛西ちゃんこ",
@@ -420,7 +1028,8 @@
           "genre": "デリヘル(激安/津島・あま・弥富・愛西)",
           "review_count": 3804,
           "min_minutes": 50,
-          "min_price": 5000
+          "min_price": 5000,
+          "price_per_minute": 100.0
         },
         {
           "name": "シャブール　名古屋店",
@@ -428,8 +1037,26 @@
           "genre": "デリヘル(高級/新栄・東新町)",
           "review_count": 16945,
           "min_minutes": 50,
-          "min_price": 24000
+          "min_price": 24000,
+          "price_per_minute": 480.0
+        },
+        {
+          "name": "ピーチルパイン",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/peachle/",
+          "genre": "エステ・アロマ(店舗型エステ/新栄・東新町)",
+          "review_count": 1539,
+          "min_minutes": 10,
+          "min_price": 2200,
+          "price_per_minute": 220.0
         }
+      ],
+      "insights": [
+        "公式掲載 463 店のうち 196 店をサンプリング（42.3%）",
+        "最低コース相場は3都市平均より 1,000円低め（中央値 13,000円）",
+        "サンプル内ではデリヘルが最多（126店・64.3%）",
+        "エリア別では「錦・栄・矢場町」の店舗密度が最高（31店・中央値 14000円）",
+        "口コミ件数の上位5店で全体の 21.0% を占有（集中度指標）",
+        "口コミ件数の中央値は 1,430 件（レビュー厚みの目安）"
       ]
     },
     {
@@ -437,7 +1064,7 @@
       "name": "大阪府",
       "short": "大阪",
       "shop_count": 460,
-      "girl_count": 29484,
+      "girl_count": 29480,
       "girl_per_shop": 64.1,
       "genres": [
         {
@@ -466,28 +1093,282 @@
           "shop_count": 30
         }
       ],
+      "coverage": {
+        "official": 460,
+        "sampled": 178,
+        "pct": 38.7
+      },
       "price_stats": {
-        "count": 191,
+        "count": 162,
         "min": 3000,
-        "median": 14000,
+        "max": 66000,
+        "mean": 14397.5,
+        "median": 13499,
+        "stdev": 6678.2,
         "p25": 10000,
-        "p75": 16500,
-        "max": 66000
+        "p75": 16500
+      },
+      "price_per_minute_stats": {
+        "count": 162,
+        "min": 100.0,
+        "max": 733.3333333333334,
+        "mean": 251.7,
+        "median": 245,
+        "stdev": 87.3,
+        "p25": 189,
+        "p75": 297
       },
       "review_stats": {
-        "count": 209,
-        "median": 840,
-        "max": 10405
+        "count": 178,
+        "min": 2,
+        "max": 9072,
+        "mean": 1426.1,
+        "median": 762,
+        "stdev": 1684.4,
+        "p25": 205,
+        "p75": 2056
+      },
+      "price_histogram": [
+        {
+          "label": "〜1万円",
+          "count": 27,
+          "pct": 16.7
+        },
+        {
+          "label": "1〜1.5万",
+          "count": 71,
+          "pct": 43.8
+        },
+        {
+          "label": "1.5〜2万",
+          "count": 40,
+          "pct": 24.7
+        },
+        {
+          "label": "2〜3万",
+          "count": 22,
+          "pct": 13.6
+        },
+        {
+          "label": "3〜5万",
+          "count": 1,
+          "pct": 0.6
+        },
+        {
+          "label": "5万円〜",
+          "count": 1,
+          "pct": 0.6
+        }
+      ],
+      "review_histogram": [
+        {
+          "label": "〜100",
+          "count": 27,
+          "pct": 15.2
+        },
+        {
+          "label": "100〜500",
+          "count": 48,
+          "pct": 27.0
+        },
+        {
+          "label": "500〜2千",
+          "count": 57,
+          "pct": 32.0
+        },
+        {
+          "label": "2千〜1万",
+          "count": 46,
+          "pct": 25.8
+        },
+        {
+          "label": "1万〜",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "genre_analysis": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "listed_count": 18,
+          "sampled_count": 17,
+          "sample_pct": 9.6,
+          "median_price": 11000,
+          "median_reviews": 3446,
+          "median_ppm": 288.9
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "listed_count": 30,
+          "sampled_count": 0,
+          "sample_pct": 0.0,
+          "median_price": null,
+          "median_reviews": null,
+          "median_ppm": null
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "listed_count": 32,
+          "sampled_count": 32,
+          "sample_pct": 18.0,
+          "median_price": 14000,
+          "median_reviews": 2161,
+          "median_ppm": 233.3
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "listed_count": 99,
+          "sampled_count": 98,
+          "sample_pct": 55.1,
+          "median_price": 14300,
+          "median_reviews": 299,
+          "median_ppm": 250.0
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "listed_count": 30,
+          "sampled_count": 0,
+          "sample_pct": 0.0,
+          "median_price": null,
+          "median_reviews": null,
+          "median_ppm": null
+        }
+      ],
+      "area_analysis": [
+        {
+          "name": "梅田・北新地",
+          "count": 59,
+          "pct": 33.1,
+          "median_price": 15000,
+          "median_reviews": 1259,
+          "mean_price": 16752.0
+        },
+        {
+          "name": "日本橋",
+          "count": 50,
+          "pct": 28.1,
+          "median_price": 13499,
+          "median_reviews": 798,
+          "mean_price": 13180.0
+        },
+        {
+          "name": "谷九・上本町",
+          "count": 25,
+          "pct": 14.0,
+          "median_price": 13000,
+          "median_reviews": 662,
+          "mean_price": 13209.0
+        },
+        {
+          "name": "難波・心斎橋",
+          "count": 22,
+          "pct": 12.4,
+          "median_price": 13650,
+          "median_reviews": 1482,
+          "mean_price": 14715
+        },
+        {
+          "name": "十三・塚本",
+          "count": 10,
+          "pct": 5.6,
+          "median_price": 9500,
+          "median_reviews": 247,
+          "mean_price": 9625
+        },
+        {
+          "name": "新大阪駅・西中島",
+          "count": 5,
+          "pct": 2.8,
+          "median_price": 14300,
+          "median_reviews": 81,
+          "mean_price": 14260
+        },
+        {
+          "name": "京橋・桜ノ宮",
+          "count": 3,
+          "pct": 1.7,
+          "median_price": 10000,
+          "median_reviews": 331,
+          "mean_price": 10667.0
+        }
+      ],
+      "subgenre_analysis": [
+        {
+          "name": "スタンダード",
+          "count": 43,
+          "pct": 24.2,
+          "median_price": 14300,
+          "median_reviews": 497,
+          "mean_price": 14768.0
+        },
+        {
+          "name": "人妻",
+          "count": 27,
+          "pct": 15.2,
+          "median_price": 13000,
+          "median_reviews": 1039,
+          "mean_price": 12692.0
+        },
+        {
+          "name": "出張エステ",
+          "count": 23,
+          "pct": 12.9,
+          "median_price": 14300,
+          "median_reviews": 918,
+          "mean_price": 14559.0
+        },
+        {
+          "name": "高級",
+          "count": 14,
+          "pct": 7.9,
+          "median_price": 23100,
+          "median_reviews": 365,
+          "mean_price": 27692.0
+        },
+        {
+          "name": "M性感",
+          "count": 10,
+          "pct": 5.6,
+          "median_price": 15150,
+          "median_reviews": 502,
+          "mean_price": 15900
+        },
+        {
+          "name": "激安",
+          "count": 10,
+          "pct": 5.6,
+          "median_price": 7000,
+          "median_reviews": 1696,
+          "mean_price": 7511.0
+        },
+        {
+          "name": "ホテヘル＆デリヘル",
+          "count": 9,
+          "pct": 5.1,
+          "median_price": 16000,
+          "median_reviews": 1273,
+          "mean_price": 13722.0
+        },
+        {
+          "name": "SM",
+          "count": 8,
+          "pct": 4.5,
+          "median_price": 16900,
+          "median_reviews": 186,
+          "mean_price": 16350
+        }
+      ],
+      "market_concentration": {
+        "top5_share_pct": 13.9,
+        "top10_share_pct": 24.4,
+        "total_reviews": 253843
       },
       "top_by_reviews": [
-        {
-          "name": "桃源郷クラブ",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
-          "genre": "ホテヘル(人妻/谷九・上本町)",
-          "review_count": 10405,
-          "min_minutes": 85,
-          "min_price": 9350
-        },
         {
           "name": "Evolution 2nd",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
@@ -495,14 +1376,6 @@
           "review_count": 9072,
           "min_minutes": 50,
           "min_price": 10000
-        },
-        {
-          "name": "LOVEキタ兎我野店",
-          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
-          "genre": "ホテヘル(スタンダード/梅田・北新地)",
-          "review_count": 7199,
-          "min_minutes": 70,
-          "min_price": 15000
         },
         {
           "name": "LOVEキタ兎我野店",
@@ -553,30 +1426,39 @@
           "min_price": 12000
         },
         {
-          "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
-          "genre": "デリヘル(スタンダード/日本橋)",
-          "review_count": 5617,
-          "min_minutes": 75,
+          "name": "リチスパ",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/richisupa/",
+          "genre": "ヘルス(エステ＆ヘルス/難波・心斎橋)",
+          "review_count": 5420,
+          "min_minutes": null,
+          "min_price": null
+        },
+        {
+          "name": "ドＭな奥さん日本橋店",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
+          "genre": "ホテヘル(人妻/日本橋)",
+          "review_count": 4982,
+          "min_minutes": 50,
+          "min_price": 7999
+        },
+        {
+          "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
+          "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
+          "genre": "ヘルス(マット/梅田・北新地)",
+          "review_count": 4889,
+          "min_minutes": 40,
           "min_price": 12000
         }
       ],
       "top_by_value": [
         {
-          "name": "桃源郷クラブ",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
-          "genre": "ホテヘル(人妻/谷九・上本町)",
-          "review_count": 10405,
-          "min_minutes": 85,
-          "min_price": 9350
-        },
-        {
           "name": "Evolution 2nd",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
           "genre": "ヘルス(スタンダード/難波・心斎橋)",
           "review_count": 9072,
           "min_minutes": 50,
-          "min_price": 10000
+          "min_price": 10000,
+          "price_per_minute": 200.0
         },
         {
           "name": "OLの品格-クラブアッシュ-",
@@ -584,7 +1466,8 @@
           "genre": "ヘルス(イメクラ/難波・心斎橋)",
           "review_count": 5964,
           "min_minutes": 30,
-          "min_price": 9000
+          "min_price": 9000,
+          "price_per_minute": 300.0
         },
         {
           "name": "秘書の品格 クラブアッシュ ヴァリエ",
@@ -592,7 +1475,8 @@
           "genre": "ヘルス(コスプレ/日本橋)",
           "review_count": 5828,
           "min_minutes": 30,
-          "min_price": 9000
+          "min_price": 9000,
+          "price_per_minute": 300.0
         },
         {
           "name": "ドＭな奥さん日本橋店",
@@ -600,15 +1484,8 @@
           "genre": "ホテヘル(人妻/日本橋)",
           "review_count": 4982,
           "min_minutes": 50,
-          "min_price": 7999
-        },
-        {
-          "name": "ドＭな奥さん日本橋店",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
-          "genre": "ホテヘル(人妻/日本橋)",
-          "review_count": 4982,
-          "min_minutes": 50,
-          "min_price": 7999
+          "min_price": 7999,
+          "price_per_minute": 160.0
         },
         {
           "name": "聖リッチ女学園",
@@ -616,7 +1493,8 @@
           "genre": "ヘルス(イメクラ/難波・心斎橋)",
           "review_count": 6837,
           "min_minutes": 45,
-          "min_price": 11000
+          "min_price": 11000,
+          "price_per_minute": 244.4
         },
         {
           "name": "アムール",
@@ -624,7 +1502,8 @@
           "genre": "ヘルス(マット/難波・心斎橋)",
           "review_count": 6186,
           "min_minutes": 40,
-          "min_price": 11000
+          "min_price": 11000,
+          "price_per_minute": 275.0
         },
         {
           "name": "LOVEキタ兎我野店",
@@ -632,16 +1511,43 @@
           "genre": "ホテヘル(スタンダード/梅田・北新地)",
           "review_count": 7199,
           "min_minutes": 70,
-          "min_price": 15000
+          "min_price": 15000,
+          "price_per_minute": 214.3
         },
         {
-          "name": "LOVEキタ兎我野店",
-          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
-          "genre": "ホテヘル(スタンダード/梅田・北新地)",
-          "review_count": 7199,
-          "min_minutes": 70,
-          "min_price": 15000
+          "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
+          "genre": "デリヘル(スタンダード/日本橋)",
+          "review_count": 5617,
+          "min_minutes": 75,
+          "min_price": 12000,
+          "price_per_minute": 160.0
+        },
+        {
+          "name": "Aroma Dione大阪店",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/aroma_d/",
+          "genre": "エステ・アロマ(出張エステ/日本橋)",
+          "review_count": 4557,
+          "min_minutes": 75,
+          "min_price": 10000,
+          "price_per_minute": 133.3
+        },
+        {
+          "name": "ノーブラで誘惑する奥さん谷九・日本橋",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270203/cosp/",
+          "genre": "デリヘル(人妻/谷九・上本町)",
+          "review_count": 4746,
+          "min_minutes": 60,
+          "min_price": 11000,
+          "price_per_minute": 183.3
         }
+      ],
+      "insights": [
+        "公式掲載 460 店のうち 178 店をサンプリング（38.7%）",
+        "サンプル内ではデリヘルが最多（98店・55.1%）",
+        "エリア別では「梅田・北新地」の店舗密度が最高（59店・中央値 15000円）",
+        "口コミ件数の上位5店で全体の 13.9% を占有（集中度指標）",
+        "口コミ件数の中央値は 762 件（レビュー厚みの目安）"
       ]
     }
   ],
@@ -650,31 +1556,46 @@
       "slug": "tokyo",
       "name": "東京",
       "shop_count": 983,
-      "girl_count": 83972,
+      "girl_count": 83975,
       "girl_per_shop": 85.4,
       "median_price": 15000,
+      "mean_price": 17094.9,
+      "median_ppm": 266,
+      "median_reviews": 1048,
       "genre_deli": 207,
-      "genre_soap": 12
+      "genre_soap": 12,
+      "coverage_pct": 31.3,
+      "top5_review_share": 17.8
     },
     {
       "slug": "aichi",
       "name": "名古屋",
       "shop_count": 463,
-      "girl_count": 24699,
+      "girl_count": 24700,
       "girl_per_shop": 53.3,
       "median_price": 13000,
+      "mean_price": 12904.0,
+      "median_ppm": 228,
+      "median_reviews": 1430,
       "genre_deli": 134,
-      "genre_soap": 9
+      "genre_soap": 9,
+      "coverage_pct": 42.3,
+      "top5_review_share": 21.0
     },
     {
       "slug": "osaka",
       "name": "大阪",
       "shop_count": 460,
-      "girl_count": 29484,
+      "girl_count": 29480,
       "girl_per_shop": 64.1,
-      "median_price": 14000,
+      "median_price": 13499,
+      "mean_price": 14397.5,
+      "median_ppm": 245,
+      "median_reviews": 762,
       "genre_deli": 99,
-      "genre_soap": 30
+      "genre_soap": 30,
+      "coverage_pct": 38.7,
+      "top5_review_share": 13.9
     }
   ]
 }

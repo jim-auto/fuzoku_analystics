@@ -33,14 +33,18 @@
   </header>
 
   <main class="container">
+    <section class="panel panel--insights" id="metro-insights"></section>
+
     <section class="cards" id="summary-cards"></section>
 
     <section class="panel">
       <h2>3都市比較</h2>
-      <div class="chart-grid">
+      <p class="panel-desc">公式掲載数・サンプル分析・相場・口コミ厚みを横並びで比較</p>
+      <div class="chart-grid chart-grid--4">
         <div class="chart-box"><canvas id="chart-shops"></canvas></div>
         <div class="chart-box"><canvas id="chart-girls"></canvas></div>
         <div class="chart-box"><canvas id="chart-price"></canvas></div>
+        <div class="chart-box"><canvas id="chart-ppm"></canvas></div>
       </div>
       <div class="table-wrap">
         <table id="comparison-table">
@@ -48,15 +52,24 @@
             <tr>
               <th>エリア</th>
               <th>店舗数</th>
-              <th>在籍数</th>
+              <th>分析率</th>
               <th>在籍/店</th>
-              <th>デリヘル</th>
-              <th>ソープ</th>
               <th>相場中央値</th>
+              <th>1分単価</th>
+              <th>口コミ中央値</th>
+              <th>上位5店集中度</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>相場・口コミ分布（3都市）</h2>
+      <div class="chart-grid">
+        <div class="chart-box chart-box--wide"><canvas id="chart-price-hist"></canvas></div>
+        <div class="chart-box chart-box--wide"><canvas id="chart-review-hist"></canvas></div>
       </div>
     </section>
 
