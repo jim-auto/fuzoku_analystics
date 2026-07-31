@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T22:21:49+09:00",
+  "updated_at": "2026-08-01T03:19:10+09:00",
   "source": "https://www.cityheaven.net/",
   "disclaimer": "非公式の統計サイト。数値のみを集計し、画像・文章は転載していません。",
   "regions_target": [
@@ -9,21 +9,21 @@
   ],
   "metro_overview": {
     "total_official_shops": 1906,
-    "total_sampled_shops": 1394,
+    "total_sampled_shops": 1433,
     "metro_price_stats": {
-      "count": 1339,
+      "count": 1373,
       "min": 1900,
       "max": 250000,
-      "mean": 14643.1,
+      "mean": 14584.8,
       "median": 13000,
-      "stdev": 10120.4,
+      "stdev": 10196.5,
       "p25": 10000,
       "p75": 16500
     },
     "insights": [
-      "相場最安は大阪（中央値 12,500円）、最高は東京（14,000円）",
-      "在籍/店舗比は東京が最大（85.4 人/店）→ 選択肢の厚み",
-      "3都市合計 1,906 店中 1,394 店を統計分析に使用"
+      "相場最安は大阪（中央値 12,000円）、最高は東京（14,000円）",
+      "在籍/店舗比は東京が最大（85.3 人/店）→ 選択肢の厚み",
+      "3都市合計 1,906 店中 1,433 店を統計分析に使用"
     ]
   },
   "regions": [
@@ -32,122 +32,122 @@
       "name": "東京都",
       "short": "東京",
       "shop_count": 983,
-      "girl_count": 83963,
-      "girl_per_shop": 85.4,
+      "girl_count": 83872,
+      "girl_per_shop": 85.3,
       "genres": [
         {
           "id": "biz1",
           "name": "ヘルス",
-          "shop_count": 220
+          "shop_count": 234
         },
         {
           "id": "biz4",
           "name": "ソープ",
-          "shop_count": 292
+          "shop_count": 299
         },
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "shop_count": 312
+          "shop_count": 323
         },
         {
           "id": "biz6",
           "name": "デリヘル",
-          "shop_count": 463
+          "shop_count": 480
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "shop_count": 233
+          "shop_count": 247
         }
       ],
       "coverage": {
         "official": 983,
-        "sampled": 714,
-        "pct": 72.6
+        "sampled": 728,
+        "pct": 74.1
       },
       "price_stats": {
-        "count": 685,
+        "count": 697,
         "min": 1900,
         "max": 250000,
-        "mean": 16173.6,
+        "mean": 16228.9,
         "median": 14000,
-        "stdev": 12733.5,
+        "stdev": 12819.5,
         "p25": 10000,
         "p75": 18000
       },
       "price_per_minute_stats": {
-        "count": 685,
+        "count": 697,
         "min": 66.33333333333333,
         "max": 2777.777777777778,
-        "mean": 277.5,
+        "mean": 277.1,
         "median": 260,
-        "stdev": 141.6,
-        "p25": 208,
+        "stdev": 142.0,
+        "p25": 200,
         "p75": 300
       },
       "review_stats": {
-        "count": 714,
+        "count": 728,
         "min": 1,
         "max": 41912,
-        "mean": 1828.2,
-        "median": 519,
-        "stdev": 3906.2,
-        "p25": 88,
-        "p75": 1891
+        "mean": 1827.6,
+        "median": 522,
+        "stdev": 3885.0,
+        "p25": 83,
+        "p75": 1898
       },
       "price_histogram": [
         {
           "label": "〜1万円",
-          "count": 112,
-          "pct": 16.4
+          "count": 115,
+          "pct": 16.5
         },
         {
           "label": "1〜1.5万",
-          "count": 248,
-          "pct": 36.2
+          "count": 256,
+          "pct": 36.7
         },
         {
           "label": "1.5〜2万",
-          "count": 192,
-          "pct": 28.0
+          "count": 191,
+          "pct": 27.4
         },
         {
           "label": "2〜3万",
-          "count": 78,
-          "pct": 11.4
+          "count": 77,
+          "pct": 11.0
         },
         {
           "label": "3〜5万",
-          "count": 47,
-          "pct": 6.9
+          "count": 49,
+          "pct": 7.0
         },
         {
           "label": "5万円〜",
-          "count": 8,
-          "pct": 1.2
+          "count": 9,
+          "pct": 1.3
         }
       ],
       "review_histogram": [
         {
           "label": "〜100",
-          "count": 194,
+          "count": 198,
           "pct": 27.2
         },
         {
           "label": "100〜500",
-          "count": 156,
-          "pct": 21.8
+          "count": 157,
+          "pct": 21.6
         },
         {
           "label": "500〜2千",
-          "count": 190,
-          "pct": 26.6
+          "count": 195,
+          "pct": 26.8
         },
         {
           "label": "2千〜1万",
-          "count": 161,
-          "pct": 22.5
+          "count": 165,
+          "pct": 22.7
         },
         {
           "label": "1万〜",
@@ -159,9 +159,9 @@
         {
           "id": "biz1",
           "name": "ヘルス",
-          "listed_count": 220,
+          "listed_count": 234,
           "sampled_count": 36,
-          "sample_pct": 5.0,
+          "sample_pct": 4.9,
           "median_price": 8000,
           "median_reviews": 779,
           "median_ppm": 260.0
@@ -169,19 +169,19 @@
         {
           "id": "biz4",
           "name": "ソープ",
-          "listed_count": 292,
-          "sampled_count": 66,
+          "listed_count": 299,
+          "sampled_count": 67,
           "sample_pct": 9.2,
-          "median_price": 20000,
-          "median_reviews": 2281,
-          "median_ppm": 333.3
+          "median_price": 20450,
+          "median_reviews": 2258,
+          "median_ppm": 331.0
         },
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "listed_count": 312,
+          "listed_count": 323,
           "sampled_count": 73,
-          "sample_pct": 10.2,
+          "sample_pct": 10.0,
           "median_price": 11000,
           "median_reviews": 512,
           "median_ppm": 250.0
@@ -189,17 +189,17 @@
         {
           "id": "biz6",
           "name": "デリヘル",
-          "listed_count": 463,
-          "sampled_count": 425,
-          "sample_pct": 59.5,
+          "listed_count": 480,
+          "sampled_count": 438,
+          "sample_pct": 60.2,
           "median_price": 15000,
-          "median_reviews": 333,
-          "median_ppm": 266.7
+          "median_reviews": 338,
+          "median_ppm": 261.2
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "listed_count": 233,
+          "listed_count": 247,
           "sampled_count": 0,
           "sample_pct": 0.0,
           "median_price": null,
@@ -210,64 +210,64 @@
       "area_analysis": [
         {
           "name": "池袋北口・西口",
-          "count": 84,
-          "pct": 11.8,
-          "median_price": 13000,
-          "median_reviews": 1133,
-          "mean_price": 13155.0
+          "count": 85,
+          "pct": 11.7,
+          "median_price": 12750,
+          "median_reviews": 1128,
+          "mean_price": 13103.0
         },
         {
           "name": "新宿・歌舞伎町",
           "count": 68,
-          "pct": 9.5,
-          "median_price": 14250,
+          "pct": 9.3,
+          "median_price": 14750,
           "median_reviews": 1261,
-          "mean_price": 16160.0
+          "mean_price": 16238.0
         },
         {
           "name": "渋谷",
-          "count": 56,
-          "pct": 7.8,
+          "count": 59,
+          "pct": 8.1,
           "median_price": 16000,
-          "median_reviews": 793,
-          "mean_price": 18425.0
+          "median_reviews": 791,
+          "mean_price": 19058.0
         },
         {
           "name": "五反田",
           "count": 53,
-          "pct": 7.4,
+          "pct": 7.3,
           "median_price": 15000,
-          "median_reviews": 973,
-          "mean_price": 14692.0
+          "median_reviews": 1056,
+          "mean_price": 14678.0
         },
         {
           "name": "錦糸町",
-          "count": 42,
-          "pct": 5.9,
+          "count": 44,
+          "pct": 6.0,
           "median_price": 13000,
-          "median_reviews": 805,
-          "mean_price": 13233.0
+          "median_reviews": 849,
+          "mean_price": 13177.0
         },
         {
           "name": "鶯谷",
-          "count": 39,
-          "pct": 5.5,
-          "median_price": 14000,
-          "median_reviews": 770,
-          "mean_price": 13734.0
+          "count": 43,
+          "pct": 5.9,
+          "median_price": 13500,
+          "median_reviews": 653,
+          "mean_price": 13568.0
         },
         {
           "name": "吉原",
-          "count": 35,
+          "count": 36,
           "pct": 4.9,
-          "median_price": 20950,
-          "median_reviews": 3207,
-          "mean_price": 23870
+          "median_price": 22000,
+          "median_reviews": 3061,
+          "mean_price": 25035.0
         },
         {
           "name": "立川",
           "count": 34,
-          "pct": 4.8,
+          "pct": 4.7,
           "median_price": 12500,
           "median_reviews": 365,
           "mean_price": 12672.0
@@ -275,15 +275,15 @@
         {
           "name": "新橋・汐留",
           "count": 33,
-          "pct": 4.6,
+          "pct": 4.5,
           "median_price": 12000,
-          "median_reviews": 119,
-          "mean_price": 11951.0
+          "median_reviews": 124,
+          "mean_price": 12042.0
         },
         {
           "name": "品川",
           "count": 27,
-          "pct": 3.8,
+          "pct": 3.7,
           "median_price": 18000,
           "median_reviews": 235,
           "mean_price": 19500
@@ -292,50 +292,50 @@
       "subgenre_analysis": [
         {
           "name": "スタンダード",
-          "count": 170,
-          "pct": 23.8,
+          "count": 176,
+          "pct": 24.2,
           "median_price": 14000,
-          "median_reviews": 845,
-          "mean_price": 14636.0
+          "median_reviews": 893,
+          "mean_price": 14658.0
         },
         {
           "name": "人妻",
-          "count": 124,
-          "pct": 17.4,
-          "median_price": 13000,
-          "median_reviews": 496,
-          "mean_price": 14067.0
+          "count": 126,
+          "pct": 17.3,
+          "median_price": 12800,
+          "median_reviews": 555,
+          "mean_price": 13701.0
         },
         {
           "name": "出張エステ",
           "count": 99,
-          "pct": 13.9,
+          "pct": 13.6,
           "median_price": 14000,
           "median_reviews": 441,
           "mean_price": 14869
         },
         {
           "name": "高級",
-          "count": 73,
-          "pct": 10.2,
+          "count": 75,
+          "pct": 10.3,
           "median_price": 33000,
-          "median_reviews": 126,
-          "mean_price": 38013.0
+          "median_reviews": 168,
+          "mean_price": 38675.0
         },
         {
           "name": "激安",
-          "count": 59,
-          "pct": 8.3,
-          "median_price": 13500,
+          "count": 60,
+          "pct": 8.2,
+          "median_price": 13000,
           "median_reviews": 972,
-          "mean_price": 13634.0
+          "mean_price": 13895.0
         },
         {
           "name": "学園系",
           "count": 32,
-          "pct": 4.5,
+          "pct": 4.4,
           "median_price": 13000,
-          "median_reviews": 864,
+          "median_reviews": 865,
           "mean_price": 13075
         },
         {
@@ -348,17 +348,17 @@
         },
         {
           "name": "ぽっちゃり",
-          "count": 21,
-          "pct": 2.9,
-          "median_price": 6000,
-          "median_reviews": 225,
-          "mean_price": 7613.0
+          "count": 22,
+          "pct": 3.0,
+          "median_price": 6990,
+          "median_reviews": 210,
+          "mean_price": 7722.0
         }
       ],
       "market_concentration": {
-        "top5_share_pct": 13.7,
-        "top10_share_pct": 20.8,
-        "total_reviews": 1305364
+        "top5_share_pct": 13.4,
+        "top10_share_pct": 20.4,
+        "total_reviews": 1330466
       },
       "top_by_reviews": [
         {
@@ -373,7 +373,7 @@
           "name": "Chloe五反田本店　S級素人清楚系デリヘル",
           "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
           "genre": "デリヘル(スタンダード/五反田)",
-          "review_count": 40069,
+          "review_count": 40068,
           "min_minutes": 70,
           "min_price": 17000
         },
@@ -389,7 +389,7 @@
           "name": "グッドワイフ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/wifesoap/",
           "genre": "ソープ(人妻/吉原)",
-          "review_count": 33298,
+          "review_count": 33297,
           "min_minutes": 50,
           "min_price": 14800
         },
@@ -397,7 +397,7 @@
           "name": "ハニーコレクション",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
           "genre": "ソープ(激安/吉原)",
-          "review_count": 26862,
+          "review_count": 26861,
           "min_minutes": 50,
           "min_price": 14800
         },
@@ -405,7 +405,7 @@
           "name": "CUTE",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
           "genre": "ソープ(コスプレ/さいたま市大宮区)",
-          "review_count": 20807,
+          "review_count": 20816,
           "min_minutes": 50,
           "min_price": 16000
         },
@@ -413,7 +413,7 @@
           "name": "MADAM",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/madamsoap/",
           "genre": "ソープ(人妻/さいたま市大宮区)",
-          "review_count": 20735,
+          "review_count": 20734,
           "min_minutes": 50,
           "min_price": 16000
         },
@@ -421,7 +421,7 @@
           "name": "アイドル研究生",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
           "genre": "ソープ(スタンダード/吉原)",
-          "review_count": 17652,
+          "review_count": 17651,
           "min_minutes": 70,
           "min_price": 23000
         },
@@ -437,7 +437,7 @@
           "name": "池袋パラダイス",
           "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
           "genre": "ホテヘル(学園系/池袋北口・西口)",
-          "review_count": 15474,
+          "review_count": 15472,
           "min_minutes": 50,
           "min_price": 14000
         },
@@ -445,7 +445,7 @@
           "name": "ファーストレディ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/firstlady/",
           "genre": "ソープ(激安/吉原)",
-          "review_count": 12053,
+          "review_count": 12056,
           "min_minutes": null,
           "min_price": null
         },
@@ -485,7 +485,7 @@
           "name": "ロケットワイフ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/",
           "genre": "ソープ(人妻/吉原)",
-          "review_count": 9546,
+          "review_count": 9547,
           "min_minutes": 50,
           "min_price": 15000
         },
@@ -509,7 +509,7 @@
           "name": "ファインモーション",
           "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
-          "review_count": 9468,
+          "review_count": 9464,
           "min_minutes": 45,
           "min_price": 14000
         },
@@ -537,7 +537,7 @@
           "name": "Chloe五反田本店　S級素人清楚系デリヘル",
           "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
           "genre": "デリヘル(スタンダード/五反田)",
-          "review_count": 40069,
+          "review_count": 40068,
           "min_minutes": 70,
           "min_price": 17000
         },
@@ -555,7 +555,7 @@
           "name": "グッドワイフ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/wifesoap/",
           "genre": "ソープ(人妻/吉原)",
-          "review_count": 33298,
+          "review_count": 33297,
           "min_minutes": 50,
           "min_price": 14800
         },
@@ -564,7 +564,7 @@
           "name": "ハニーコレクション",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
           "genre": "ソープ(激安/吉原)",
-          "review_count": 26862,
+          "review_count": 26861,
           "min_minutes": 50,
           "min_price": 14800
         },
@@ -573,7 +573,7 @@
           "name": "CUTE",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
           "genre": "ソープ(コスプレ/さいたま市大宮区)",
-          "review_count": 20807,
+          "review_count": 20816,
           "min_minutes": 50,
           "min_price": 16000
         },
@@ -582,7 +582,7 @@
           "name": "MADAM",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/madamsoap/",
           "genre": "ソープ(人妻/さいたま市大宮区)",
-          "review_count": 20735,
+          "review_count": 20734,
           "min_minutes": 50,
           "min_price": 16000
         },
@@ -591,7 +591,7 @@
           "name": "アイドル研究生",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
           "genre": "ソープ(スタンダード/吉原)",
-          "review_count": 17652,
+          "review_count": 17651,
           "min_minutes": 70,
           "min_price": 23000
         },
@@ -609,7 +609,7 @@
           "name": "池袋パラダイス",
           "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
           "genre": "ホテヘル(学園系/池袋北口・西口)",
-          "review_count": 15474,
+          "review_count": 15472,
           "min_minutes": 50,
           "min_price": 14000
         },
@@ -618,7 +618,7 @@
           "name": "ファーストレディ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/firstlady/",
           "genre": "ソープ(激安/吉原)",
-          "review_count": 12053,
+          "review_count": 12056,
           "min_minutes": null,
           "min_price": null
         },
@@ -663,7 +663,7 @@
           "name": "ロケットワイフ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/",
           "genre": "ソープ(人妻/吉原)",
-          "review_count": 9546,
+          "review_count": 9547,
           "min_minutes": 50,
           "min_price": 15000
         },
@@ -690,7 +690,7 @@
           "name": "ファインモーション",
           "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
           "genre": "デリヘル(スタンダード/池袋北口・西口)",
-          "review_count": 9468,
+          "review_count": 9464,
           "min_minutes": 45,
           "min_price": 14000
         },
@@ -710,8 +710,8 @@
           "新宿・歌舞伎町",
           "渋谷",
           "五反田",
-          "錦糸町",
           "鶯谷",
+          "錦糸町",
           "立川",
           "新橋・汐留"
         ],
@@ -736,7 +736,7 @@
             13500,
             null,
             25500,
-            16000,
+            16500,
             8000,
             12000
           ],
@@ -752,25 +752,25 @@
             16500,
             null,
             null,
-            15500,
+            16000,
             null,
             11000
+          ],
+          [
+            15000,
+            null,
+            null,
+            14000,
+            null,
+            10000
           ],
           [
             11000,
             null,
             null,
-            13500,
+            13000,
             null,
             12000
-          ],
-          [
-            15000,
-            null,
-            null,
-            15000,
-            null,
-            10000
           ],
           [
             15400,
@@ -790,6 +790,12 @@
           ]
         ]
       },
+      "heatmap_insights": [
+        "相場最安は「渋谷×ヘルス」（中央値 6,000円）",
+        "相場最高は「新宿・歌舞伎町×ソープ」（中央値 25,500円）",
+        "都市中央値より高めのエリア: 五反田, 新宿・歌舞伎町, 池袋北口・西口, 渋谷",
+        "都市中央値より低めのエリア: 五反田, 新宿・歌舞伎町, 新橋・汐留, 池袋北口・西口"
+      ],
       "top_by_value": [
         {
           "name": "Platinum stage(プラチナステージ)",
@@ -813,7 +819,7 @@
           "name": "Chloe五反田本店　S級素人清楚系デリヘル",
           "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
           "genre": "デリヘル(スタンダード/五反田)",
-          "review_count": 40069,
+          "review_count": 40068,
           "min_minutes": 70,
           "min_price": 17000,
           "price_per_minute": 242.9
@@ -822,7 +828,7 @@
           "name": "グッドワイフ",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/wifesoap/",
           "genre": "ソープ(人妻/吉原)",
-          "review_count": 33298,
+          "review_count": 33297,
           "min_minutes": 50,
           "min_price": 14800,
           "price_per_minute": 296.0
@@ -831,7 +837,7 @@
           "name": "ハニーコレクション",
           "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
           "genre": "ソープ(激安/吉原)",
-          "review_count": 26862,
+          "review_count": 26861,
           "min_minutes": 50,
           "min_price": 14800,
           "price_per_minute": 296.0
@@ -849,7 +855,7 @@
           "name": "CUTE",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
           "genre": "ソープ(コスプレ/さいたま市大宮区)",
-          "review_count": 20807,
+          "review_count": 20816,
           "min_minutes": 50,
           "min_price": 16000,
           "price_per_minute": 320.0
@@ -858,7 +864,7 @@
           "name": "MADAM",
           "url": "https://www.cityheaven.net/saitama/A1101/A110101/madamsoap/",
           "genre": "ソープ(人妻/さいたま市大宮区)",
-          "review_count": 20735,
+          "review_count": 20734,
           "min_minutes": 50,
           "min_price": 16000,
           "price_per_minute": 320.0
@@ -867,7 +873,7 @@
           "name": "池袋パラダイス",
           "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
           "genre": "ホテヘル(学園系/池袋北口・西口)",
-          "review_count": 15474,
+          "review_count": 15472,
           "min_minutes": 50,
           "min_price": 14000,
           "price_per_minute": 280.0
@@ -883,12 +889,12 @@
         }
       ],
       "insights": [
-        "公式掲載 983 店のうち 714 店をサンプリング（72.6%）",
+        "公式掲載 983 店のうち 728 店をサンプリング（74.1%）",
         "最低コース相場は3都市平均より 1,000円高め（中央値 14,000円）",
-        "サンプル内ではデリヘルが最多（425店・59.5%）",
-        "エリア別では「池袋北口・西口」の店舗密度が最高（84店・中央値 13000円）",
-        "口コミ件数の上位5店で全体の 13.7% を占有（集中度指標）",
-        "口コミ件数の中央値は 519 件（レビュー厚みの目安）"
+        "サンプル内ではデリヘルが最多（438店・60.2%）",
+        "エリア別では「池袋北口・西口」の店舗密度が最高（85店・中央値 12750円）",
+        "口コミ件数の上位5店で全体の 13.4% を占有（集中度指標）",
+        "口コミ件数の中央値は 522 件（レビュー厚みの目安）"
       ]
     },
     {
@@ -896,33 +902,33 @@
       "name": "愛知県",
       "short": "名古屋",
       "shop_count": 463,
-      "girl_count": 24693,
+      "girl_count": 24673,
       "girl_per_shop": 53.3,
       "genres": [
         {
           "id": "biz1",
           "name": "ヘルス",
-          "shop_count": 114
+          "shop_count": 130
         },
         {
           "id": "biz4",
           "name": "ソープ",
-          "shop_count": 140
+          "shop_count": 156
         },
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "shop_count": 128
+          "shop_count": 149
         },
         {
           "id": "biz6",
           "name": "デリヘル",
-          "shop_count": 204
+          "shop_count": 217
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "shop_count": 88
+          "shop_count": 108
         }
       ],
       "coverage": {
@@ -934,31 +940,31 @@
         "count": 345,
         "min": 2200,
         "max": 60000,
-        "mean": 12896.2,
+        "mean": 12933.9,
         "median": 13000,
-        "stdev": 6101.3,
+        "stdev": 6321.0,
         "p25": 9000,
-        "p75": 15900
+        "p75": 15400
       },
       "price_per_minute_stats": {
         "count": 345,
         "min": 99.33333333333333,
         "max": 666.6666666666666,
-        "mean": 239.5,
+        "mean": 239.7,
         "median": 233,
-        "stdev": 80.0,
-        "p25": 180,
-        "p75": 280
+        "stdev": 81.3,
+        "p25": 183,
+        "p75": 277
       },
       "review_stats": {
         "count": 348,
         "min": 1,
         "max": 46190,
-        "mean": 1934.2,
-        "median": 967,
-        "stdev": 3390.3,
-        "p25": 205,
-        "p75": 2362
+        "mean": 1922.9,
+        "median": 947,
+        "stdev": 3383.0,
+        "p25": 185,
+        "p75": 2330
       },
       "price_histogram": [
         {
@@ -983,30 +989,30 @@
         },
         {
           "label": "3〜5万",
-          "count": 4,
-          "pct": 1.2
+          "count": 3,
+          "pct": 0.9
         },
         {
           "label": "5万円〜",
-          "count": 2,
-          "pct": 0.6
+          "count": 3,
+          "pct": 0.9
         }
       ],
       "review_histogram": [
         {
           "label": "〜100",
-          "count": 61,
-          "pct": 17.5
+          "count": 62,
+          "pct": 17.8
         },
         {
           "label": "100〜500",
-          "count": 67,
-          "pct": 19.3
+          "count": 68,
+          "pct": 19.5
         },
         {
           "label": "500〜2千",
-          "count": 114,
-          "pct": 32.8
+          "count": 113,
+          "pct": 32.5
         },
         {
           "label": "2千〜1万",
@@ -1015,15 +1021,15 @@
         },
         {
           "label": "1万〜",
-          "count": 7,
-          "pct": 2.0
+          "count": 6,
+          "pct": 1.7
         }
       ],
       "genre_analysis": [
         {
           "id": "biz1",
           "name": "ヘルス",
-          "listed_count": 114,
+          "listed_count": 130,
           "sampled_count": 89,
           "sample_pct": 25.6,
           "median_price": 12000,
@@ -1033,17 +1039,17 @@
         {
           "id": "biz4",
           "name": "ソープ",
-          "listed_count": 140,
+          "listed_count": 156,
           "sampled_count": 7,
           "sample_pct": 2.0,
           "median_price": 8000,
-          "median_reviews": 1786,
+          "median_reviews": 1787,
           "median_ppm": 150.0
         },
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "listed_count": 128,
+          "listed_count": 149,
           "sampled_count": 1,
           "sample_pct": 0.3,
           "median_price": 20000,
@@ -1053,17 +1059,17 @@
         {
           "id": "biz6",
           "name": "デリヘル",
-          "listed_count": 204,
+          "listed_count": 217,
           "sampled_count": 191,
           "sample_pct": 54.9,
           "median_price": 13000,
-          "median_reviews": 608,
+          "median_reviews": 604,
           "median_ppm": 216.7
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "listed_count": 88,
+          "listed_count": 108,
           "sampled_count": 0,
           "sample_pct": 0.0,
           "median_price": null,
@@ -1082,11 +1088,11 @@
         },
         {
           "name": "名古屋駅周辺",
-          "count": 65,
-          "pct": 18.7,
+          "count": 66,
+          "pct": 19.0,
           "median_price": 12000,
-          "median_reviews": 918,
-          "mean_price": 13520.0
+          "median_reviews": 897,
+          "mean_price": 14081.0
         },
         {
           "name": "新栄・東新町",
@@ -1094,7 +1100,7 @@
           "pct": 10.3,
           "median_price": 15000,
           "median_reviews": 1690,
-          "mean_price": 15030.0
+          "mean_price": 14530.0
         },
         {
           "name": "豊橋",
@@ -1109,24 +1115,16 @@
           "count": 29,
           "pct": 8.3,
           "median_price": 10000,
-          "median_reviews": 713,
+          "median_reviews": 664,
           "mean_price": 10500.0
         },
         {
           "name": "安城",
-          "count": 22,
-          "pct": 6.3,
+          "count": 21,
+          "pct": 6.0,
           "median_price": 13000,
-          "median_reviews": 294,
-          "mean_price": 12491.0
-        },
-        {
-          "name": "岡崎",
-          "count": 13,
-          "pct": 3.7,
-          "median_price": 18000,
-          "median_reviews": 768,
-          "mean_price": 16692.0
+          "median_reviews": 261,
+          "mean_price": 12324.0
         },
         {
           "name": "千種・今池・池下",
@@ -1137,6 +1135,14 @@
           "mean_price": 12100
         },
         {
+          "name": "岡崎",
+          "count": 12,
+          "pct": 3.4,
+          "median_price": 18000,
+          "median_reviews": 768,
+          "mean_price": 16500
+        },
+        {
           "name": "黒川・大曽根・矢田",
           "count": 11,
           "pct": 3.2,
@@ -1145,22 +1151,22 @@
           "mean_price": 12545.0
         },
         {
-          "name": "小牧・春日井",
+          "name": "大須・金山・鶴舞",
           "count": 8,
           "pct": 2.3,
-          "median_price": 14000,
-          "median_reviews": 2011,
-          "mean_price": 13375
+          "median_price": 12000,
+          "median_reviews": 744,
+          "mean_price": 11875
         }
       ],
       "subgenre_analysis": [
         {
           "name": "スタンダード",
-          "count": 120,
-          "pct": 34.5,
-          "median_price": 14000,
-          "median_reviews": 1301,
-          "mean_price": 13212.0
+          "count": 119,
+          "pct": 34.2,
+          "median_price": 13500,
+          "median_reviews": 1333,
+          "mean_price": 13188.0
         },
         {
           "name": "人妻",
@@ -1168,7 +1174,7 @@
           "pct": 24.7,
           "median_price": 13500,
           "median_reviews": 850,
-          "mean_price": 13346.0
+          "mean_price": 13096.0
         },
         {
           "name": "店舗型エステ",
@@ -1220,9 +1226,9 @@
         }
       ],
       "market_concentration": {
-        "top5_share_pct": 15.4,
-        "top10_share_pct": 22.6,
-        "total_reviews": 673104
+        "top5_share_pct": 15.5,
+        "top10_share_pct": 22.4,
+        "total_reviews": 669162
       },
       "top_by_reviews": [
         {
@@ -1253,7 +1259,7 @@
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
           "genre": "ヘルス(スタンダード/新栄・東新町)",
-          "review_count": 11087,
+          "review_count": 11086,
           "min_minutes": 50,
           "min_price": 14000
         },
@@ -1268,14 +1274,6 @@
         {
           "name": "ワンカラット〜人妻の輝き〜　名古屋店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/1ct/",
-          "genre": "デリヘル(人妻/新栄・東新町)",
-          "review_count": 10393,
-          "min_minutes": 90,
-          "min_price": 33000
-        },
-        {
-          "name": "かべや",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
           "genre": "デリヘル(人妻/新栄・東新町)",
           "review_count": 10393,
           "min_minutes": 90,
@@ -1322,6 +1320,22 @@
           "min_price": 16000
         },
         {
+          "name": "奥鉄オクテツ豊橋・浜松店（デリヘル市場グループ）",
+          "url": "https://www.cityheaven.net/aichi/A2306/A230601/okutetsu_toyohashi/",
+          "genre": "デリヘル(人妻/豊橋)",
+          "review_count": 7515,
+          "min_minutes": 70,
+          "min_price": 16000
+        },
+        {
+          "name": "奥鉄オクテツ三重店（デリへル市場グループ）",
+          "url": "https://www.cityheaven.net/mie/A2402/A240201/okutetsu_mie/",
+          "genre": "デリヘル(人妻/四日市)",
+          "review_count": 7515,
+          "min_minutes": 70,
+          "min_price": 16000
+        },
+        {
           "name": "AVANCE",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
           "genre": "デリヘル(人妻/錦・栄・矢場町)",
@@ -1341,7 +1355,7 @@
           "name": "ドMなバニーちゃん 名古屋・池下店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230106/dombunny/",
           "genre": "ヘルス(スタンダード/千種・今池・池下)",
-          "review_count": 6869,
+          "review_count": 6879,
           "min_minutes": 30,
           "min_price": 10000
         },
@@ -1376,14 +1390,6 @@
           "review_count": 6237,
           "min_minutes": 40,
           "min_price": 10000
-        },
-        {
-          "name": "ビデオパブ＆オナクラ 大阪でらちゃん 名駅・納屋橋店",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230101/derachan_n/",
-          "genre": "ヘルス(手コキ・オナクラ/名古屋駅周辺)",
-          "review_count": 6015,
-          "min_minutes": 20,
-          "min_price": 2980
         }
       ],
       "ranking_table": [
@@ -1419,7 +1425,7 @@
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
           "genre": "ヘルス(スタンダード/新栄・東新町)",
-          "review_count": 11087,
+          "review_count": 11086,
           "min_minutes": 50,
           "min_price": 14000
         },
@@ -1443,15 +1449,6 @@
         },
         {
           "rank": 7,
-          "name": "かべや",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
-          "genre": "デリヘル(人妻/新栄・東新町)",
-          "review_count": 10393,
-          "min_minutes": 90,
-          "min_price": 33000
-        },
-        {
-          "rank": 8,
           "name": "グランドオペラ名古屋",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
           "genre": "デリヘル(高級/新栄・東新町)",
@@ -1460,7 +1457,7 @@
           "min_price": 40000
         },
         {
-          "rank": 9,
+          "rank": 8,
           "name": "アリス女学院　東新町・新栄校",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/alicejogakuin/",
           "genre": "ヘルス(学園系/新栄・東新町)",
@@ -1469,7 +1466,7 @@
           "min_price": 12000
         },
         {
-          "rank": 10,
+          "rank": 9,
           "name": "OPERA(オペラ)",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/opera/",
           "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
@@ -1478,7 +1475,7 @@
           "min_price": 12000
         },
         {
-          "rank": 11,
+          "rank": 10,
           "name": "ドMな奥様　名古屋・錦店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
           "genre": "ヘルス(人妻/錦・栄・矢場町)",
@@ -1487,7 +1484,7 @@
           "min_price": 9000
         },
         {
-          "rank": 12,
+          "rank": 11,
           "name": "奥鉄オクテツ東海店（デリヘル市場グループ）",
           "url": "https://www.cityheaven.net/aichi/A2301/A230101/ot69/",
           "genre": "デリヘル(人妻待ち合わせ/名古屋駅周辺)",
@@ -1496,7 +1493,25 @@
           "min_price": 16000
         },
         {
+          "rank": 12,
+          "name": "奥鉄オクテツ豊橋・浜松店（デリヘル市場グループ）",
+          "url": "https://www.cityheaven.net/aichi/A2306/A230601/okutetsu_toyohashi/",
+          "genre": "デリヘル(人妻/豊橋)",
+          "review_count": 7515,
+          "min_minutes": 70,
+          "min_price": 16000
+        },
+        {
           "rank": 13,
+          "name": "奥鉄オクテツ三重店（デリへル市場グループ）",
+          "url": "https://www.cityheaven.net/mie/A2402/A240201/okutetsu_mie/",
+          "genre": "デリヘル(人妻/四日市)",
+          "review_count": 7515,
+          "min_minutes": 70,
+          "min_price": 16000
+        },
+        {
+          "rank": 14,
           "name": "AVANCE",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
           "genre": "デリヘル(人妻/錦・栄・矢場町)",
@@ -1505,7 +1520,7 @@
           "min_price": 16000
         },
         {
-          "rank": 14,
+          "rank": 15,
           "name": "ヘルスクラブ　長者町　巴里",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/c_pari/",
           "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
@@ -1514,16 +1529,16 @@
           "min_price": 15000
         },
         {
-          "rank": 15,
+          "rank": 16,
           "name": "ドMなバニーちゃん 名古屋・池下店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230106/dombunny/",
           "genre": "ヘルス(スタンダード/千種・今池・池下)",
-          "review_count": 6869,
+          "review_count": 6879,
           "min_minutes": 30,
           "min_price": 10000
         },
         {
-          "rank": 16,
+          "rank": 17,
           "name": "スターブルーム名古屋",
           "url": "https://www.cityheaven.net/aichi/A2301/A230103/n_shirouto_dx/",
           "genre": "デリヘル(スタンダード/錦・栄・矢場町)",
@@ -1532,7 +1547,7 @@
           "min_price": 13000
         },
         {
-          "rank": 17,
+          "rank": 18,
           "name": "東海SNS風俗！直アポ鉄道",
           "url": "https://www.cityheaven.net/aichi/A2301/A230106/chokuapo_okusama/",
           "genre": "デリヘル(人妻待ち合わせ/千種・今池・池下)",
@@ -1541,7 +1556,7 @@
           "min_price": 14000
         },
         {
-          "rank": 18,
+          "rank": 19,
           "name": "ドMな団地妻　名古屋・池下店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230106/doemunadanchizuma-ikeshita/",
           "genre": "ヘルス(人妻/千種・今池・池下)",
@@ -1550,22 +1565,13 @@
           "min_price": 10000
         },
         {
-          "rank": 19,
+          "rank": 20,
           "name": "WEST・COM（ウエスト・コム）",
           "url": "https://www.cityheaven.net/aichi/A2301/A230101/west-com/",
           "genre": "ヘルス(イメクラ/名古屋駅周辺)",
           "review_count": 6237,
           "min_minutes": 40,
           "min_price": 10000
-        },
-        {
-          "rank": 20,
-          "name": "ビデオパブ＆オナクラ 大阪でらちゃん 名駅・納屋橋店",
-          "url": "https://www.cityheaven.net/aichi/A2301/A230101/derachan_n/",
-          "genre": "ヘルス(手コキ・オナクラ/名古屋駅周辺)",
-          "review_count": 6015,
-          "min_minutes": 20,
-          "min_price": 2980
         }
       ],
       "price_heatmap": {
@@ -1576,8 +1582,8 @@
           "豊橋",
           "一宮・稲沢",
           "安城",
-          "岡崎",
-          "千種・今池・池下"
+          "千種・今池・池下",
+          "岡崎"
         ],
         "biz_types": [
           "エステ・アロマ",
@@ -1603,7 +1609,7 @@
             null,
             null,
             8000,
-            13500,
+            14000,
             10000,
             null
           ],
@@ -1644,15 +1650,6 @@
             null
           ],
           [
-            null,
-            null,
-            null,
-            null,
-            18500,
-            null,
-            null
-          ],
-          [
             10000,
             null,
             null,
@@ -1660,9 +1657,24 @@
             16500,
             11000,
             null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            18000,
+            null,
+            null
           ]
         ]
       },
+      "heatmap_insights": [
+        "相場最安は「名古屋駅周辺×ソープ」（中央値 8,000円）",
+        "相場最高は「岡崎×デリヘル」（中央値 18,000円）",
+        "都市中央値より高めのエリア: 千種・今池・池下, 岡崎, 新栄・東新町, 豊橋",
+        "都市中央値より低めのエリア: 一宮・稲沢, 千種・今池・池下, 名古屋駅周辺, 新栄・東新町"
+      ],
       "top_by_value": [
         {
           "name": "巨乳専門E－BODY（イーボディ）名古屋錦店～E＋Group～",
@@ -1740,7 +1752,7 @@
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
           "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
           "genre": "ヘルス(スタンダード/新栄・東新町)",
-          "review_count": 11087,
+          "review_count": 11086,
           "min_minutes": 50,
           "min_price": 14000,
           "price_per_minute": 280.0
@@ -1759,8 +1771,8 @@
         "公式掲載 463 店のうち 348 店をサンプリング（75.2%）",
         "サンプル内ではデリヘルが最多（191店・54.9%）",
         "エリア別では「錦・栄・矢場町」の店舗密度が最高（66店・中央値 12100円）",
-        "口コミ件数の上位5店で全体の 15.4% を占有（集中度指標）",
-        "口コミ件数の中央値は 967 件（レビュー厚みの目安）"
+        "口コミ件数の上位5店で全体の 15.5% を占有（集中度指標）",
+        "口コミ件数の中央値は 947 件（レビュー厚みの目安）"
       ]
     },
     {
@@ -1768,95 +1780,95 @@
       "name": "大阪府",
       "short": "大阪",
       "shop_count": 460,
-      "girl_count": 29470,
-      "girl_per_shop": 64.1,
+      "girl_count": 29418,
+      "girl_per_shop": 64.0,
       "genres": [
         {
           "id": "biz1",
           "name": "ヘルス",
-          "shop_count": 112
+          "shop_count": 132
         },
         {
           "id": "biz4",
           "name": "ソープ",
-          "shop_count": 121
+          "shop_count": 139
         },
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "shop_count": 171
+          "shop_count": 198
         },
         {
           "id": "biz6",
           "name": "デリヘル",
-          "shop_count": 159
+          "shop_count": 181
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "shop_count": 85
+          "shop_count": 102
         }
       ],
       "coverage": {
         "official": 460,
-        "sampled": 332,
-        "pct": 72.2
+        "sampled": 357,
+        "pct": 77.6
       },
       "price_stats": {
-        "count": 309,
+        "count": 331,
         "min": 2000,
         "max": 66000,
-        "mean": 13200.4,
-        "median": 12500,
-        "stdev": 5706.1,
-        "p25": 10000,
+        "mean": 12843.8,
+        "median": 12000,
+        "stdev": 5692.0,
+        "p25": 9500,
         "p75": 15000
       },
       "price_per_minute_stats": {
-        "count": 309,
-        "min": 100.0,
+        "count": 331,
+        "min": 99.75,
         "max": 733.3333333333334,
-        "mean": 229.9,
-        "median": 220,
-        "stdev": 79.7,
+        "mean": 225.7,
+        "median": 216,
+        "stdev": 79.4,
         "p25": 166,
-        "p75": 275
+        "p75": 266
       },
       "review_stats": {
-        "count": 332,
+        "count": 357,
         "min": 1,
-        "max": 10405,
-        "mean": 1216.5,
-        "median": 570,
-        "stdev": 1579.0,
-        "p25": 131,
-        "p75": 1719
+        "max": 10404,
+        "mean": 1175.6,
+        "median": 608,
+        "stdev": 1532.8,
+        "p25": 150,
+        "p75": 1612
       },
       "price_histogram": [
         {
           "label": "〜1万円",
-          "count": 73,
-          "pct": 23.6
+          "count": 90,
+          "pct": 27.2
         },
         {
           "label": "1〜1.5万",
-          "count": 142,
-          "pct": 46.0
+          "count": 147,
+          "pct": 44.4
         },
         {
           "label": "1.5〜2万",
-          "count": 62,
-          "pct": 20.1
+          "count": 64,
+          "pct": 19.3
         },
         {
           "label": "2〜3万",
-          "count": 30,
-          "pct": 9.7
+          "count": 27,
+          "pct": 8.2
         },
         {
           "label": "3〜5万",
-          "count": 1,
-          "pct": 0.3
+          "count": 2,
+          "pct": 0.6
         },
         {
           "label": "5万円〜",
@@ -1867,23 +1879,23 @@
       "review_histogram": [
         {
           "label": "〜100",
-          "count": 71,
-          "pct": 21.4
+          "count": 73,
+          "pct": 20.4
         },
         {
           "label": "100〜500",
-          "count": 86,
-          "pct": 25.9
+          "count": 93,
+          "pct": 26.1
         },
         {
           "label": "500〜2千",
-          "count": 102,
-          "pct": 30.7
+          "count": 121,
+          "pct": 33.9
         },
         {
           "label": "2千〜1万",
-          "count": 72,
-          "pct": 21.7
+          "count": 69,
+          "pct": 19.3
         },
         {
           "label": "1万〜",
@@ -1895,17 +1907,17 @@
         {
           "id": "biz1",
           "name": "ヘルス",
-          "listed_count": 112,
+          "listed_count": 132,
           "sampled_count": 17,
-          "sample_pct": 5.1,
+          "sample_pct": 4.8,
           "median_price": 11000,
-          "median_reviews": 3446,
+          "median_reviews": 3456,
           "median_ppm": 288.9
         },
         {
           "id": "biz4",
           "name": "ソープ",
-          "listed_count": 121,
+          "listed_count": 139,
           "sampled_count": 0,
           "sample_pct": 0.0,
           "median_price": null,
@@ -1915,27 +1927,27 @@
         {
           "id": "biz5",
           "name": "ホテヘル",
-          "listed_count": 171,
-          "sampled_count": 114,
-          "sample_pct": 34.3,
+          "listed_count": 198,
+          "sampled_count": 137,
+          "sample_pct": 38.4,
           "median_price": 11000,
-          "median_reviews": 1163,
-          "median_ppm": 203.1
+          "median_reviews": 1068,
+          "median_ppm": 200.0
         },
         {
           "id": "biz6",
           "name": "デリヘル",
-          "listed_count": 159,
-          "sampled_count": 146,
-          "sample_pct": 44.0,
+          "listed_count": 181,
+          "sampled_count": 149,
+          "sample_pct": 41.7,
           "median_price": 13000,
-          "median_reviews": 196,
-          "median_ppm": 234.5
+          "median_reviews": 201,
+          "median_ppm": 233.3
         },
         {
           "id": "biz7",
           "name": "エステ",
-          "listed_count": 85,
+          "listed_count": 102,
           "sampled_count": 0,
           "sample_pct": 0.0,
           "median_price": null,
@@ -1946,162 +1958,162 @@
       "area_analysis": [
         {
           "name": "梅田・北新地",
-          "count": 82,
-          "pct": 24.7,
+          "count": 85,
+          "pct": 23.8,
           "median_price": 13100,
-          "median_reviews": 1266,
-          "mean_price": 15097.0
+          "median_reviews": 1235,
+          "mean_price": 14797.0
         },
         {
           "name": "日本橋",
-          "count": 73,
-          "pct": 22.0,
+          "count": 76,
+          "pct": 21.3,
           "median_price": 12000,
-          "median_reviews": 892,
-          "mean_price": 12141.0
+          "median_reviews": 798,
+          "mean_price": 12322.0
         },
         {
           "name": "谷九・上本町",
           "count": 45,
-          "pct": 13.6,
+          "pct": 12.6,
           "median_price": 13000,
           "median_reviews": 774,
-          "mean_price": 12924.0
-        },
-        {
-          "name": "十三・塚本",
-          "count": 28,
-          "pct": 8.4,
-          "median_price": 9000,
-          "median_reviews": 298,
-          "mean_price": 10440.0
+          "mean_price": 12804.0
         },
         {
           "name": "難波・心斎橋",
-          "count": 27,
+          "count": 41,
+          "pct": 11.5,
+          "median_price": 11000,
+          "median_reviews": 735,
+          "mean_price": 13055.0
+        },
+        {
+          "name": "十三・塚本",
+          "count": 29,
           "pct": 8.1,
-          "median_price": 13000,
-          "median_reviews": 891,
-          "mean_price": 14148
+          "median_price": 9499,
+          "median_reviews": 305,
+          "mean_price": 10404.0
         },
         {
           "name": "堺東",
           "count": 18,
-          "pct": 5.4,
-          "median_price": 12050,
-          "median_reviews": 111,
-          "mean_price": 12361.0
+          "pct": 5.0,
+          "median_price": 11500,
+          "median_reviews": 133,
+          "mean_price": 11639.0
         },
         {
           "name": "南大阪・関西空港",
           "count": 12,
-          "pct": 3.6,
-          "median_price": 15200,
-          "median_reviews": 37,
-          "mean_price": 16011.0
+          "pct": 3.4,
+          "median_price": 11555,
+          "median_reviews": 118,
+          "mean_price": 12111.0
         },
         {
           "name": "茨木・摂津・吹田・高槻",
           "count": 11,
-          "pct": 3.3,
+          "pct": 3.1,
           "median_price": 12000,
           "median_reviews": 72,
-          "mean_price": 12409.0
+          "mean_price": 12227.0
         },
         {
           "name": "新大阪駅・西中島",
           "count": 10,
-          "pct": 3.0,
+          "pct": 2.8,
           "median_price": 14650,
           "median_reviews": 99,
           "mean_price": 16230
         },
         {
-          "name": "東大阪・大東",
-          "count": 7,
-          "pct": 2.1,
-          "median_price": 12000,
-          "median_reviews": 28,
-          "mean_price": 11571.0
+          "name": "京橋・桜ノ宮",
+          "count": 8,
+          "pct": 2.2,
+          "median_price": 9750,
+          "median_reviews": 367,
+          "mean_price": 10488.0
         }
       ],
       "subgenre_analysis": [
         {
           "name": "人妻",
-          "count": 76,
-          "pct": 22.9,
-          "median_price": 12500,
-          "median_reviews": 371,
-          "mean_price": 12430.0
+          "count": 84,
+          "pct": 23.5,
+          "median_price": 12000,
+          "median_reviews": 468,
+          "mean_price": 11982.0
         },
         {
           "name": "スタンダード",
-          "count": 66,
+          "count": 71,
           "pct": 19.9,
-          "median_price": 14000,
-          "median_reviews": 225,
-          "mean_price": 14593.0
+          "median_price": 13999,
+          "median_reviews": 383,
+          "mean_price": 13859.0
+        },
+        {
+          "name": "激安",
+          "count": 33,
+          "pct": 9.2,
+          "median_price": 8000,
+          "median_reviews": 962,
+          "mean_price": 8062.0
         },
         {
           "name": "出張エステ",
           "count": 32,
-          "pct": 9.6,
+          "pct": 9.0,
           "median_price": 14300,
           "median_reviews": 701,
           "mean_price": 14852.0
         },
         {
-          "name": "激安",
-          "count": 29,
-          "pct": 8.7,
-          "median_price": 8000,
-          "median_reviews": 907,
-          "mean_price": 8021.0
-        },
-        {
           "name": "ホテヘル＆デリヘル",
-          "count": 26,
+          "count": 28,
           "pct": 7.8,
-          "median_price": 12000,
-          "median_reviews": 754,
-          "mean_price": 12696.0
+          "median_price": 11000,
+          "median_reviews": 717,
+          "mean_price": 12385.0
         },
         {
           "name": "高級",
           "count": 16,
-          "pct": 4.8,
+          "pct": 4.5,
           "median_price": 20900,
           "median_reviews": 546,
-          "mean_price": 25243.0
-        },
-        {
-          "name": "M性感",
-          "count": 13,
-          "pct": 3.9,
-          "median_price": 14300,
-          "median_reviews": 564,
-          "mean_price": 15664.0
+          "mean_price": 25879.0
         },
         {
           "name": "手コキ・オナクラ",
-          "count": 13,
+          "count": 15,
+          "pct": 4.2,
+          "median_price": 4500,
+          "median_reviews": 1278,
+          "mean_price": 6027.0
+        },
+        {
+          "name": "M性感",
+          "count": 14,
           "pct": 3.9,
-          "median_price": 6000,
-          "median_reviews": 2358,
-          "mean_price": 6600.0
+          "median_price": 14300,
+          "median_reviews": 502,
+          "mean_price": 15192.0
         }
       ],
       "market_concentration": {
-        "top5_share_pct": 9.8,
-        "top10_share_pct": 17.1,
-        "total_reviews": 403885
+        "top5_share_pct": 9.6,
+        "top10_share_pct": 16.7,
+        "total_reviews": 419687
       },
       "top_by_reviews": [
         {
           "name": "桃源郷クラブ",
           "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
           "genre": "ホテヘル(人妻/谷九・上本町)",
-          "review_count": 10405,
+          "review_count": 10404,
           "min_minutes": 85,
           "min_price": 9350
         },
@@ -2128,6 +2140,14 @@
           "review_count": 6837,
           "min_minutes": 45,
           "min_price": 11000
+        },
+        {
+          "name": "レッドろまん摂津守口店",
+          "url": "https://www.cityheaven.net/osaka/A2703/A270301/red_romance_s/",
+          "genre": "デリヘル(スタンダード/都島区・旭区)",
+          "review_count": 6837,
+          "min_minutes": 60,
+          "min_price": 15000
         },
         {
           "name": "手コキ＆オナクラ 大阪はまちゃん 梅田店",
@@ -2170,14 +2190,6 @@
           "min_price": 12000
         },
         {
-          "name": "クレドール大阪",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270202/kuredoru_osaka/",
-          "genre": "デリヘル(高級/日本橋)",
-          "review_count": 5617,
-          "min_minutes": 75,
-          "min_price": 12000
-        },
-        {
           "name": "リチスパ",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/richisupa/",
           "genre": "ヘルス(エステ＆ヘルス/難波・心斎橋)",
@@ -2197,7 +2209,7 @@
           "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
           "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
           "genre": "ヘルス(マット/梅田・北新地)",
-          "review_count": 4889,
+          "review_count": 4890,
           "min_minutes": 40,
           "min_price": 12000
         },
@@ -2237,7 +2249,7 @@
           "name": "プロフィール大阪",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/prof_osaka/",
           "genre": "デリヘル(スタンダード/難波・心斎橋)",
-          "review_count": 4443,
+          "review_count": 4442,
           "min_minutes": 60,
           "min_price": 20900
         },
@@ -2264,7 +2276,7 @@
           "name": "桃源郷クラブ",
           "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
           "genre": "ホテヘル(人妻/谷九・上本町)",
-          "review_count": 10405,
+          "review_count": 10404,
           "min_minutes": 85,
           "min_price": 9350
         },
@@ -2297,6 +2309,15 @@
         },
         {
           "rank": 5,
+          "name": "レッドろまん摂津守口店",
+          "url": "https://www.cityheaven.net/osaka/A2703/A270301/red_romance_s/",
+          "genre": "デリヘル(スタンダード/都島区・旭区)",
+          "review_count": 6837,
+          "min_minutes": 60,
+          "min_price": 15000
+        },
+        {
+          "rank": 6,
           "name": "手コキ＆オナクラ 大阪はまちゃん 梅田店",
           "url": "https://www.cityheaven.net/osaka/A2701/A270101/osaka-hamachan/",
           "genre": "ホテヘル(手コキ・オナクラ/梅田・北新地)",
@@ -2305,7 +2326,7 @@
           "min_price": 4000
         },
         {
-          "rank": 6,
+          "rank": 7,
           "name": "アムール",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/amour_namba/",
           "genre": "ヘルス(マット/難波・心斎橋)",
@@ -2314,7 +2335,7 @@
           "min_price": 11000
         },
         {
-          "rank": 7,
+          "rank": 8,
           "name": "OLの品格-クラブアッシュ-",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
           "genre": "ヘルス(イメクラ/難波・心斎橋)",
@@ -2323,7 +2344,7 @@
           "min_price": 9000
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "秘書の品格 クラブアッシュ ヴァリエ",
           "url": "https://www.cityheaven.net/osaka/A2702/A270202/club_h_valie/",
           "genre": "ヘルス(コスプレ/日本橋)",
@@ -2332,19 +2353,10 @@
           "min_price": 9000
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
           "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
           "genre": "デリヘル(スタンダード/日本橋)",
-          "review_count": 5617,
-          "min_minutes": 75,
-          "min_price": 12000
-        },
-        {
-          "rank": 10,
-          "name": "クレドール大阪",
-          "url": "https://www.cityheaven.net/osaka/A2702/A270202/kuredoru_osaka/",
-          "genre": "デリヘル(高級/日本橋)",
           "review_count": 5617,
           "min_minutes": 75,
           "min_price": 12000
@@ -2372,7 +2384,7 @@
           "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
           "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
           "genre": "ヘルス(マット/梅田・北新地)",
-          "review_count": 4889,
+          "review_count": 4890,
           "min_minutes": 40,
           "min_price": 12000
         },
@@ -2417,7 +2429,7 @@
           "name": "プロフィール大阪",
           "url": "https://www.cityheaven.net/osaka/A2702/A270201/prof_osaka/",
           "genre": "デリヘル(スタンダード/難波・心斎橋)",
-          "review_count": 4443,
+          "review_count": 4442,
           "min_minutes": 60,
           "min_price": 20900
         },
@@ -2468,14 +2480,14 @@
           ],
           [
             14300,
-            13999,
+            14000,
             null,
             10000,
             null
           ],
           [
             13650,
-            12500,
+            12000,
             null,
             12600,
             null
@@ -2484,11 +2496,11 @@
             15400,
             18800,
             10500,
-            13000,
+            9500,
             null
           ],
           [
-            7500,
+            8000,
             9000,
             null,
             10000,
@@ -2496,7 +2508,7 @@
           ],
           [
             null,
-            13200,
+            12100,
             null,
             10000,
             10000
@@ -2510,13 +2522,19 @@
           ],
           [
             null,
-            15400,
+            12000,
             null,
             null,
             null
           ]
         ]
       },
+      "heatmap_insights": [
+        "相場最安は「十三・塚本×エステ・アロマ」（中央値 8,000円）",
+        "相場最高は「難波・心斎橋×デリヘル」（中央値 18,800円）",
+        "都市中央値より高めのエリア: 日本橋, 梅田・北新地, 難波・心斎橋",
+        "都市中央値より低めのエリア: 十三・塚本, 堺東, 日本橋, 梅田・北新地"
+      ],
       "top_by_value": [
         {
           "name": "手コキ＆オナクラ 大阪 はまちゃん 谷九店",
@@ -2549,7 +2567,7 @@
           "name": "桃源郷クラブ",
           "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
           "genre": "ホテヘル(人妻/谷九・上本町)",
-          "review_count": 10405,
+          "review_count": 10404,
           "min_minutes": 85,
           "min_price": 9350,
           "price_per_minute": 110.0
@@ -2610,11 +2628,12 @@
         }
       ],
       "insights": [
-        "公式掲載 460 店のうち 332 店をサンプリング（72.2%）",
-        "サンプル内ではデリヘルが最多（146店・44.0%）",
-        "エリア別では「梅田・北新地」の店舗密度が最高（82店・中央値 13100円）",
-        "口コミ件数の上位5店で全体の 9.8% を占有（集中度指標）",
-        "口コミ件数の中央値は 570 件（レビュー厚みの目安）"
+        "公式掲載 460 店のうち 357 店をサンプリング（77.6%）",
+        "最低コース相場は3都市平均より 1,000円低め（中央値 12,000円）",
+        "サンプル内ではデリヘルが最多（149店・41.7%）",
+        "エリア別では「梅田・北新地」の店舗密度が最高（85店・中央値 13100円）",
+        "口コミ件数の上位5店で全体の 9.6% を占有（集中度指標）",
+        "口コミ件数の中央値は 608 件（レビュー厚みの目安）"
       ]
     }
   ],
@@ -2623,99 +2642,83 @@
       "slug": "tokyo",
       "name": "東京",
       "shop_count": 983,
-      "girl_count": 83963,
-      "girl_per_shop": 85.4,
+      "girl_count": 83872,
+      "girl_per_shop": 85.3,
       "median_price": 14000,
-      "mean_price": 16173.6,
+      "mean_price": 16228.9,
       "median_ppm": 260,
-      "median_reviews": 519,
-      "genre_deli": 463,
-      "genre_soap": 292,
-      "coverage_pct": 72.6,
-      "top5_review_share": 13.7
+      "median_reviews": 522,
+      "genre_deli": 480,
+      "genre_soap": 299,
+      "coverage_pct": 74.1,
+      "top5_review_share": 13.4
     },
     {
       "slug": "aichi",
       "name": "名古屋",
       "shop_count": 463,
-      "girl_count": 24693,
+      "girl_count": 24673,
       "girl_per_shop": 53.3,
       "median_price": 13000,
-      "mean_price": 12896.2,
+      "mean_price": 12933.9,
       "median_ppm": 233,
-      "median_reviews": 967,
-      "genre_deli": 204,
-      "genre_soap": 140,
+      "median_reviews": 947,
+      "genre_deli": 217,
+      "genre_soap": 156,
       "coverage_pct": 75.2,
-      "top5_review_share": 15.4
+      "top5_review_share": 15.5
     },
     {
       "slug": "osaka",
       "name": "大阪",
       "shop_count": 460,
-      "girl_count": 29470,
-      "girl_per_shop": 64.1,
-      "median_price": 12500,
-      "mean_price": 13200.4,
-      "median_ppm": 220,
-      "median_reviews": 570,
-      "genre_deli": 159,
-      "genre_soap": 121,
-      "coverage_pct": 72.2,
-      "top5_review_share": 9.8
+      "girl_count": 29418,
+      "girl_per_shop": 64.0,
+      "median_price": 12000,
+      "mean_price": 12843.8,
+      "median_ppm": 216,
+      "median_reviews": 608,
+      "genre_deli": 181,
+      "genre_soap": 139,
+      "coverage_pct": 77.6,
+      "top5_review_share": 9.6
     }
   ],
   "changes": {
-    "since": "2026-07-31T21:40:21",
+    "since": "2026-08-01T02:30:32",
     "days": 1,
     "metro_median_price_delta": 0,
     "regions": [
       {
         "slug": "tokyo",
         "shop_count_delta": 0,
-        "girl_count_delta": -44,
-        "sampled_delta": -50,
+        "girl_count_delta": -15,
+        "sampled_delta": -3,
         "median_price_delta": 0,
-        "median_reviews_delta": 58,
-        "genre_deli_delta": -49,
+        "median_reviews_delta": 1,
+        "genre_deli_delta": 0,
         "review_movers": [],
         "rank_changes": [
           {
-            "name": "ファーストレディ",
-            "url": "https://www.cityheaven.net/tokyo/A1311/A131101/firstlady/",
-            "new_rank": 11,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
+            "name": "H",
+            "url": "https://www.cityheaven.net/tokyo/A1304/A130401/hoteheruh/",
+            "new_rank": 18,
+            "old_rank": 19,
+            "rank_delta": 1,
+            "label": "19位→18位"
           },
           {
-            "name": "メイドマスター",
-            "url": "https://www.cityheaven.net/tokyo/A1311/A131101/maidsoap/",
-            "new_rank": 12,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
+            "name": "ファインモーション",
+            "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
+            "new_rank": 19,
+            "old_rank": 20,
+            "rank_delta": 1,
+            "label": "20位→19位"
           },
           {
-            "name": "素人系イメージSOAP彼女感大宮館",
-            "url": "https://www.cityheaven.net/saitama/A1101/A110101/kanojyokan-omiya/",
-            "new_rank": 13,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "GINGIRA☆TOKYO　～ギンギラ東京～",
-            "url": "https://www.cityheaven.net/tokyo/A1304/A130401/gingira/",
-            "new_rank": 14,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "E+錦糸町",
-            "url": "https://www.cityheaven.net/tokyo/A1313/A131301/e-plus/",
-            "new_rank": 15,
+            "name": "ウルトラプラチナム",
+            "url": "https://www.cityheaven.net/tokyo/A1304/A130401/ug-platinum/",
+            "new_rank": 20,
             "old_rank": null,
             "rank_delta": null,
             "label": "新規ランクイン"
@@ -2725,188 +2728,220 @@
       {
         "slug": "aichi",
         "shop_count_delta": 0,
-        "girl_count_delta": -2,
-        "sampled_delta": -20,
+        "girl_count_delta": 1,
+        "sampled_delta": -1,
         "median_price_delta": 0,
-        "median_reviews_delta": -14,
-        "genre_deli_delta": -15,
+        "median_reviews_delta": 14,
+        "genre_deli_delta": -2,
+        "review_movers": [],
+        "rank_changes": []
+      },
+      {
+        "slug": "osaka",
+        "shop_count_delta": 0,
+        "girl_count_delta": -18,
+        "sampled_delta": 12,
+        "median_price_delta": 0,
+        "median_reviews_delta": 0,
+        "genre_deli_delta": 0,
         "review_movers": [
           {
-            "name": "かべや",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
-            "review_count": 10393,
-            "review_delta": 455
+            "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
+            "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
+            "review_count": 4890,
+            "review_delta": 1
           }
         ],
         "rank_changes": [
           {
-            "name": "かべや",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
-            "new_rank": 7,
-            "old_rank": 8,
-            "rank_delta": 1,
-            "label": "8位→7位"
+            "name": "手コキ＆オナクラ 大阪はまちゃん 梅田店",
+            "url": "https://www.cityheaven.net/osaka/A2701/A270101/osaka-hamachan/",
+            "new_rank": 6,
+            "old_rank": 5,
+            "rank_delta": -1,
+            "label": "5位→6位"
           },
           {
-            "name": "グランドオペラ名古屋",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
+            "name": "アムール",
+            "url": "https://www.cityheaven.net/osaka/A2702/A270201/amour_namba/",
+            "new_rank": 7,
+            "old_rank": 6,
+            "rank_delta": -1,
+            "label": "6位→7位"
+          },
+          {
+            "name": "OLの品格-クラブアッシュ-",
+            "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
             "new_rank": 8,
             "old_rank": 7,
             "rank_delta": -1,
             "label": "7位→8位"
           },
           {
-            "name": "ドMな奥様　名古屋・錦店",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
-            "new_rank": 11,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "奥鉄オクテツ東海店（デリヘル市場グループ）",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230101/ot69/",
-            "new_rank": 12,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "AVANCE",
-            "url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
-            "new_rank": 13,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          }
-        ]
-      },
-      {
-        "slug": "osaka",
-        "shop_count_delta": 0,
-        "girl_count_delta": -10,
-        "sampled_delta": -46,
-        "median_price_delta": 500,
-        "median_reviews_delta": 25,
-        "genre_deli_delta": -5,
-        "review_movers": [],
-        "rank_changes": [
-          {
-            "name": "リチスパ",
-            "url": "https://www.cityheaven.net/osaka/A2702/A270201/richisupa/",
-            "new_rank": 11,
-            "old_rank": 10,
+            "name": "秘書の品格 クラブアッシュ ヴァリエ",
+            "url": "https://www.cityheaven.net/osaka/A2702/A270202/club_h_valie/",
+            "new_rank": 9,
+            "old_rank": 8,
             "rank_delta": -1,
-            "label": "10位→11位"
+            "label": "8位→9位"
           },
           {
-            "name": "クレドール大阪",
-            "url": "https://www.cityheaven.net/osaka/A2702/A270202/kuredoru_osaka/",
+            "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
+            "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
             "new_rank": 10,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "ドＭな奥さん日本橋店",
-            "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
-            "new_rank": 12,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
-            "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
-            "new_rank": 13,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
-          },
-          {
-            "name": "とろとろな女神たち",
-            "url": "https://www.cityheaven.net/osaka/A2702/A270202/aroma-muse/",
-            "new_rank": 14,
-            "old_rank": null,
-            "rank_delta": null,
-            "label": "新規ランクイン"
+            "old_rank": 9,
+            "rank_delta": -1,
+            "label": "9位→10位"
           }
         ]
       }
     ]
   },
   "trends": {
-    "dates": [
-      "2026-07-31",
-      "2026-07-31",
-      "2026-07-31"
-    ],
-    "series": {
-      "tokyo": {
-        "shop_count": [
-          983,
-          983,
-          983
-        ],
-        "girl_count": [
-          84004,
-          84007,
-          83963
-        ],
-        "median_price": [
-          14000,
-          14000,
-          14000
-        ],
-        "median_reviews": [
-          527,
-          461,
-          519
-        ]
-      },
-      "aichi": {
-        "shop_count": [
-          463,
-          463,
-          463
-        ],
-        "girl_count": [
-          24702,
-          24695,
-          24693
-        ],
-        "median_price": [
-          13000,
-          13000,
-          13000
-        ],
-        "median_reviews": [
-          1008,
-          981,
-          967
-        ]
-      },
-      "osaka": {
-        "shop_count": [
-          460,
-          460,
-          460
-        ],
-        "girl_count": [
-          29477,
-          29480,
-          29470
-        ],
-        "median_price": [
-          13000,
-          12000,
-          12500
-        ],
-        "median_reviews": [
-          558,
-          545,
-          570
-        ]
+    "cityheaven": {
+      "dates": [
+        "2026-07-31",
+        "2026-07-31",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-01"
+      ],
+      "series": {
+        "tokyo": {
+          "shop_count": [
+            983,
+            983,
+            983,
+            983,
+            983
+          ],
+          "girl_count": [
+            84004,
+            84007,
+            83963,
+            83887,
+            83872
+          ],
+          "median_price": [
+            14000,
+            14000,
+            14000,
+            14000,
+            14000
+          ],
+          "median_reviews": [
+            527,
+            461,
+            519,
+            521,
+            522
+          ]
+        },
+        "aichi": {
+          "shop_count": [
+            463,
+            463,
+            463,
+            463,
+            463
+          ],
+          "girl_count": [
+            24702,
+            24695,
+            24693,
+            24672,
+            24673
+          ],
+          "median_price": [
+            13000,
+            13000,
+            13000,
+            13000,
+            13000
+          ],
+          "median_reviews": [
+            1008,
+            981,
+            967,
+            933,
+            947
+          ]
+        },
+        "osaka": {
+          "shop_count": [
+            460,
+            460,
+            460,
+            460,
+            460
+          ],
+          "girl_count": [
+            29477,
+            29480,
+            29470,
+            29436,
+            29418
+          ],
+          "median_price": [
+            13000,
+            12000,
+            12500,
+            12000,
+            12000
+          ],
+          "median_reviews": [
+            558,
+            545,
+            570,
+            608,
+            608
+          ]
+        }
+      }
+    },
+    "bakusai": {
+      "dates": [
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-01"
+      ],
+      "series": {
+        "tokyo": {
+          "thread_count": [
+            45,
+            134,
+            134
+          ],
+          "total_responses": [
+            726962,
+            831115,
+            686643
+          ]
+        },
+        "aichi": {
+          "thread_count": [
+            45,
+            132,
+            133
+          ],
+          "total_responses": [
+            391128,
+            498651,
+            540642
+          ]
+        },
+        "osaka": {
+          "thread_count": [
+            45,
+            134,
+            133
+          ],
+          "total_responses": [
+            1269197,
+            1417098,
+            1350819
+          ]
+        }
       }
     }
   },
@@ -2918,64 +2953,57 @@
         "slug": "tokyo",
         "name": "東京",
         "board_url": "https://bakusai.com/thr_tl/acode=3/ctgid=103/bid=412/",
-        "thread_count": 45,
-        "total_responses": 726962,
-        "total_views": 30128969,
+        "pages_fetched": 5,
+        "thread_count": 134,
+        "total_responses": 686643,
+        "total_views": 31586129,
         "top_by_responses": [
-          {
-            "title": "池袋北口みせすはーと【ホテヘル】",
-            "shop_name": "池袋北口",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13376779/",
-            "views": 2739000,
-            "responses": 129542,
-            "area": "ホテヘル"
-          },
           {
             "title": "【目黒】アリスマリオン",
             "shop_name": "",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13379472/",
             "views": 1922000,
-            "responses": 109993,
+            "responses": 109998,
             "area": "目黒"
+          },
+          {
+            "title": "【池袋西口】 ソープランド 桃李 【王朝宮殿】",
+            "shop_name": "桃李",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396105/",
+            "views": 4310000,
+            "responses": 108431,
+            "area": "池袋西口"
           },
           {
             "title": "【歌舞伎町】SOPHIA(ソフィア) 【ヘルス】",
             "shop_name": "SOPHIA()",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396747/",
-            "views": 1652000,
-            "responses": 99095,
+            "views": 1653000,
+            "responses": 99096,
             "area": "歌舞伎町"
           },
           {
             "title": "【秋コス】白いぽっちゃりさん 鶯谷店",
             "shop_name": "白 鶯谷店",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13377148/",
-            "views": 2849000,
-            "responses": 90749,
+            "views": 2850000,
+            "responses": 90754,
             "area": "秋コス"
-          },
-          {
-            "title": "【葛西】ママれもん【錦糸町】",
-            "shop_name": "",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13387080/",
-            "views": 4846000,
-            "responses": 76396,
-            "area": "葛西"
           },
           {
             "title": "【池袋北口】若葉【ソープ】",
             "shop_name": "若葉",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13398112/",
             "views": 4413000,
-            "responses": 73198,
+            "responses": 73200,
             "area": "池袋北口"
           },
           {
-            "title": "新橋  箱ヘル  花夫人",
-            "shop_name": "新橋 箱 花夫人",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13293769/",
-            "views": 2038000,
-            "responses": 35822,
+            "title": "巣鴨の30代お姉さん店舗型ヘルス 『華椿』",
+            "shop_name": "巣鴨30代姉店舗型 華椿",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13321313/",
+            "views": 3189000,
+            "responses": 43996,
             "area": null
           },
           {
@@ -2991,7 +3019,7 @@
             "shop_name": "（新宿歌舞伎町）COCOMERO--（巨乳）",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13298250/",
             "views": 1680000,
-            "responses": 20441,
+            "responses": 20445,
             "area": null
           },
           {
@@ -2999,15 +3027,15 @@
             "shop_name": "新宿",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13403500/",
             "views": 1167000,
-            "responses": 14163,
+            "responses": 14171,
             "area": null
           },
           {
-            "title": "日暮里 私のブラジャーどこいった？ ⑮",
-            "shop_name": "日暮里 私？",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13397736/",
-            "views": 2590000,
-            "responses": 14147,
+            "title": "ガッツリ痴漢倶楽部in渋谷 ⑬",
+            "shop_name": "痴漢倶楽部in渋谷",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396891/",
+            "views": 552000,
+            "responses": 12082,
             "area": null
           },
           {
@@ -3015,89 +3043,81 @@
             "shop_name": "大人 大久保新宿店",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13106029/",
             "views": 605000,
-            "responses": 10711,
+            "responses": 10712,
             "area": null
           },
           {
-            "title": "【二丁目】新宿多恋人【ソープ】 ⑦",
-            "shop_name": "新宿多恋人",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13386624/",
-            "views": 493000,
-            "responses": 6671,
-            "area": "二丁目"
-          },
-          {
-            "title": "歌舞伎町 ソープ ドンファン ⑤",
-            "shop_name": "歌舞伎町",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13394829/",
-            "views": 401000,
-            "responses": 4236,
+            "title": "五反田 レンタル美少女 堕とされた優等生 ⑨",
+            "shop_name": "五反田 美少女 堕優等生",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13374056/",
+            "views": 1180000,
+            "responses": 8449,
             "area": null
           },
           {
-            "title": "巣鴨の30代お姉さん店舗型ヘルス 『華椿』",
-            "shop_name": "巣鴨30代姉店舗型 華椿",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13321313/",
-            "views": 95783,
-            "responses": 992,
+            "title": "手こきオナクラ ミセスの手ほどき 池袋店 ④",
+            "shop_name": "手 手 池袋店",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13194416/",
+            "views": 391000,
+            "responses": 3787,
             "area": null
+          },
+          {
+            "title": "高円寺 ビジョルナ",
+            "shop_name": "高円寺",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13362047/",
+            "views": 42645,
+            "responses": 1000,
+            "area": null
+          },
+          {
+            "title": "【シンデレラ】池袋ぱんぷきん【巨乳・ぽっちゃり】",
+            "shop_name": "池袋",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13280635/",
+            "views": 94177,
+            "responses": 1000,
+            "area": "シンデレラ"
           }
         ],
         "top_by_views": [
-          {
-            "title": "【葛西】ママれもん【錦糸町】",
-            "shop_name": "",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13387080/",
-            "views": 4846000,
-            "responses": 76396,
-            "area": "葛西"
-          },
           {
             "title": "【池袋北口】若葉【ソープ】",
             "shop_name": "若葉",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13398112/",
             "views": 4413000,
-            "responses": 73198,
+            "responses": 73200,
             "area": "池袋北口"
+          },
+          {
+            "title": "【池袋西口】 ソープランド 桃李 【王朝宮殿】",
+            "shop_name": "桃李",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396105/",
+            "views": 4310000,
+            "responses": 108431,
+            "area": "池袋西口"
+          },
+          {
+            "title": "巣鴨の30代お姉さん店舗型ヘルス 『華椿』",
+            "shop_name": "巣鴨30代姉店舗型 華椿",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13321313/",
+            "views": 3189000,
+            "responses": 43996,
+            "area": null
           },
           {
             "title": "【秋コス】白いぽっちゃりさん 鶯谷店",
             "shop_name": "白 鶯谷店",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13377148/",
-            "views": 2849000,
-            "responses": 90749,
+            "views": 2850000,
+            "responses": 90754,
             "area": "秋コス"
-          },
-          {
-            "title": "池袋北口みせすはーと【ホテヘル】",
-            "shop_name": "池袋北口",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13376779/",
-            "views": 2739000,
-            "responses": 129542,
-            "area": "ホテヘル"
-          },
-          {
-            "title": "日暮里 私のブラジャーどこいった？ ⑮",
-            "shop_name": "日暮里 私？",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13397736/",
-            "views": 2590000,
-            "responses": 14147,
-            "area": null
-          },
-          {
-            "title": "新橋  箱ヘル  花夫人",
-            "shop_name": "新橋 箱 花夫人",
-            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13293769/",
-            "views": 2038000,
-            "responses": 35822,
-            "area": null
           },
           {
             "title": "【目黒】アリスマリオン",
             "shop_name": "",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13379472/",
             "views": 1922000,
-            "responses": 109993,
+            "responses": 109998,
             "area": "目黒"
           },
           {
@@ -3105,15 +3125,15 @@
             "shop_name": "（新宿歌舞伎町）COCOMERO--（巨乳）",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13298250/",
             "views": 1680000,
-            "responses": 20441,
+            "responses": 20445,
             "area": null
           },
           {
             "title": "【歌舞伎町】SOPHIA(ソフィア) 【ヘルス】",
             "shop_name": "SOPHIA()",
             "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396747/",
-            "views": 1652000,
-            "responses": 99095,
+            "views": 1653000,
+            "responses": 99096,
             "area": "歌舞伎町"
           },
           {
@@ -3123,68 +3143,84 @@
             "views": 1285000,
             "responses": 27102,
             "area": null
+          },
+          {
+            "title": "五反田 レンタル美少女 堕とされた優等生 ⑨",
+            "shop_name": "五反田 美少女 堕優等生",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13374056/",
+            "views": 1180000,
+            "responses": 8449,
+            "area": null
+          },
+          {
+            "title": "ハンドキャンパス新宿 ⑮",
+            "shop_name": "新宿",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13403500/",
+            "views": 1167000,
+            "responses": 14171,
+            "area": null
           }
         ],
         "area_stats": [
           {
             "area": "その他",
-            "thread_count": 32,
-            "total_responses": 138623,
-            "median_responses": 625
+            "thread_count": 97,
+            "total_responses": 184148,
+            "median_responses": 496
           },
           {
-            "area": "ホテヘル",
-            "thread_count": 1,
-            "total_responses": 129542,
-            "median_responses": 129542
+            "area": "池袋西口",
+            "thread_count": 4,
+            "total_responses": 110579,
+            "median_responses": 1000
           },
           {
             "area": "目黒",
             "thread_count": 1,
-            "total_responses": 109993,
-            "median_responses": 109993
+            "total_responses": 109998,
+            "median_responses": 109998
           },
           {
             "area": "歌舞伎町",
-            "thread_count": 1,
-            "total_responses": 99095,
-            "median_responses": 99095
+            "thread_count": 2,
+            "total_responses": 100096,
+            "median_responses": 99096
           },
           {
             "area": "秋コス",
-            "thread_count": 1,
-            "total_responses": 90749,
-            "median_responses": 90749
-          },
-          {
-            "area": "葛西",
-            "thread_count": 1,
-            "total_responses": 76396,
-            "median_responses": 76396
+            "thread_count": 2,
+            "total_responses": 91754,
+            "median_responses": 90754
           },
           {
             "area": "池袋北口",
-            "thread_count": 1,
-            "total_responses": 73198,
-            "median_responses": 73198
+            "thread_count": 4,
+            "total_responses": 75193,
+            "median_responses": 1000
           },
           {
-            "area": "二丁目",
-            "thread_count": 1,
-            "total_responses": 6671,
-            "median_responses": 6671
+            "area": "閉店",
+            "thread_count": 5,
+            "total_responses": 4001,
+            "median_responses": 794
           },
           {
-            "area": "ハレ系",
-            "thread_count": 1,
-            "total_responses": 832,
-            "median_responses": 832
+            "area": "池袋東口",
+            "thread_count": 2,
+            "total_responses": 1512,
+            "median_responses": 1000
           },
           {
-            "area": "STAR",
-            "thread_count": 1,
-            "total_responses": 679,
-            "median_responses": 679
+            "area": "葛西",
+            "thread_count": 2,
+            "total_responses": 1405,
+            "median_responses": 1000
+          },
+          {
+            "area": "大塚",
+            "thread_count": 2,
+            "total_responses": 1302,
+            "median_responses": 1000
           }
         ]
       },
@@ -3192,56 +3228,73 @@
         "slug": "osaka",
         "name": "大阪",
         "board_url": "https://bakusai.com/thr_tl/acode=7/ctgid=103/bid=410/",
-        "thread_count": 45,
-        "total_responses": 1269197,
-        "total_views": 49653196,
+        "pages_fetched": 5,
+        "thread_count": 133,
+        "total_responses": 1350819,
+        "total_views": 50062996,
         "top_by_responses": [
-          {
-            "title": "SPEED ECO スピードエコ 難波店",
-            "shop_name": "SPEED ECO 難波店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13385096/",
-            "views": 7484000,
-            "responses": 253833,
-            "area": null
-          },
           {
             "title": "SPEED スピード 日本橋店",
             "shop_name": "SPEED 日本橋店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13393797/",
-            "views": 8895000,
-            "responses": 216536,
+            "views": 8897000,
+            "responses": 216555,
+            "area": null
+          },
+          {
+            "title": "激安商事の課長命令 日本橋店",
+            "shop_name": "激安商事課長命令 日本橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13365346/",
+            "views": 3935000,
+            "responses": 175392,
+            "area": null
+          },
+          {
+            "title": "SPEED ECO スピード エコ 京橋店",
+            "shop_name": "SPEED ECO 京橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13398278/",
+            "views": 5190000,
+            "responses": 158141,
             "area": null
           },
           {
             "title": "SPEED スピード 難波店",
             "shop_name": "SPEED 難波店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390746/",
-            "views": 5639000,
-            "responses": 122353,
+            "views": 5640000,
+            "responses": 122365,
             "area": null
           },
           {
             "title": "SPEED スピード 梅田店",
             "shop_name": "SPEED 梅田店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362251/",
-            "views": 3646000,
-            "responses": 118788,
+            "views": 3647000,
+            "responses": 118792,
+            "area": null
+          },
+          {
+            "title": "手コキ 大阪はまちゃん 梅田店",
+            "shop_name": "手 大阪 梅田店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
+            "views": 2602000,
+            "responses": 96713,
             "area": null
           },
           {
             "title": "ホテヘル SPEED スピード 京橋店",
             "shop_name": "SPEED 京橋店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362578/",
-            "views": 3709000,
-            "responses": 75627,
+            "views": 3710000,
+            "responses": 75630,
             "area": null
           },
           {
             "title": "難波 OLの品格 クラブアッシュ",
             "shop_name": "難波 OL品格",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13386411/",
-            "views": 1571000,
-            "responses": 75394,
+            "views": 1572000,
+            "responses": 75395,
             "area": null
           },
           {
@@ -3249,15 +3302,7 @@
             "shop_name": "女子校生",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13395900/",
             "views": 1238000,
-            "responses": 75199,
-            "area": null
-          },
-          {
-            "title": "clubさくら 難波店",
-            "shop_name": "club 難波店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396925/",
-            "views": 4509000,
-            "responses": 75179,
+            "responses": 75205,
             "area": null
           },
           {
@@ -3265,15 +3310,15 @@
             "shop_name": "大奥 梅田店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390489/",
             "views": 2449000,
-            "responses": 58374,
+            "responses": 58379,
             "area": null
           },
           {
-            "title": "コンカフェ×オナクラ あいこねくと",
-            "shop_name": "×",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13406446/",
-            "views": 4773000,
-            "responses": 46031,
+            "title": "リッチドールなんば店",
+            "shop_name": "店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13400564/",
+            "views": 2578000,
+            "responses": 52089,
             "area": null
           },
           {
@@ -3281,23 +3326,7 @@
             "shop_name": "大阪 回春性感 谷九店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13316494/",
             "views": 1455000,
-            "responses": 45226,
-            "area": null
-          },
-          {
-            "title": "ぷるるん小町 京橋店",
-            "shop_name": "小町 京橋店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13403297/",
-            "views": 1301000,
-            "responses": 43049,
-            "area": null
-          },
-          {
-            "title": "Pink Collection BABY ミナミ谷九店 ～ピンクコレクションベイビー～",
-            "shop_name": "Pink Collection BABY 谷九店 ～～",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13363361/",
-            "views": 440000,
-            "responses": 38349,
+            "responses": 45229,
             "area": null
           },
           {
@@ -3305,15 +3334,23 @@
             "shop_name": "× 梅田店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13383475/",
             "views": 1120000,
-            "responses": 9305,
+            "responses": 9313,
             "area": null
           },
           {
-            "title": "梅田 ホテルだョ！全員集合",
-            "shop_name": "梅田 ！全員集合",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13356331/",
-            "views": 54740,
-            "responses": 968,
+            "title": "日本橋ユートピア",
+            "shop_name": "日本橋",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13134579/",
+            "views": 127913,
+            "responses": 1000,
+            "area": null
+          },
+          {
+            "title": "リッチドールなんば店",
+            "shop_name": "店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13337881/",
+            "views": 51398,
+            "responses": 1000,
             "area": null
           }
         ],
@@ -3322,56 +3359,64 @@
             "title": "SPEED スピード 日本橋店",
             "shop_name": "SPEED 日本橋店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13393797/",
-            "views": 8895000,
-            "responses": 216536,
-            "area": null
-          },
-          {
-            "title": "SPEED ECO スピードエコ 難波店",
-            "shop_name": "SPEED ECO 難波店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13385096/",
-            "views": 7484000,
-            "responses": 253833,
+            "views": 8897000,
+            "responses": 216555,
             "area": null
           },
           {
             "title": "SPEED スピード 難波店",
             "shop_name": "SPEED 難波店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390746/",
-            "views": 5639000,
-            "responses": 122353,
+            "views": 5640000,
+            "responses": 122365,
             "area": null
           },
           {
-            "title": "コンカフェ×オナクラ あいこねくと",
-            "shop_name": "×",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13406446/",
-            "views": 4773000,
-            "responses": 46031,
+            "title": "SPEED ECO スピード エコ 京橋店",
+            "shop_name": "SPEED ECO 京橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13398278/",
+            "views": 5190000,
+            "responses": 158141,
             "area": null
           },
           {
-            "title": "clubさくら 難波店",
-            "shop_name": "club 難波店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396925/",
-            "views": 4509000,
-            "responses": 75179,
+            "title": "激安商事の課長命令 日本橋店",
+            "shop_name": "激安商事課長命令 日本橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13365346/",
+            "views": 3935000,
+            "responses": 175392,
             "area": null
           },
           {
             "title": "ホテヘル SPEED スピード 京橋店",
             "shop_name": "SPEED 京橋店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362578/",
-            "views": 3709000,
-            "responses": 75627,
+            "views": 3710000,
+            "responses": 75630,
             "area": null
           },
           {
             "title": "SPEED スピード 梅田店",
             "shop_name": "SPEED 梅田店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362251/",
-            "views": 3646000,
-            "responses": 118788,
+            "views": 3647000,
+            "responses": 118792,
+            "area": null
+          },
+          {
+            "title": "手コキ 大阪はまちゃん 梅田店",
+            "shop_name": "手 大阪 梅田店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
+            "views": 2602000,
+            "responses": 96713,
+            "area": null
+          },
+          {
+            "title": "リッチドールなんば店",
+            "shop_name": "店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13400564/",
+            "views": 2578000,
+            "responses": 52089,
             "area": null
           },
           {
@@ -3379,44 +3424,30 @@
             "shop_name": "大奥 梅田店",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390489/",
             "views": 2449000,
-            "responses": 58374,
+            "responses": 58379,
             "area": null
           },
           {
             "title": "難波 OLの品格 クラブアッシュ",
             "shop_name": "難波 OL品格",
             "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13386411/",
-            "views": 1571000,
-            "responses": 75394,
-            "area": null
-          },
-          {
-            "title": "大阪 回春性感エステ ティーク 谷九店",
-            "shop_name": "大阪 回春性感 谷九店",
-            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13316494/",
-            "views": 1455000,
-            "responses": 45226,
+            "views": 1572000,
+            "responses": 75395,
             "area": null
           }
         ],
         "area_stats": [
           {
             "area": "その他",
-            "thread_count": 43,
-            "total_responses": 1267481,
-            "median_responses": 705
+            "thread_count": 132,
+            "total_responses": 1349819,
+            "median_responses": 779
           },
           {
-            "area": "アインズ",
+            "area": "谷九",
             "thread_count": 1,
-            "total_responses": 909,
-            "median_responses": 909
-          },
-          {
-            "area": "夜這い",
-            "thread_count": 1,
-            "total_responses": 807,
-            "median_responses": 807
+            "total_responses": 1000,
+            "median_responses": 1000
           }
         ]
       },
@@ -3424,32 +3455,57 @@
         "slug": "aichi",
         "name": "名古屋",
         "board_url": "https://bakusai.com/thr_tl/acode=5/ctgid=103/bid=472/",
-        "thread_count": 45,
-        "total_responses": 391128,
-        "total_views": 22442627,
+        "pages_fetched": 5,
+        "thread_count": 133,
+        "total_responses": 540642,
+        "total_views": 29923703,
         "top_by_responses": [
           {
-            "title": "豊橋 マダムChaCha 茶々",
-            "shop_name": "豊橋 ChaCha 茶",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347088/",
-            "views": 3011000,
-            "responses": 108591,
-            "area": null
-          },
-          {
-            "title": "一宮 ダイスキ",
+            "title": "一宮ガーデン",
             "shop_name": "一宮",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13333256/",
-            "views": 3716000,
-            "responses": 65855,
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13364677/",
+            "views": 4109000,
+            "responses": 139826,
             "area": null
           },
           {
-            "title": "逢って30秒で即尺",
-            "shop_name": "逢30秒即尺",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13317982/",
-            "views": 1445000,
-            "responses": 32800,
+            "title": "名古屋出張マッサージ委員会",
+            "shop_name": "名古屋出張委員会",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13374309/",
+            "views": 663000,
+            "responses": 66296,
+            "area": null
+          },
+          {
+            "title": "岡崎 DEIDOS でりどす",
+            "shop_name": "岡崎 DEIDOS",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13343198/",
+            "views": 3912000,
+            "responses": 44653,
+            "area": null
+          },
+          {
+            "title": "名古屋 デリヘル ラブココ",
+            "shop_name": "名古屋",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
+            "views": 757000,
+            "responses": 37898,
+            "area": null
+          },
+          {
+            "title": "名古屋 ニューデリー",
+            "shop_name": "名古屋",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13326372/",
+            "views": 2227000,
+            "responses": 32991,
+            "area": null
+          },
+          {
+            "title": "グランドオペラ 名古屋店",
+            "shop_name": "名古屋店",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13359335/",
+            "views": 1470000,
+            "responses": 26700,
             "area": null
           },
           {
@@ -3457,7 +3513,7 @@
             "shop_name": "M 岡崎",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13377145/",
             "views": 2425000,
-            "responses": 25540,
+            "responses": 25541,
             "area": null
           },
           {
@@ -3465,7 +3521,7 @@
             "shop_name": "小牧 紳士",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13395386/",
             "views": 1506000,
-            "responses": 23047,
+            "responses": 23050,
             "area": null
           },
           {
@@ -3473,15 +3529,7 @@
             "shop_name": "岡崎 人妻星人",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13388411/",
             "views": 704000,
-            "responses": 21232,
-            "area": null
-          },
-          {
-            "title": "こあくまな熟女たち 三河店",
-            "shop_name": "熟女 三河店",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347944/",
-            "views": 1641000,
-            "responses": 20951,
+            "responses": 21249,
             "area": null
           },
           {
@@ -3489,7 +3537,7 @@
             "shop_name": "一宮",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13332614/",
             "views": 845000,
-            "responses": 20879,
+            "responses": 20881,
             "area": null
           },
           {
@@ -3501,35 +3549,19 @@
             "area": null
           },
           {
+            "title": "ぽちゃカワ専門店 マシュマロ ⑮",
+            "shop_name": "専門店",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13324522/",
+            "views": 1179000,
+            "responses": 14804,
+            "area": null
+          },
+          {
             "title": "大門 激安ソープランド ドマーニ ⑪",
             "shop_name": "大門 激安",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13355413/",
             "views": 979000,
-            "responses": 10747,
-            "area": null
-          },
-          {
-            "title": "春日井アネキャンモード⑩",
-            "shop_name": "春日井",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12533267/",
-            "views": 415000,
-            "responses": 9311,
-            "area": null
-          },
-          {
-            "title": "ソフトヘルス ちらりずむ ⑦",
-            "shop_name": "",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13365861/",
-            "views": 666000,
-            "responses": 6413,
-            "area": null
-          },
-          {
-            "title": "名古屋 でりどす⑤",
-            "shop_name": "名古屋",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12559565/",
-            "views": 680000,
-            "responses": 4963,
+            "responses": 10751,
             "area": null
           },
           {
@@ -3541,29 +3573,29 @@
             "area": null
           },
           {
-            "title": "デリヘル MELT☆UP-メルト・アップ-名古屋 ③",
-            "shop_name": "MELTUP--名古屋",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13393650/",
-            "views": 227000,
-            "responses": 2117,
+            "title": "デリヘル ぽちゃ巨乳専門ちゃんこ 大高・大府・東海市店 ⑨",
+            "shop_name": "巨乳専門 大高大府東海市店",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13099719/",
+            "views": 67917,
+            "responses": 1000,
             "area": null
           }
         ],
         "top_by_views": [
           {
-            "title": "一宮 ダイスキ",
+            "title": "一宮ガーデン",
             "shop_name": "一宮",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13333256/",
-            "views": 3716000,
-            "responses": 65855,
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13364677/",
+            "views": 4109000,
+            "responses": 139826,
             "area": null
           },
           {
-            "title": "豊橋 マダムChaCha 茶々",
-            "shop_name": "豊橋 ChaCha 茶",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347088/",
-            "views": 3011000,
-            "responses": 108591,
+            "title": "岡崎 DEIDOS でりどす",
+            "shop_name": "岡崎 DEIDOS",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13343198/",
+            "views": 3912000,
+            "responses": 44653,
             "area": null
           },
           {
@@ -3571,7 +3603,7 @@
             "shop_name": "M 岡崎",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13377145/",
             "views": 2425000,
-            "responses": 25540,
+            "responses": 25541,
             "area": null
           },
           {
@@ -3583,11 +3615,11 @@
             "area": null
           },
           {
-            "title": "こあくまな熟女たち 三河店",
-            "shop_name": "熟女 三河店",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347944/",
-            "views": 1641000,
-            "responses": 20951,
+            "title": "名古屋 ニューデリー",
+            "shop_name": "名古屋",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13326372/",
+            "views": 2227000,
+            "responses": 32991,
             "area": null
           },
           {
@@ -3595,15 +3627,23 @@
             "shop_name": "小牧 紳士",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13395386/",
             "views": 1506000,
-            "responses": 23047,
+            "responses": 23050,
             "area": null
           },
           {
-            "title": "逢って30秒で即尺",
-            "shop_name": "逢30秒即尺",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13317982/",
-            "views": 1445000,
-            "responses": 32800,
+            "title": "グランドオペラ 名古屋店",
+            "shop_name": "名古屋店",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13359335/",
+            "views": 1470000,
+            "responses": 26700,
+            "area": null
+          },
+          {
+            "title": "ぽちゃカワ専門店 マシュマロ ⑮",
+            "shop_name": "専門店",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13324522/",
+            "views": 1179000,
+            "responses": 14804,
             "area": null
           },
           {
@@ -3611,7 +3651,7 @@
             "shop_name": "大門 激安",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13355413/",
             "views": 979000,
-            "responses": 10747,
+            "responses": 10751,
             "area": null
           },
           {
@@ -3619,76 +3659,240 @@
             "shop_name": "一宮",
             "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13332614/",
             "views": 845000,
-            "responses": 20879,
-            "area": null
-          },
-          {
-            "title": "岡崎 やまとなでしこ 〜人妻エロエロ星人〜",
-            "shop_name": "岡崎 人妻星人",
-            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13388411/",
-            "views": 704000,
-            "responses": 21232,
+            "responses": 20881,
             "area": null
           }
         ],
         "area_stats": [
           {
             "area": "その他",
-            "thread_count": 44,
-            "total_responses": 390726,
-            "median_responses": 794
+            "thread_count": 132,
+            "total_responses": 540402,
+            "median_responses": 455
           },
           {
-            "area": "店長ネタ禁止",
+            "area": "逆夜這い",
             "thread_count": 1,
-            "total_responses": 402,
-            "median_responses": 402
+            "total_responses": 240,
+            "median_responses": 240
           }
         ]
       }
     ]
   },
-  "bakusai_changes": null,
+  "bakusai_changes": {
+    "since": "2026-08-01T02:30:32",
+    "regions": [
+      {
+        "slug": "tokyo",
+        "response_movers": [
+          {
+            "title": "【池袋西口】 ソープランド 桃李 【王朝宮殿】",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396105/",
+            "responses": 108431,
+            "response_delta": 108000
+          },
+          {
+            "title": "【歌舞伎町】SOPHIA(ソフィア) 【ヘルス】",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396747/",
+            "responses": 99096,
+            "response_delta": 99000
+          },
+          {
+            "title": "（新宿歌舞伎町）COCOMERO-ココメロ-（巨乳ヘルス）",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13298250/",
+            "responses": 20445,
+            "response_delta": 20000
+          },
+          {
+            "title": "ハンドキャンパス新宿 ⑮",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13403500/",
+            "responses": 14171,
+            "response_delta": 14000
+          },
+          {
+            "title": "五反田 レンタル美少女 堕とされた優等生 ⑨",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13374056/",
+            "responses": 8449,
+            "response_delta": 8000
+          },
+          {
+            "title": "【葛西】ママれもん【錦糸町】",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13387080/",
+            "responses": 405,
+            "response_delta": 3
+          },
+          {
+            "title": "大塚 ピンサロ ハイカロリー ⑯",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13371557/",
+            "responses": 527,
+            "response_delta": 2
+          },
+          {
+            "title": "【荻窪】ピンサロ 79.5Part",
+            "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13407442/",
+            "responses": 75,
+            "response_delta": 2
+          }
+        ]
+      },
+      {
+        "slug": "osaka",
+        "response_movers": [
+          {
+            "title": "SPEED スピード 日本橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13393797/",
+            "responses": 216555,
+            "response_delta": 216000
+          },
+          {
+            "title": "手コキ 大阪はまちゃん 梅田店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
+            "responses": 96713,
+            "response_delta": 96000
+          },
+          {
+            "title": "難波 OLの品格 クラブアッシュ",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13386411/",
+            "responses": 75395,
+            "response_delta": 75000
+          },
+          {
+            "title": "リッチドールなんば店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13400564/",
+            "responses": 52089,
+            "response_delta": 52000
+          },
+          {
+            "title": "SPEED ECO スピード エコ 日本橋店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396860/",
+            "responses": 852,
+            "response_delta": 4
+          },
+          {
+            "title": "SPEED ECO スピードエコ 難波店",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13385096/",
+            "responses": 852,
+            "response_delta": 3
+          },
+          {
+            "title": "やんちゃな子猫兎我野",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13379406/",
+            "responses": 552,
+            "response_delta": 2
+          },
+          {
+            "title": "ニューハーフ Club DIAMOND ダイアモンド 日本橋店 ⑤",
+            "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=12118688/",
+            "responses": 991,
+            "response_delta": 2
+          }
+        ]
+      },
+      {
+        "slug": "aichi",
+        "response_movers": [
+          {
+            "title": "岡崎 DEIDOS でりどす",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13343198/",
+            "responses": 44653,
+            "response_delta": 44000
+          },
+          {
+            "title": "ドMバスターズ 岡崎",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13377145/",
+            "responses": 25541,
+            "response_delta": 25000
+          },
+          {
+            "title": "小牧 紳士クラブ",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13395386/",
+            "responses": 23050,
+            "response_delta": 23000
+          },
+          {
+            "title": "岡崎 やまとなでしこ 〜人妻エロエロ星人〜",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13388411/",
+            "responses": 21249,
+            "response_delta": 21000
+          },
+          {
+            "title": "アラモード",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13397398/",
+            "responses": 370,
+            "response_delta": 2
+          },
+          {
+            "title": "名古屋素人革命DX ⑨",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13391311/",
+            "responses": 188,
+            "response_delta": 2
+          },
+          {
+            "title": "めちゃすく！北学園 ②",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13015461/",
+            "responses": 113,
+            "response_delta": 1
+          },
+          {
+            "title": "アリス女学院 大曽根校",
+            "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12369984/",
+            "responses": 204,
+            "response_delta": 1
+          }
+        ]
+      }
+    ]
+  },
   "bakusai_cross": [
     {
       "slug": "tokyo",
       "name": "東京",
-      "matched_count": 4,
+      "matched_count": 5,
       "matched": [
         {
           "name": "Chloe五反田本店　S級素人清楚系デリヘル",
           "heaven_url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
-          "heaven_reviews": 40069,
+          "heaven_reviews": 40068,
           "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13406935/",
-          "bakusai_responses": 29,
-          "bakusai_views": 441,
+          "bakusai_responses": 52,
+          "bakusai_views": 912,
           "match_score": 1.0
         },
         {
           "name": "池袋パラダイス",
           "heaven_url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
-          "heaven_reviews": 15474,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13405003/",
-          "bakusai_responses": 555,
-          "bakusai_views": 21126,
+          "heaven_reviews": 15472,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13324382/",
+          "bakusai_responses": 830,
+          "bakusai_views": 93603,
           "match_score": 1.0
+        },
+        {
+          "name": "GINGIRA☆TOKYO　～ギンギラ東京～",
+          "heaven_url": "https://www.cityheaven.net/tokyo/A1304/A130401/gingira/",
+          "heaven_reviews": 9707,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=10763925/",
+          "bakusai_responses": 374,
+          "bakusai_views": 36290,
+          "match_score": 0.5
         },
         {
           "name": "E+錦糸町",
           "heaven_url": "https://www.cityheaven.net/tokyo/A1313/A131301/e-plus/",
           "heaven_reviews": 9705,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13387080/",
-          "bakusai_responses": 76396,
-          "bakusai_views": 4846000,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=11633114/",
+          "bakusai_responses": 522,
+          "bakusai_views": 149869,
           "match_score": 1.0
         },
         {
           "name": "グランドオペラ東京",
           "heaven_url": "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/",
           "heaven_reviews": 9542,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13397685/",
-          "bakusai_responses": 14,
-          "bakusai_views": 3514,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=10763925/",
+          "bakusai_responses": 374,
+          "bakusai_views": 36290,
           "match_score": 1.0
         }
       ],
@@ -3709,35 +3913,35 @@
         },
         {
           "name": "グッドワイフ",
-          "heaven_reviews": 33298,
+          "heaven_reviews": 33297,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/tokyo/A1311/A131101/wifesoap/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
           "name": "ハニーコレクション",
-          "heaven_reviews": 26862,
+          "heaven_reviews": 26861,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
           "name": "CUTE",
-          "heaven_reviews": 20807,
+          "heaven_reviews": 20816,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
           "name": "MADAM",
-          "heaven_reviews": 20735,
+          "heaven_reviews": 20734,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/saitama/A1101/A110101/madamsoap/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
           "name": "アイドル研究生",
-          "heaven_reviews": 17652,
+          "heaven_reviews": 17651,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
@@ -3752,85 +3956,85 @@
       ],
       "bakusai_hot_heaven_quiet": [
         {
-          "title": "池袋北口みせすはーと【ホテヘル】",
-          "responses": 129542,
-          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13376779/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "【目黒】アリスマリオン",
+          "responses": 109998,
+          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13379472/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
-          "title": "【目黒】アリスマリオン",
-          "responses": 109993,
-          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13379472/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "【池袋西口】 ソープランド 桃李 【王朝宮殿】",
+          "responses": 108431,
+          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396105/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "【歌舞伎町】SOPHIA(ソフィア) 【ヘルス】",
-          "responses": 99095,
+          "responses": 99096,
           "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13396747/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "【秋コス】白いぽっちゃりさん 鶯谷店",
-          "responses": 90749,
+          "responses": 90754,
           "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13377148/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "【池袋北口】若葉【ソープ】",
-          "responses": 73198,
+          "responses": 73200,
           "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13398112/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
-          "title": "新橋  箱ヘル  花夫人",
-          "responses": 35822,
-          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13293769/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
-        },
-        {
-          "title": "大塚ピンサロペローチェ",
-          "responses": 27102,
-          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13388216/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "巣鴨の30代お姉さん店舗型ヘルス 『華椿』",
+          "responses": 43996,
+          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13321313/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "（新宿歌舞伎町）COCOMERO-ココメロ-（巨乳ヘルス）",
-          "responses": 20441,
+          "responses": 20445,
           "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13298250/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
+        },
+        {
+          "title": "ハンドキャンパス新宿 ⑮",
+          "responses": 14171,
+          "url": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13403500/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         }
       ]
     },
     {
       "slug": "aichi",
       "name": "名古屋",
-      "matched_count": 8,
+      "matched_count": 7,
       "matched": [
         {
           "name": "シャブール　名古屋店",
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/shaboole/",
           "heaven_reviews": 16945,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
-          "bakusai_responses": 892,
-          "bakusai_views": 136283,
-          "match_score": 1.0
-        },
-        {
-          "name": "ワンカラット〜人妻の輝き〜　名古屋店",
-          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/1ct/",
-          "heaven_reviews": 10393,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
-          "bakusai_responses": 892,
-          "bakusai_views": 136283,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13359335/",
+          "bakusai_responses": 26700,
+          "bakusai_views": 1470000,
           "match_score": 1.0
         },
         {
           "name": "グランドオペラ名古屋",
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
           "heaven_reviews": 9938,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
-          "bakusai_responses": 892,
-          "bakusai_views": 136283,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13393650/",
+          "bakusai_responses": 126,
+          "bakusai_views": 5328,
+          "match_score": 1.0
+        },
+        {
+          "name": "ドMな奥様　名古屋・錦店",
+          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
+          "heaven_reviews": 8169,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12944877/",
+          "bakusai_responses": 68,
+          "bakusai_views": 10100,
           "match_score": 1.0
         },
         {
@@ -3838,44 +4042,35 @@
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
           "heaven_reviews": 7309,
           "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13398129/",
-          "bakusai_responses": 252,
-          "bakusai_views": 14990,
-          "match_score": 1.0
-        },
-        {
-          "name": "ヘルスクラブ　長者町　巴里",
-          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230103/c_pari/",
-          "heaven_reviews": 7068,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=10567901/",
-          "bakusai_responses": 581,
-          "bakusai_views": 226853,
+          "bakusai_responses": 253,
+          "bakusai_views": 15516,
           "match_score": 1.0
         },
         {
           "name": "ドMなバニーちゃん 名古屋・池下店",
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230106/dombunny/",
-          "heaven_reviews": 6869,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
-          "bakusai_responses": 892,
-          "bakusai_views": 136283,
+          "heaven_reviews": 6879,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12683990/",
+          "bakusai_responses": 408,
+          "bakusai_views": 122237,
           "match_score": 1.0
         },
         {
           "name": "スターブルーム名古屋",
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230103/n_shirouto_dx/",
           "heaven_reviews": 6562,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13345426/",
-          "bakusai_responses": 892,
-          "bakusai_views": 136283,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13393650/",
+          "bakusai_responses": 126,
+          "bakusai_views": 5328,
           "match_score": 1.0
         },
         {
-          "name": "ビデオパブ＆オナクラ 大阪でらちゃん 名駅・納屋橋店",
-          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230101/derachan_n/",
-          "heaven_reviews": 6015,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13355339/",
-          "bakusai_responses": 794,
-          "bakusai_views": 139879,
+          "name": "WEST・COM（ウエスト・コム）",
+          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230101/west-com/",
+          "heaven_reviews": 6237,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13139240/",
+          "bakusai_responses": 98,
+          "bakusai_views": 26655,
           "match_score": 1.0
         }
       ],
@@ -3896,7 +4091,7 @@
         },
         {
           "name": "ドMな逆バニーちゃん 　栄・東新町店",
-          "heaven_reviews": 11087,
+          "heaven_reviews": 11086,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
@@ -3909,10 +4104,10 @@
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
-          "name": "かべや",
+          "name": "ワンカラット〜人妻の輝き〜　名古屋店",
           "heaven_reviews": 10393,
           "bakusai_responses": 0,
-          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
+          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/1ct/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
@@ -3928,71 +4123,96 @@
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230103/opera/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
+        },
+        {
+          "name": "グランドオペラ名古屋",
+          "heaven_reviews": 9938,
+          "bakusai_responses": 126,
+          "heaven_url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
+          "note": "CH口コミは多いが爆サイでの話題は相対的に少ない"
         }
       ],
       "bakusai_hot_heaven_quiet": [
         {
-          "title": "豊橋 マダムChaCha 茶々",
-          "responses": 108591,
-          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347088/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "一宮ガーデン",
+          "responses": 139826,
+          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13364677/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
-          "title": "一宮 ダイスキ",
-          "responses": 65855,
-          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13333256/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "名古屋出張マッサージ委員会",
+          "responses": 66296,
+          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13374309/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
-          "title": "逢って30秒で即尺",
-          "responses": 32800,
-          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13317982/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "岡崎 DEIDOS でりどす",
+          "responses": 44653,
+          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13343198/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "ドMバスターズ 岡崎",
-          "responses": 25540,
+          "responses": 25541,
           "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13377145/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "小牧 紳士クラブ",
-          "responses": 23047,
+          "responses": 23050,
           "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13395386/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "岡崎 やまとなでしこ 〜人妻エロエロ星人〜",
-          "responses": 21232,
+          "responses": 21249,
           "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13388411/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
-        },
-        {
-          "title": "こあくまな熟女たち 三河店",
-          "responses": 20951,
-          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13347944/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "アイリス 一宮",
-          "responses": 20879,
+          "responses": 20881,
           "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=13332614/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
+        },
+        {
+          "title": "愛らぶ名古屋本店 旧：愛らぶ学園 ⑳",
+          "responses": 20000,
+          "url": "https://bakusai.com/thr_res/acode=5/ctgid=103/bid=472/tid=12918502/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         }
       ]
     },
     {
       "slug": "osaka",
       "name": "大阪",
-      "matched_count": 10,
+      "matched_count": 8,
       "matched": [
+        {
+          "name": "Evolution 2nd",
+          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
+          "heaven_reviews": 9068,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13386830/",
+          "bakusai_responses": 242,
+          "bakusai_views": 21511,
+          "match_score": 1.0
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "heaven_reviews": 7199,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396565/",
+          "bakusai_responses": 70,
+          "bakusai_views": 9268,
+          "match_score": 0.5
+        },
         {
           "name": "聖リッチ女学園",
           "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/club_rich/",
           "heaven_reviews": 6837,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13384360/",
-          "bakusai_responses": 465,
-          "bakusai_views": 38847,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13354007/",
+          "bakusai_responses": 1000,
+          "bakusai_views": 59791,
           "match_score": 1.0
         },
         {
@@ -4000,8 +4220,8 @@
           "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/osaka-hamachan/",
           "heaven_reviews": 6211,
           "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
-          "bakusai_responses": 705,
-          "bakusai_views": 83084,
+          "bakusai_responses": 96713,
+          "bakusai_views": 2602000,
           "match_score": 1.0
         },
         {
@@ -4009,53 +4229,17 @@
           "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
           "heaven_reviews": 5963,
           "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13386411/",
-          "bakusai_responses": 75394,
-          "bakusai_views": 1571000,
-          "match_score": 1.0
-        },
-        {
-          "name": "クレドール大阪",
-          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270202/kuredoru_osaka/",
-          "heaven_reviews": 5617,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
-          "bakusai_responses": 705,
-          "bakusai_views": 83084,
-          "match_score": 1.0
-        },
-        {
-          "name": "ドＭな奥さん日本橋店",
-          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
-          "heaven_reviews": 4982,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396860/",
-          "bakusai_responses": 836,
-          "bakusai_views": 54238,
-          "match_score": 1.0
-        },
-        {
-          "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
-          "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
-          "heaven_reviews": 4889,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13341745/",
-          "bakusai_responses": 695,
-          "bakusai_views": 56180,
-          "match_score": 0.75
-        },
-        {
-          "name": "いけない奥さん梅田店",
-          "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/ikeoku_ume/",
-          "heaven_reviews": 4447,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13392591/",
-          "bakusai_responses": 129,
-          "bakusai_views": 4970,
+          "bakusai_responses": 75395,
+          "bakusai_views": 1572000,
           "match_score": 1.0
         },
         {
           "name": "プロフィール大阪",
           "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/prof_osaka/",
-          "heaven_reviews": 4443,
-          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362435/",
-          "bakusai_responses": 705,
-          "bakusai_views": 83084,
+          "heaven_reviews": 4442,
+          "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=1299279/",
+          "bakusai_responses": 930,
+          "bakusai_views": 8538,
           "match_score": 1.0
         },
         {
@@ -4063,8 +4247,8 @@
           "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270202/ai_connect/",
           "heaven_reviews": 4375,
           "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396860/",
-          "bakusai_responses": 836,
-          "bakusai_views": 54238,
+          "bakusai_responses": 852,
+          "bakusai_views": 56225,
           "match_score": 1.0
         },
         {
@@ -4072,7 +4256,7 @@
           "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/richdoll_2_umeda/",
           "heaven_reviews": 4314,
           "bakusai_url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13383475/",
-          "bakusai_responses": 9305,
+          "bakusai_responses": 9313,
           "bakusai_views": 1120000,
           "match_score": 1.0
         }
@@ -4080,23 +4264,16 @@
       "heaven_high_bakusai_low": [
         {
           "name": "桃源郷クラブ",
-          "heaven_reviews": 10405,
+          "heaven_reviews": 10404,
           "bakusai_responses": 0,
           "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
-          "name": "Evolution 2nd",
-          "heaven_reviews": 9068,
+          "name": "レッドろまん摂津守口店",
+          "heaven_reviews": 6837,
           "bakusai_responses": 0,
-          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
-          "note": "爆サイスレ未検出（表記差 or 話題薄）"
-        },
-        {
-          "name": "LOVEキタ兎我野店",
-          "heaven_reviews": 7199,
-          "bakusai_responses": 0,
-          "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "heaven_url": "https://www.cityheaven.net/osaka/A2703/A270301/red_romance_s/",
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
@@ -4121,61 +4298,68 @@
           "note": "爆サイスレ未検出（表記差 or 話題薄）"
         },
         {
-          "name": "聖リッチ女学園",
-          "heaven_reviews": 6837,
-          "bakusai_responses": 465,
-          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/club_rich/",
+          "name": "Evolution 2nd",
+          "heaven_reviews": 9068,
+          "bakusai_responses": 242,
+          "heaven_url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
+          "note": "CH口コミは多いが爆サイでの話題は相対的に少ない"
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "heaven_reviews": 7199,
+          "bakusai_responses": 70,
+          "heaven_url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
           "note": "CH口コミは多いが爆サイでの話題は相対的に少ない"
         }
       ],
       "bakusai_hot_heaven_quiet": [
         {
-          "title": "SPEED ECO スピードエコ 難波店",
-          "responses": 253833,
-          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13385096/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "SPEED ECO スピード エコ 京橋店",
+          "responses": 158141,
+          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13398278/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "SPEED スピード 難波店",
-          "responses": 122353,
+          "responses": 122365,
           "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390746/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "ホテヘル SPEED スピード 京橋店",
-          "responses": 75627,
+          "responses": 75630,
           "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13362578/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "女子校生はやめられない",
-          "responses": 75199,
+          "responses": 75205,
           "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13395900/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
-        },
-        {
-          "title": "clubさくら 難波店",
-          "responses": 75179,
-          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13396925/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "ホテヘル 大奥 梅田店",
-          "responses": 58374,
+          "responses": 58379,
           "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13390489/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
-          "title": "コンカフェ×オナクラ あいこねくと",
-          "responses": 46031,
-          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13406446/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "title": "リッチドールなんば店",
+          "responses": 52089,
+          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13400564/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         },
         {
           "title": "大阪 回春性感エステ ティーク 谷九店",
-          "responses": 45226,
+          "responses": 45229,
           "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13316494/",
-          "note": "爆サイで話題だがCH口コミTOP20外"
+          "note": "爆サイで話題だがCH口コミ上位50外"
+        },
+        {
+          "title": "日本橋ユートピア",
+          "responses": 1000,
+          "url": "https://bakusai.com/thr_res/acode=7/ctgid=103/bid=410/tid=13134579/",
+          "note": "爆サイで話題だがCH口コミ上位50外"
         }
       ]
     }

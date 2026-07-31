@@ -38,7 +38,10 @@ def append_snapshot(path: Path, snapshot: dict[str, Any]) -> list[dict[str, Any]
     snapshots = load_history(path)
     snapshots.append(snapshot)
     snapshots = snapshots[-MAX_SNAPSHOTS:]
-    path.write_text(json.dumps({"snapshots": snapshots}, ensure_ascii=False, indent=2), encoding="utf-8")
+    payload = json.dumps({"snapshots": snapshots}, ensure_ascii=False, indent=2)
+    tmp = path.with_suffix(".json.tmp")
+    tmp.write_text(payload, encoding="utf-8")
+    tmp.replace(path)
     return snapshots
 
 
@@ -71,3 +74,23 @@ def compute_bakusai_changes(current: dict[str, Any], snapshots: list[dict[str, A
         region_changes.append({"slug": slug, "response_movers": movers[:8]})
 
     return {"since": since, "regions": region_changes}
+
+
+def build_bakusai_trends(snapshots: list[dict[str, Any]]) -> dict[str, Any]:
+    if not snapshots:
+        return {"dates": [], "series": {}}
+
+    dates = [s.get("captured_at", "")[:10] for s in snapshots]
+    series: dict[str, dict[str, list]] = {
+        slug: {"thread_count": [], "total_responses": []}
+        for slug in ("tokyo", "aichi", "osaka")
+    }
+
+    for snap in snapshots:
+        for slug, metrics in series.items():
+            region = snap.get("regions", {}).get(slug, {})
+            metrics["thread_count"].append(region.get("thread_count"))
+            total = sum(t.get("responses", 0) for t in region.get("threads", {}).values())
+            metrics["total_responses"].append(total)
+
+    return {"dates": dates, "series": series}

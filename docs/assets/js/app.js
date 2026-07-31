@@ -133,18 +133,19 @@ function renderChanges(data) {
 
 function renderTrendCharts(trends) {
   const panel = document.getElementById("trends-panel");
-  if (!trends?.dates?.length || trends.dates.length < 2) {
+  const ch = trends?.cityheaven || trends;
+  if (!ch?.dates?.length || ch.dates.length < 2) {
     return;
   }
   panel.hidden = false;
 
-  const labels = trends.dates.map((d) => d.slice(5));
+  const labels = ch.dates.map((d) => d.slice(5));
   const slugs = ["tokyo", "aichi", "osaka"];
   const names = { tokyo: "東京", aichi: "名古屋", osaka: "大阪" };
 
   const priceDatasets = slugs.map((slug) => ({
     label: names[slug],
-    data: trends.series[slug]?.median_price || [],
+    data: ch.series[slug]?.median_price || [],
     borderColor: REGION_COLORS[names[slug]],
     backgroundColor: REGION_COLORS[names[slug]] + "33",
     tension: 0.3,
@@ -153,7 +154,7 @@ function renderTrendCharts(trends) {
 
   const shopDatasets = slugs.map((slug) => ({
     label: names[slug],
-    data: trends.series[slug]?.shop_count || [],
+    data: ch.series[slug]?.shop_count || [],
     borderColor: REGION_COLORS[names[slug]],
     backgroundColor: REGION_COLORS[names[slug]] + "33",
     tension: 0.3,
@@ -186,6 +187,44 @@ function renderTrendCharts(trends) {
       plugins: {
         legend: { labels: { color: "#9aa3b5" } },
         title: { display: true, text: "掲載店舗数の推移", color: "#9aa3b5" },
+      },
+      scales: {
+        y: { ticks: { color: "#9aa3b5" }, grid: { color: "#2a3144" } },
+        x: { ticks: { color: "#9aa3b5" }, grid: { display: false } },
+      },
+    },
+  });
+
+  renderBakusaiTrendChart(trends?.bakusai);
+}
+
+function renderBakusaiTrendChart(bTrends) {
+  const canvas = document.getElementById("chart-bakusai-responses");
+  if (!canvas || !bTrends?.dates?.length || bTrends.dates.length < 2) return;
+
+  const labels = bTrends.dates.map((d) => d.slice(5));
+  const slugs = ["tokyo", "aichi", "osaka"];
+  const names = { tokyo: "東京", aichi: "名古屋", osaka: "大阪" };
+
+  new Chart(canvas, {
+    type: "line",
+    data: {
+      labels,
+      datasets: slugs.map((slug) => ({
+        label: names[slug],
+        data: bTrends.series[slug]?.total_responses || [],
+        borderColor: REGION_COLORS[names[slug]],
+        backgroundColor: REGION_COLORS[names[slug]] + "33",
+        tension: 0.3,
+        fill: false,
+      })),
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "#9aa3b5" } },
+        title: { display: true, text: "爆サイ 総レス数の推移", color: "#9aa3b5" },
       },
       scales: {
         y: { ticks: { color: "#9aa3b5" }, grid: { color: "#2a3144" } },
@@ -597,12 +636,17 @@ function renderRegionSections(data) {
         <h3>エリア別統計（上位）</h3>
         ${renderDataTable(["エリア", "店舗数", "構成比", "相場中央値", "口コミ中央値"], areaRows)}
 
-        <h3>エリア×業種 相場ヒートマップ</h3>
-        <p class="panel-desc">セルは最低コース料金の中央値（円）。色が濃いほど高め。</p>
-        ${renderHeatmap(region.price_heatmap)}
+        <details class="collapsible" open>
+          <summary><h3 style="display:inline;margin:0">エリア×業種 相場ヒートマップ</h3></summary>
+          <p class="panel-desc">セルは最低コース料金の中央値（円）。色が濃いほど高め。</p>
+          ${(region.heatmap_insights || []).length ? `<ul class="insights-list">${region.heatmap_insights.map((t) => `<li>${t}</li>`).join("")}</ul>` : ""}
+          ${renderHeatmap(region.price_heatmap)}
+        </details>
 
-        <h3>口コミ TOP20 順位表</h3>
-        ${renderRankingTable(region.ranking_table)}
+        <details class="collapsible">
+          <summary><h3 style="display:inline;margin:0">口コミ TOP20 順位表</h3></summary>
+          ${renderRankingTable(region.ranking_table)}
+        </details>
 
         <h3>コンセプト別（上位）</h3>
         ${renderDataTable(["コンセプト", "店舗数", "構成比", "相場中央値"], subgenreRows)}

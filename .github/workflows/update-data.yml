@@ -2,11 +2,12 @@ name: Update data
 
 on:
   schedule:
-    - cron: "0 15 * * 0"  # 日曜 00:00 JST
+    - cron: "0 18 * * 0"  # 月曜 03:00 JST
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -31,12 +32,44 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/public/summary.json docs/data/summary.json docs/data/trends.json data/history/index.json
+          git add data/public/summary.json docs/data/summary.json docs/data/trends.json data/history/index.json data/history/bakusai.json
           git diff --staged --quiet || git commit -m "Update analytics data"
           git push
 
-      - name: Note on fetch failure
+      - name: Create issue on fetch failure
         if: steps.fetch.outcome != 'success'
-        run: |
-          echo "Fetch failed (often 403 from City Heaven on GitHub runners)."
-          echo "Run 'python run.py' locally and push to update data."
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `[週次更新] データ取得失敗 (${new Date().toISOString().slice(0, 10)})`;
+            const body = [
+              'GitHub Actions からの `python run.py` が失敗しました（City Heaven 403 の可能性が高いです）。',
+              '',
+              '## 手順',
+              '1. ローカルで `python run.py` を実行',
+              '2. `git add docs/data data/history data/public` → commit → push',
+              '',
+              'ワークフロー: `.github/workflows/update-data.yml`',
+            ].join('\n');
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 20,
+            });
+            const existing = issues.find(i => i.title.startsWith('[週次更新]'));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `再試行失敗 (${context.runId})\n\n${body}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+            }

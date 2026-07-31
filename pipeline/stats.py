@@ -221,3 +221,43 @@ def build_price_heatmap(
         matrix.append(row)
 
     return {"areas": areas, "biz_types": biz_list, "matrix": matrix}
+
+
+def heatmap_insights(heatmap: dict[str, Any], region_median: int | None = None) -> list[str]:
+    areas = heatmap.get("areas") or []
+    biz_types = heatmap.get("biz_types") or []
+    matrix = heatmap.get("matrix") or []
+    if not areas or not biz_types:
+        return []
+
+    insights: list[str] = []
+    cells: list[tuple[str, str, int]] = []
+    for i, area in enumerate(areas):
+        for j, biz in enumerate(biz_types):
+            val = matrix[i][j] if i < len(matrix) and j < len(matrix[i]) else None
+            if val is not None:
+                cells.append((area, biz, val))
+
+    if not cells:
+        return insights
+
+    cells.sort(key=lambda c: c[2])
+    cheapest = cells[0]
+    priciest = cells[-1]
+    insights.append(
+        f"相場最安は「{cheapest[0]}×{cheapest[1]}」（中央値 {cheapest[2]:,}円）"
+    )
+    if priciest != cheapest:
+        insights.append(
+            f"相場最高は「{priciest[0]}×{priciest[1]}」（中央値 {priciest[2]:,}円）"
+        )
+
+    if region_median:
+        high_areas = sorted({a for a, _, v in cells if v >= region_median * 1.15}, key=str)
+        low_areas = sorted({a for a, _, v in cells if v <= region_median * 0.85}, key=str)
+        if high_areas:
+            insights.append(f"都市中央値より高めのエリア: {', '.join(high_areas[:4])}")
+        if low_areas:
+            insights.append(f"都市中央値より低めのエリア: {', '.join(low_areas[:4])}")
+
+    return insights[:4]

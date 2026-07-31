@@ -64,37 +64,106 @@ def parse_area_genre_links(html: str, region_slug: str, biz_id: str) -> list[str
     return links
 
 
+def parse_area_codes(html: str, region_slug: str) -> list[str]:
+    """Extract sub-area codes (e.g. A1317) linked from prefecture / hub pages."""
+    soup = BeautifulSoup(html, "html.parser")
+    pattern = re.compile(rf"^/{region_slug}/([A-Z]\d{{3,5}})/")
+    codes: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"].split("?")[0]
+        match = pattern.match(href)
+        if match:
+            codes.add(match.group(1))
+    return sorted(codes)
+
+
+def parse_shop_list_page_links(html: str, region_slug: str, path: str) -> list[str]:
+    """Discover paginated shop-list URLs for the same area/genre."""
+    soup = BeautifulSoup(html, "html.parser")
+    base = path.split("?")[0]
+    pages: set[str] = {path.split("?")[0]}
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"].split("#")[0]
+        if not href.startswith(f"/{region_slug}/"):
+            continue
+        if not href.split("?")[0].startswith(base.rstrip("/")):
+            continue
+        if "shop-list" not in href:
+            continue
+        pages.add(href.split("?")[0] if "?" not in href else href)
+    return sorted(pages)
+
+
+def _fetch_html(client, url: str) -> str | None:
+    try:
+        return client.get(url)
+    except httpx.HTTPStatusError:
+        return None
+
+
+def collect_area_codes_for_region(
+    client,
+    region_slug: str,
+    pref_html: str,
+    base_url: str,
+) -> list[str]:
+    """Collect sub-area codes once per prefecture (shared across genres)."""
+    seed_html: list[str] = [pref_html]
+    codes: set[str] = set()
+
+    for hub_path in (f"/{region_slug}/shop-list/", f"/{region_slug}/region/shop-list/"):
+        hub_html = _fetch_html(client, f"{base_url}{hub_path}")
+        if hub_html:
+            seed_html.append(hub_html)
+
+    for html in seed_html:
+        codes.update(parse_area_codes(html, region_slug))
+
+    default_biz = "biz6"
+    index_html = _fetch_html(client, f"{base_url}/{region_slug}/shop-list/{default_biz}/")
+    if index_html:
+        seed_html.append(index_html)
+        codes.update(parse_area_codes(index_html, region_slug))
+
+    return sorted(codes)[:80]
+
+
 def collect_area_list_paths(
     client,
     region_slug: str,
     biz_id: str,
     pref_html: str,
     base_url: str,
+    area_codes: list[str] | None = None,
 ) -> list[str]:
-    """Gather sub-area shop-list URLs from prefecture top and genre index page."""
+    """Gather sub-area shop-list URLs from prefecture top, hubs, and area codes."""
     default = f"/{region_slug}/shop-list/{biz_id}/"
     seen: set[str] = set()
     paths: list[str] = []
 
     def add(path: str) -> None:
-        if path not in seen:
-            seen.add(path)
-            paths.append(path)
+        clean = path.split("?")[0]
+        if clean not in seen:
+            seen.add(clean)
+            paths.append(clean)
 
     for path in parse_area_genre_links(pref_html, region_slug, biz_id):
         add(path)
 
-    index_html = client.get(f"{base_url}{default}")
-    for path in parse_area_genre_links(index_html, region_slug, biz_id):
-        add(path)
+    index_html = _fetch_html(client, f"{base_url}{default}")
+    if index_html:
+        for path in parse_area_genre_links(index_html, region_slug, biz_id):
+            add(path)
 
     region_hub = f"/{region_slug}/region/shop-list/{biz_id}/"
-    try:
-        hub_html = client.get(f"{base_url}{region_hub}")
+    hub_html = _fetch_html(client, f"{base_url}{region_hub}")
+    if hub_html:
         for path in parse_area_genre_links(hub_html, region_slug, biz_id):
             add(path)
-    except httpx.HTTPStatusError:
-        pass
+
+    codes = area_codes if area_codes is not None else parse_area_codes(pref_html, region_slug)
+    for code in codes:
+        add(f"/{region_slug}/{code}/shop-list/{biz_id}/")
 
     add(default)
     return paths

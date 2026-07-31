@@ -8,6 +8,7 @@ from pipeline.stats import (
     dedupe_shops,
     genre_analysis,
     group_analysis,
+    heatmap_insights,
     histogram,
     market_concentration,
     numeric_stats,
@@ -114,7 +115,9 @@ def aggregate(raw: dict) -> dict[str, Any]:
             [s for s in shops if s.get("review_count")],
             key=lambda s: s["review_count"],
             reverse=True,
-        )[:20]
+        )[:50]
+
+        match_pool = top_reviews
 
         ranking_table = [
             {
@@ -126,7 +129,7 @@ def aggregate(raw: dict) -> dict[str, Any]:
                 "min_minutes": s.get("min_minutes"),
                 "min_price": s.get("min_price"),
             }
-            for i, s in enumerate(top_reviews)
+            for i, s in enumerate(top_reviews[:20])
         ]
 
         top_value = sorted(
@@ -147,6 +150,8 @@ def aggregate(raw: dict) -> dict[str, Any]:
             min_count=3,
             limit=8,
         )
+
+        price_heatmap = build_price_heatmap(shops)
 
         region_summary: dict[str, Any] = {
             "slug": region["slug"],
@@ -172,9 +177,17 @@ def aggregate(raw: dict) -> dict[str, Any]:
             "area_analysis": area_analysis,
             "subgenre_analysis": subgenre_analysis,
             "market_concentration": market_concentration(shops),
-            "top_by_reviews": top_reviews,
+            "top_by_reviews": top_reviews[:20],
+            "match_pool": [
+                {"name": s["name"], "url": s["url"], "review_count": s.get("review_count")}
+                for s in match_pool
+            ],
             "ranking_table": ranking_table,
-            "price_heatmap": build_price_heatmap(shops),
+            "price_heatmap": price_heatmap,
+            "heatmap_insights": heatmap_insights(
+                price_heatmap,
+                numeric_stats(prices).get("median"),
+            ),
             "top_by_value": [
                 {
                     "name": s["name"],

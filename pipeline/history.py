@@ -58,10 +58,10 @@ def load_history(path: Path) -> list[dict[str, Any]]:
 def save_history(path: Path, snapshots: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     trimmed = snapshots[-MAX_SNAPSHOTS:]
-    path.write_text(
-        json.dumps({"snapshots": trimmed}, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    payload = json.dumps({"snapshots": trimmed}, ensure_ascii=False, indent=2)
+    tmp = path.with_suffix(".json.tmp")
+    tmp.write_text(payload, encoding="utf-8")
+    tmp.replace(path)
 
 
 def append_snapshot(path: Path, snapshot: dict[str, Any]) -> list[dict[str, Any]]:

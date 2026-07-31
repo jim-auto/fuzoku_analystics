@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>東名阪 風俗エリア分析 | fuzoku analytics</title>
-  <meta name="description" content="City Heaven 公開情報を客目線で再整理。東京・名古屋・大阪の店舗数・業種・相場・口コミを比較。">
+  <meta name="description" content="City Heaven 公開情報を客目線で再整理。東京・名古屋・大阪の店舗数・業種・相場・口コミ・爆サイ話題指数を比較。">
+  <link rel="canonical" href="https://jim-auto.github.io/fuzoku_analystics/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="東名阪 風俗エリア分析">
+  <meta property="og:description" content="東京・名古屋・大阪の相場・口コミ・爆サイ話題指数を客目線で比較する非公式統計サイト。">
+  <meta property="og:url" content="https://jim-auto.github.io/fuzoku_analystics/">
+  <meta property="og:image" content="https://jim-auto.github.io/fuzoku_analystics/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="東名阪 風俗エリア分析">
+  <meta name="twitter:description" content="東京・名古屋・大阪の相場・口コミ・爆サイ話題指数を比較。">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="assets/js/app.js" defer></script>
@@ -48,6 +57,10 @@
         <div class="chart-box chart-box--wide"><canvas id="chart-trend-price"></canvas></div>
         <div class="chart-box chart-box--wide"><canvas id="chart-trend-shops"></canvas></div>
       </div>
+      <details class="collapsible">
+        <summary>爆サイ 総レス数の推移</summary>
+        <div class="chart-box chart-box--wide"><canvas id="chart-bakusai-responses"></canvas></div>
+      </details>
     </section>
 
     <section class="cards" id="summary-cards"></section>
@@ -96,15 +109,15 @@
 
     <section class="panel" id="region-sections"></section>
 
-    <section class="panel panel--muted">
-      <h2>免責事項</h2>
+    <details class="panel collapsible panel--muted">
+      <summary><h2 style="display:inline;margin:0">免責事項</h2></summary>
       <ul class="disclaimer">
         <li>本サイトは <a href="https://www.cityheaven.net/" target="_blank" rel="noopener">シティヘブンネット</a> 非公式の第三者分析です。</li>
         <li>店舗の写真・キャッチコピー・口コミ本文は転載していません。数値の集計のみを公開します。</li>
         <li>料金は各店舗一覧に掲載の最低コース目安です。実際の料金は店舗にご確認ください。</li>
         <li>18歳未満（高校生を含む）の閲覧は禁止です。</li>
       </ul>
-    </section>
+    </details>
   </main>
 
   <footer class="footer">

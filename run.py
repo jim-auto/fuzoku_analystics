@@ -9,6 +9,7 @@ from pathlib import Path
 from pipeline.aggregate import aggregate
 from pipeline.bakusai_history import (
     append_snapshot as append_bakusai_snapshot,
+    build_bakusai_trends,
     compact_bakusai,
     compute_bakusai_changes,
 )
@@ -39,6 +40,10 @@ def _public_bakusai(bakusai: dict) -> dict:
     return {**bakusai, "regions": regions}
 
 
+def _public_regions(regions: list[dict]) -> list[dict]:
+    return [{k: v for k, v in r.items() if k != "match_pool"} for r in regions]
+
+
 def main() -> None:
     client = HeavenClient()
     try:
@@ -51,12 +56,15 @@ def main() -> None:
     snapshot = compact_snapshot(aggregated)
     snapshots = append_snapshot(HISTORY_PATH, snapshot)
     changes = compute_changes(snapshot, snapshots)
-    trends = build_trends(snapshots)
+    ch_trends = build_trends(snapshots)
 
     bakusai_snapshot = compact_bakusai(bakusai)
     bakusai_snapshots = append_bakusai_snapshot(BAKUSAI_HISTORY_PATH, bakusai_snapshot)
     bakusai_changes = compute_bakusai_changes(bakusai_snapshot, bakusai_snapshots)
+    bakusai_trends = build_bakusai_trends(bakusai_snapshots)
     bakusai_cross = cross_reference(aggregated.get("regions", []), bakusai)
+
+    trends = {"cityheaven": ch_trends, "bakusai": bakusai_trends}
 
     payload = {
         "updated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
@@ -64,6 +72,7 @@ def main() -> None:
         "disclaimer": "非公式の統計サイト。数値のみを集計し、画像・文章は転載していません。",
         "regions_target": ["tokyo", "aichi", "osaka"],
         **aggregated,
+        "regions": _public_regions(aggregated.get("regions", [])),
         "changes": changes,
         "trends": trends,
         "bakusai": _public_bakusai(bakusai),

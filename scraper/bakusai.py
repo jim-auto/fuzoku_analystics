@@ -162,14 +162,47 @@ def analyze_threads(threads: list[BakusaiThread]) -> dict:
     }
 
 
-def fetch_bakusai_board(client, slug: str) -> dict:
+def parse_bakusai_list_pages(html: str, list_url: str) -> list[str]:
+    """Discover paginated Bakusai thread-list URLs."""
+    soup = BeautifulSoup(html, "html.parser")
+    base = list_url.rstrip("/")
+    prefix = base.split("/page=")[0]
+    pages: set[str] = {list_url}
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"]
+        if "thr_tl/" not in href:
+            continue
+        full = href if href.startswith("http") else BAKUSAI_BASE + href
+        full = full.split("#")[0]
+        if prefix in full.split("/page=")[0]:
+            pages.add(full if full.endswith("/") else full + "/")
+    return sorted(pages)
+
+
+def fetch_bakusai_board(client, slug: str, max_pages: int = 5) -> dict:
     board = BOARDS[slug]
-    html = client.get(board["list_url"])
-    threads = parse_thread_list(html, board["ctgid"], board["bid"])
+    list_url = board["list_url"]
+    html = client.get(list_url)
+    page_urls = parse_bakusai_list_pages(html, list_url)[:max_pages]
+
+    threads: list[BakusaiThread] = []
+    seen: set[str] = set()
+    for url in page_urls:
+        try:
+            page_html = html if url.rstrip("/") == list_url.rstrip("/") else client.get(url)
+        except Exception:
+            continue
+        for thread in parse_thread_list(page_html, board["ctgid"], board["bid"]):
+            if thread.url in seen:
+                continue
+            seen.add(thread.url)
+            threads.append(thread)
+
     return {
         "slug": slug,
         "name": board["name"],
         "board_url": board["list_url"],
+        "pages_fetched": len(page_urls),
         **analyze_threads(threads),
     }
 

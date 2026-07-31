@@ -51,9 +51,11 @@ City Heaven は GitHub Actions の IP から 403 になることが多いため�
 4. `git add docs/data data/history` → commit → push
 5. GitHub Pages（`pages.yml`）が `docs/` を自動デプロイ
 
-**爆サイ**: スレ一覧メタデータのみ取得。2回目以降で「レス増加トップ」が表示されます。
+**爆サイ**: スレ一覧メタデータのみ取得（最大5ページ/都市）。2回目以降で「レス増加トップ」が表示されます。
 
-**Actions 週次ジョブ**: `.github/workflows/update-data.yml` が月曜 03:00 JST に試行しますが、403 時はスキップされます。失敗ログを見てローカル更新に切り替えてください。
+**CH×爆サイ突合**: `pipeline/shop_aliases.json` で表記ゆれを補正。上位50店をマッチプールに使用。
+
+**Actions 週次ジョブ**: `.github/workflows/update-data.yml` が月曜 03:00 JST に試行します。403 時は `data-update` ラベルの Issue を自動作成します。
 
 ローカルプレビュー:
 
