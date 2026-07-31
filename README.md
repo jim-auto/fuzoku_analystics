@@ -42,7 +42,9 @@ python -m http.server 8080 --directory docs
 
 1. リポジトリを GitHub に push
 2. **Settings → Pages → Build and deployment → GitHub Actions**
-3. `main` に push すると `.github/workflows/pages.yml` が実行されます
+3. `main` に push すると `.github/workflows/pages.yml` が `docs/` をデプロイします
+
+**データ更新**: City Heaven は GitHub Actions の IP から 403 になることがあります。その場合はローカルで `python run.py` を実行して push してください。週次の自動更新は `.github/workflows/update-data.yml` が試行します（成功時のみ commit）。
 
 ## 免責
 
