@@ -7,12 +7,19 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pipeline.aggregate import aggregate
+from pipeline.history import (
+    append_snapshot,
+    build_trends,
+    compact_snapshot,
+    compute_changes,
+)
 from scraper.client import HeavenClient
 from scraper.fetch import fetch_all
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data" / "public"
 DOCS_DATA = ROOT / "docs" / "data"
+HISTORY_PATH = ROOT / "data" / "history" / "index.json"
 
 
 def main() -> None:
@@ -22,19 +29,33 @@ def main() -> None:
     finally:
         client.close()
 
+    aggregated = aggregate(raw)
+    snapshot = compact_snapshot(aggregated)
+    snapshots = append_snapshot(HISTORY_PATH, snapshot)
+    changes = compute_changes(snapshot, snapshots)
+    trends = build_trends(snapshots)
+
     payload = {
         "updated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "source": "https://www.cityheaven.net/",
         "disclaimer": "非公式の統計サイト。数値のみを集計し、画像・文章は転載していません。",
         "regions_target": ["tokyo", "aichi", "osaka"],
-        **aggregate(raw),
+        **aggregated,
+        "changes": changes,
+        "trends": trends,
     }
 
+    outputs = {
+        DATA_DIR / "summary.json": payload,
+        DOCS_DATA / "summary.json": payload,
+        DOCS_DATA / "trends.json": trends,
+    }
     for directory in (DATA_DIR, DOCS_DATA):
         directory.mkdir(parents=True, exist_ok=True)
-        out = directory / "summary.json"
-        out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Wrote {out}")
+
+    for path, data in outputs.items():
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Wrote {path}")
 
 
 if __name__ == "__main__":

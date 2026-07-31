@@ -1,6 +1,11 @@
 from scraper.client import HeavenClient
 from scraper.config import BASE_URL, GENRES, REGIONS, Region
-from scraper.parse import ShopRecord, parse_area_genre_links, parse_prefecture_counts, parse_shop_list
+from scraper.parse import (
+    ShopRecord,
+    collect_area_list_paths,
+    parse_prefecture_counts,
+    parse_shop_list,
+)
 
 
 def _normalize_url(url: str) -> str:
@@ -30,10 +35,7 @@ def fetch_region_summary(client: HeavenClient, region: Region) -> tuple[dict, st
 
 def fetch_genre_shops(client: HeavenClient, region: Region, biz_id: str, pref_html: str) -> tuple[int, list[ShopRecord]]:
     shops_by_url: dict[str, ShopRecord] = {}
-    list_paths = parse_area_genre_links(pref_html, region.slug, biz_id)
-
-    if not list_paths:
-        list_paths = [f"/{region.slug}/shop-list/{biz_id}/"]
+    list_paths = collect_area_list_paths(client, region.slug, biz_id, pref_html, BASE_URL)
 
     for path in list_paths:
         html = client.get(f"{BASE_URL}{path}")

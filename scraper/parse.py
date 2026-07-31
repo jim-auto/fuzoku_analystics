@@ -63,6 +63,34 @@ def parse_area_genre_links(html: str, region_slug: str, biz_id: str) -> list[str
     return links
 
 
+def collect_area_list_paths(
+    client,
+    region_slug: str,
+    biz_id: str,
+    pref_html: str,
+    base_url: str,
+) -> list[str]:
+    """Gather sub-area shop-list URLs from prefecture top and genre index page."""
+    default = f"/{region_slug}/shop-list/{biz_id}/"
+    seen: set[str] = set()
+    paths: list[str] = []
+
+    def add(path: str) -> None:
+        if path not in seen:
+            seen.add(path)
+            paths.append(path)
+
+    for path in parse_area_genre_links(pref_html, region_slug, biz_id):
+        add(path)
+
+    index_html = client.get(f"{base_url}{default}")
+    for path in parse_area_genre_links(index_html, region_slug, biz_id):
+        add(path)
+
+    add(default)
+    return paths
+
+
 def parse_shop_list(html: str, region_slug: str) -> GenrePageResult:
     soup = BeautifulSoup(html, "html.parser")
     total = parse_genre_total(html)

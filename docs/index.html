@@ -35,6 +35,21 @@
   <main class="container">
     <section class="panel panel--insights" id="metro-insights"></section>
 
+    <section class="panel" id="changes-panel" hidden>
+      <h2>前回比の変化</h2>
+      <p class="panel-desc" id="changes-desc"></p>
+      <div id="changes-content"></div>
+    </section>
+
+    <section class="panel" id="trends-panel" hidden>
+      <h2>時系列トレンド</h2>
+      <p class="panel-desc">週次スナップショットの推移（更新のたびに1点追加）</p>
+      <div class="chart-grid">
+        <div class="chart-box chart-box--wide"><canvas id="chart-trend-price"></canvas></div>
+        <div class="chart-box chart-box--wide"><canvas id="chart-trend-shops"></canvas></div>
+      </div>
+    </section>
+
     <section class="cards" id="summary-cards"></section>
 
     <section class="panel">

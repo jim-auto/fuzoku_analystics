@@ -1,0 +1,49 @@
+{
+  "dates": [
+    "2026-07-31"
+  ],
+  "series": {
+    "tokyo": {
+      "shop_count": [
+        983
+      ],
+      "girl_count": [
+        83978
+      ],
+      "median_price": [
+        14000
+      ],
+      "median_reviews": [
+        518
+      ]
+    },
+    "aichi": {
+      "shop_count": [
+        463
+      ],
+      "girl_count": [
+        24702
+      ],
+      "median_price": [
+        13000
+      ],
+      "median_reviews": [
+        1008
+      ]
+    },
+    "osaka": {
+      "shop_count": [
+        460
+      ],
+      "girl_count": [
+        29479
+      ],
+      "median_price": [
+        13000
+      ],
+      "median_reviews": [
+        577
+      ]
+    }
+  }
+}

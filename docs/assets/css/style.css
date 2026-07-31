@@ -85,6 +85,32 @@ h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); }
 .insights-list { margin: 0; padding-left: 1.1rem; color: var(--text); }
 .insights-list li { margin-bottom: 0.45rem; }
 
+.delta { font-size: 0.82rem; font-weight: 600; margin-left: 0.35rem; }
+.delta--up { color: var(--ok); }
+.delta--down { color: #f87171; }
+.delta--flat { color: var(--muted); }
+
+.changes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.change-card {
+  background: #111522;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.change-card h3 { margin: 0 0 0.75rem; font-size: 1rem; }
+.change-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.change-row:last-child { border-bottom: none; }
+
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));

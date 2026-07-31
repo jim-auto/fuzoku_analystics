@@ -67,6 +67,123 @@ function setupAgeGate() {
   });
 }
 
+function fmtDelta(n, suffix = "") {
+  if (n == null) return "";
+  if (n === 0) return `<span class="delta delta--flat">±0${suffix}</span>`;
+  const cls = n > 0 ? "delta--up" : "delta--down";
+  const sign = n > 0 ? "+" : "";
+  return `<span class="delta ${cls}">${sign}${fmt(n)}${suffix}</span>`;
+}
+
+function renderChanges(data) {
+  const panel = document.getElementById("changes-panel");
+  const changes = data.changes;
+  if (!changes) {
+    panel.hidden = false;
+    document.getElementById("changes-desc").textContent =
+      "初回スナップショットを保存しました。次回 run.py 実行後から前回比が表示されます。";
+    document.getElementById("changes-content").innerHTML = "";
+    return;
+  }
+
+  panel.hidden = false;
+  document.getElementById("changes-desc").textContent =
+    `${changes.since} から ${changes.days ?? "?"} 日間の変化`;
+
+  const nameBySlug = Object.fromEntries((data.regions || []).map((r) => [r.slug, r.short]));
+  document.getElementById("changes-content").innerHTML = `
+    <div class="changes-grid">
+      ${changes.regions
+        .map(
+          (c) => `
+        <article class="change-card">
+          <h3>${nameBySlug[c.slug] || c.slug}</h3>
+          <div class="change-row"><span>掲載店舗</span><span>${fmtDelta(c.shop_count_delta, " 店")}</span></div>
+          <div class="change-row"><span>在籍数</span><span>${fmtDelta(c.girl_count_delta, " 人")}</span></div>
+          <div class="change-row"><span>相場中央値</span><span>${fmtDelta(c.median_price_delta, " 円")}</span></div>
+          <div class="change-row"><span>口コミ中央値</span><span>${fmtDelta(c.median_reviews_delta, " 件")}</span></div>
+          <div class="change-row"><span>デリヘル掲載</span><span>${fmtDelta(c.genre_deli_delta, " 店")}</span></div>
+          ${
+            (c.review_movers || []).length
+              ? `<h4 style="margin:0.75rem 0 0.35rem;font-size:0.85rem;color:var(--muted)">口コミ増加トップ</h4>
+                 <ul class="shop-list">${c.review_movers
+                   .map(
+                     (m) =>
+                       `<li><div><a href="${m.url}" target="_blank" rel="noopener">${m.name}</a></div><div class="shop-meta">+${fmt(m.review_delta)} 件</div></li>`
+                   )
+                   .join("")}</ul>`
+              : ""
+          }
+        </article>`
+        )
+        .join("")}
+    </div>`;
+}
+
+function renderTrendCharts(trends) {
+  const panel = document.getElementById("trends-panel");
+  if (!trends?.dates?.length || trends.dates.length < 2) {
+    return;
+  }
+  panel.hidden = false;
+
+  const labels = trends.dates.map((d) => d.slice(5));
+  const slugs = ["tokyo", "aichi", "osaka"];
+  const names = { tokyo: "東京", aichi: "名古屋", osaka: "大阪" };
+
+  const priceDatasets = slugs.map((slug) => ({
+    label: names[slug],
+    data: trends.series[slug]?.median_price || [],
+    borderColor: REGION_COLORS[names[slug]],
+    backgroundColor: REGION_COLORS[names[slug]] + "33",
+    tension: 0.3,
+    fill: false,
+  }));
+
+  const shopDatasets = slugs.map((slug) => ({
+    label: names[slug],
+    data: trends.series[slug]?.shop_count || [],
+    borderColor: REGION_COLORS[names[slug]],
+    backgroundColor: REGION_COLORS[names[slug]] + "33",
+    tension: 0.3,
+    fill: false,
+  }));
+
+  new Chart(document.getElementById("chart-trend-price"), {
+    type: "line",
+    data: { labels, datasets: priceDatasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "#9aa3b5" } },
+        title: { display: true, text: "相場中央値の推移", color: "#9aa3b5" },
+      },
+      scales: {
+        y: { ticks: { color: "#9aa3b5" }, grid: { color: "#2a3144" } },
+        x: { ticks: { color: "#9aa3b5" }, grid: { display: false } },
+      },
+    },
+  });
+
+  new Chart(document.getElementById("chart-trend-shops"), {
+    type: "line",
+    data: { labels, datasets: shopDatasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "#9aa3b5" } },
+        title: { display: true, text: "掲載店舗数の推移", color: "#9aa3b5" },
+      },
+      scales: {
+        y: { ticks: { color: "#9aa3b5" }, grid: { color: "#2a3144" } },
+        x: { ticks: { color: "#9aa3b5" }, grid: { display: false } },
+      },
+    },
+  });
+}
+
 function renderMetroInsights(data) {
   const el = document.getElementById("metro-insights");
   const overview = data.metro_overview || {};
@@ -383,6 +500,8 @@ async function main() {
 
   document.getElementById("updated-at").textContent = `更新: ${data.updated_at ?? "—"}`;
   renderMetroInsights(data);
+  renderChanges(data);
+  renderTrendCharts(data.trends);
   renderSummaryCards(data);
   renderComparisonTable(data);
   renderCharts(data);

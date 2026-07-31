@@ -30,6 +30,10 @@ python run.py
 
 - `data/public/summary.json`
 - `docs/data/summary.json`（GitHub Pages 用）
+- `docs/data/trends.json`（時系列チャート用）
+- `data/history/index.json`（週次スナップショット、差分計算用）
+
+**差分・トレンド**: `run.py` を実行するたびに当日分を履歴に追加します。2回目以降で「前回比」や時系列グラフが表示されます。City Heaven の 403 回避のため、更新はローカル実行 → push を推奨します。
 
 ローカルプレビュー:
 
