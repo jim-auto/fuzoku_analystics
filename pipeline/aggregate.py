@@ -4,6 +4,7 @@ from typing import Any
 from pipeline.stats import (
     REVIEW_BUCKETS,
     PRICE_BUCKETS,
+    build_price_heatmap,
     dedupe_shops,
     genre_analysis,
     group_analysis,
@@ -113,7 +114,20 @@ def aggregate(raw: dict) -> dict[str, Any]:
             [s for s in shops if s.get("review_count")],
             key=lambda s: s["review_count"],
             reverse=True,
-        )[:10]
+        )[:20]
+
+        ranking_table = [
+            {
+                "rank": i + 1,
+                "name": s["name"],
+                "url": s["url"],
+                "genre": s.get("genre"),
+                "review_count": s.get("review_count"),
+                "min_minutes": s.get("min_minutes"),
+                "min_price": s.get("min_price"),
+            }
+            for i, s in enumerate(top_reviews)
+        ]
 
         top_value = sorted(
             shops_with_ppm(shops),
@@ -159,6 +173,8 @@ def aggregate(raw: dict) -> dict[str, Any]:
             "subgenre_analysis": subgenre_analysis,
             "market_concentration": market_concentration(shops),
             "top_by_reviews": top_reviews,
+            "ranking_table": ranking_table,
+            "price_heatmap": build_price_heatmap(shops),
             "top_by_value": [
                 {
                     "name": s["name"],

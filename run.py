@@ -7,6 +7,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pipeline.aggregate import aggregate
+from pipeline.bakusai_history import (
+    append_snapshot as append_bakusai_snapshot,
+    compact_bakusai,
+    compute_bakusai_changes,
+)
 from pipeline.bakusai_match import cross_reference
 from pipeline.history import (
     append_snapshot,
@@ -22,6 +27,16 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data" / "public"
 DOCS_DATA = ROOT / "docs" / "data"
 HISTORY_PATH = ROOT / "data" / "history" / "index.json"
+BAKUSAI_HISTORY_PATH = ROOT / "data" / "history" / "bakusai.json"
+
+
+def _public_bakusai(bakusai: dict) -> dict:
+    """Strip full thread lists from public payload (kept in history file)."""
+    regions = []
+    for region in bakusai.get("regions", []):
+        pub = {k: v for k, v in region.items() if k != "threads"}
+        regions.append(pub)
+    return {**bakusai, "regions": regions}
 
 
 def main() -> None:
@@ -37,6 +52,10 @@ def main() -> None:
     snapshots = append_snapshot(HISTORY_PATH, snapshot)
     changes = compute_changes(snapshot, snapshots)
     trends = build_trends(snapshots)
+
+    bakusai_snapshot = compact_bakusai(bakusai)
+    bakusai_snapshots = append_bakusai_snapshot(BAKUSAI_HISTORY_PATH, bakusai_snapshot)
+    bakusai_changes = compute_bakusai_changes(bakusai_snapshot, bakusai_snapshots)
     bakusai_cross = cross_reference(aggregated.get("regions", []), bakusai)
 
     payload = {
@@ -47,7 +66,8 @@ def main() -> None:
         **aggregated,
         "changes": changes,
         "trends": trends,
-        "bakusai": bakusai,
+        "bakusai": _public_bakusai(bakusai),
+        "bakusai_changes": bakusai_changes,
         "bakusai_cross": bakusai_cross,
     }
 

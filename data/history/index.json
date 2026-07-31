@@ -378,6 +378,346 @@
           ]
         }
       }
+    },
+    {
+      "captured_at": "2026-07-31T22:21:48",
+      "date": "2026-07-31",
+      "metro_median_price": 13000,
+      "regions": {
+        "tokyo": {
+          "shop_count": 983,
+          "girl_count": 83963,
+          "sampled": 714,
+          "median_price": 14000,
+          "median_reviews": 519,
+          "median_ppm": 260,
+          "genre_deli": 463,
+          "top_shops": [
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1305/A130505/stella_tokyo/",
+              "name": "STELLA TOKYO(ステラ東京)",
+              "review_count": 41912
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
+              "name": "Chloe五反田本店　S級素人清楚系デリヘル",
+              "review_count": 40069
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/plutinum/",
+              "name": "Platinum stage(プラチナステージ)",
+              "review_count": 36802
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/wifesoap/",
+              "name": "グッドワイフ",
+              "review_count": 33298
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
+              "name": "ハニーコレクション",
+              "review_count": 26862
+            },
+            {
+              "url": "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
+              "name": "CUTE",
+              "review_count": 20807
+            },
+            {
+              "url": "https://www.cityheaven.net/saitama/A1101/A110101/madamsoap/",
+              "name": "MADAM",
+              "review_count": 20735
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
+              "name": "アイドル研究生",
+              "review_count": 17652
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1305/A130505/hypergrace/",
+              "name": "HYPER TOKYO",
+              "review_count": 17305
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
+              "name": "池袋パラダイス",
+              "review_count": 15474
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/firstlady/",
+              "name": "ファーストレディ",
+              "review_count": 12053
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/maidsoap/",
+              "name": "メイドマスター",
+              "review_count": 10594
+            },
+            {
+              "url": "https://www.cityheaven.net/saitama/A1101/A110101/kanojyokan-omiya/",
+              "name": "素人系イメージSOAP彼女感大宮館",
+              "review_count": 10051
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1304/A130401/gingira/",
+              "name": "GINGIRA☆TOKYO　～ギンギラ東京～",
+              "review_count": 9707
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1313/A131301/e-plus/",
+              "name": "E+錦糸町",
+              "review_count": 9705
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/",
+              "name": "ロケットワイフ",
+              "review_count": 9546
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/",
+              "name": "グランドオペラ東京",
+              "review_count": 9542
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1304/A130401/hoteheruh/",
+              "name": "H",
+              "review_count": 9523
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
+              "name": "ファインモーション",
+              "review_count": 9468
+            },
+            {
+              "url": "https://www.cityheaven.net/tokyo/A1304/A130401/ug-platinum/",
+              "name": "ウルトラプラチナム",
+              "review_count": 8970
+            }
+          ]
+        },
+        "aichi": {
+          "shop_count": 463,
+          "girl_count": 24693,
+          "sampled": 348,
+          "median_price": 13000,
+          "median_reviews": 967,
+          "median_ppm": 233,
+          "genre_deli": 204,
+          "top_shops": [
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/e-body_n/",
+              "name": "巨乳専門E－BODY（イーボディ）名古屋錦店～E＋Group～",
+              "review_count": 46190
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/amsd_nishiki/",
+              "name": "甘サド美少女、お貸しします。名古屋錦店〜E＋Group〜",
+              "review_count": 18744
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/shaboole/",
+              "name": "シャブール　名古屋店",
+              "review_count": 16945
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
+              "name": "ドMな逆バニーちゃん 　栄・東新町店",
+              "review_count": 11087
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/rocket/",
+              "name": "人妻in誘惑スイートルーム名古屋錦店～E＋Group～",
+              "review_count": 10503
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/1ct/",
+              "name": "ワンカラット〜人妻の輝き〜　名古屋店",
+              "review_count": 10393
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/kabeya/",
+              "name": "かべや",
+              "review_count": 10393
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
+              "name": "グランドオペラ名古屋",
+              "review_count": 9938
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230104/alicejogakuin/",
+              "name": "アリス女学院　東新町・新栄校",
+              "review_count": 9526
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/opera/",
+              "name": "OPERA(オペラ)",
+              "review_count": 8675
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
+              "name": "ドMな奥様　名古屋・錦店",
+              "review_count": 8169
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230101/ot69/",
+              "name": "奥鉄オクテツ東海店（デリヘル市場グループ）",
+              "review_count": 7515
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/avance/",
+              "name": "AVANCE",
+              "review_count": 7309
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/c_pari/",
+              "name": "ヘルスクラブ　長者町　巴里",
+              "review_count": 7068
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230106/dombunny/",
+              "name": "ドMなバニーちゃん 名古屋・池下店",
+              "review_count": 6869
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230103/n_shirouto_dx/",
+              "name": "スターブルーム名古屋",
+              "review_count": 6562
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230106/chokuapo_okusama/",
+              "name": "東海SNS風俗！直アポ鉄道",
+              "review_count": 6480
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230106/doemunadanchizuma-ikeshita/",
+              "name": "ドMな団地妻　名古屋・池下店",
+              "review_count": 6404
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230101/west-com/",
+              "name": "WEST・COM（ウエスト・コム）",
+              "review_count": 6237
+            },
+            {
+              "url": "https://www.cityheaven.net/aichi/A2301/A230101/derachan_n/",
+              "name": "ビデオパブ＆オナクラ 大阪でらちゃん 名駅・納屋橋店",
+              "review_count": 6015
+            }
+          ]
+        },
+        "osaka": {
+          "shop_count": 460,
+          "girl_count": 29470,
+          "sampled": 332,
+          "median_price": 12500,
+          "median_reviews": 570,
+          "median_ppm": 220,
+          "genre_deli": 159,
+          "top_shops": [
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
+              "name": "桃源郷クラブ",
+              "review_count": 10405
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
+              "name": "Evolution 2nd",
+              "review_count": 9068
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+              "name": "LOVEキタ兎我野店",
+              "review_count": 7199
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_rich/",
+              "name": "聖リッチ女学園",
+              "review_count": 6837
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2701/A270101/osaka-hamachan/",
+              "name": "手コキ＆オナクラ 大阪はまちゃん 梅田店",
+              "review_count": 6211
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/amour_namba/",
+              "name": "アムール",
+              "review_count": 6186
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
+              "name": "OLの品格-クラブアッシュ-",
+              "review_count": 5963
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/club_h_valie/",
+              "name": "秘書の品格 クラブアッシュ ヴァリエ",
+              "review_count": 5828
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
+              "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
+              "review_count": 5617
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/kuredoru_osaka/",
+              "name": "クレドール大阪",
+              "review_count": 5617
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/richisupa/",
+              "name": "リチスパ",
+              "review_count": 5413
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
+              "name": "ドＭな奥さん日本橋店",
+              "review_count": 4982
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2701/A270101/rd-feminine/",
+              "name": "ﾘｯﾁﾄﾞｰﾙﾌｪﾐﾆﾝ",
+              "review_count": 4889
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/aroma-muse/",
+              "name": "とろとろな女神たち",
+              "review_count": 4831
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270203/cosp/",
+              "name": "ノーブラで誘惑する奥さん谷九・日本橋",
+              "review_count": 4746
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/aroma_d/",
+              "name": "Aroma Dione大阪店",
+              "review_count": 4556
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2701/A270101/ikeoku_ume/",
+              "name": "いけない奥さん梅田店",
+              "review_count": 4447
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270201/prof_osaka/",
+              "name": "プロフィール大阪",
+              "review_count": 4443
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2702/A270202/ai_connect/",
+              "name": "コンカフェ×オナクラ あいこねくと日本橋店",
+              "review_count": 4375
+            },
+            {
+              "url": "https://www.cityheaven.net/osaka/A2701/A270101/richdoll_2_umeda/",
+              "name": "ﾘｯﾁﾄﾞｰﾙﾊﾟｰﾄII  梅田店",
+              "review_count": 4314
+            }
+          ]
+        }
+      }
     }
   ]
 }

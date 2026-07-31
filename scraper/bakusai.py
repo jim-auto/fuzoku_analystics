@@ -147,15 +147,17 @@ def analyze_threads(threads: list[BakusaiThread]) -> dict:
             "area": t.area,
         }
 
-    top_resp = sorted(threads, key=lambda t: t.responses, reverse=True)[:15]
-    top_views = sorted(threads, key=lambda t: t.views, reverse=True)[:10]
+    all_threads = [as_dict(t) for t in threads]
+    top_resp = sorted(all_threads, key=lambda t: t["responses"], reverse=True)[:15]
+    top_views = sorted(all_threads, key=lambda t: t["views"], reverse=True)[:10]
 
     return {
         "thread_count": len(threads),
         "total_responses": sum(t.responses for t in threads),
         "total_views": sum(t.views for t in threads),
-        "top_by_responses": [as_dict(t) for t in top_resp],
-        "top_by_views": [as_dict(t) for t in top_views],
+        "threads": all_threads,
+        "top_by_responses": top_resp,
+        "top_by_views": top_views,
         "area_stats": area_stats,
     }
 

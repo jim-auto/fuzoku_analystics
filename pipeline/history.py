@@ -23,7 +23,7 @@ def compact_snapshot(aggregated: dict[str, Any]) -> dict[str, Any]:
                 "name": s["name"],
                 "review_count": s.get("review_count"),
             }
-            for s in (region.get("top_by_reviews") or [])[:15]
+            for s in (region.get("top_by_reviews") or [])[:20]
         ]
         regions[region["slug"]] = {
             "shop_count": region.get("shop_count"),
@@ -109,7 +109,7 @@ def _rank_changes(
 ) -> list[dict[str, Any]]:
     prev_rank = {s["url"]: i + 1 for i, s in enumerate(previous_shops)}
     changes = []
-    for i, shop in enumerate(current_shops[:10]):
+    for i, shop in enumerate(current_shops[:20]):
         new_rank = i + 1
         old_rank = prev_rank.get(shop["url"])
         if old_rank is None:

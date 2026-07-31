@@ -1,6 +1,7 @@
 import re
 from dataclasses import dataclass, field
 
+import httpx
 from bs4 import BeautifulSoup
 
 
@@ -86,6 +87,14 @@ def collect_area_list_paths(
     index_html = client.get(f"{base_url}{default}")
     for path in parse_area_genre_links(index_html, region_slug, biz_id):
         add(path)
+
+    region_hub = f"/{region_slug}/region/shop-list/{biz_id}/"
+    try:
+        hub_html = client.get(f"{base_url}{region_hub}")
+        for path in parse_area_genre_links(hub_html, region_slug, biz_id):
+            add(path)
+    except httpx.HTTPStatusError:
+        pass
 
     add(default)
     return paths

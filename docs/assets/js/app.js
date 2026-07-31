@@ -195,42 +195,137 @@ function renderTrendCharts(trends) {
   });
 }
 
+function renderHeatmap(heatmap) {
+  if (!heatmap?.areas?.length || !heatmap?.biz_types?.length) {
+    return "<p class='shop-meta'>データ不足</p>";
+  }
+  const flat = heatmap.matrix.flat().filter((v) => v != null);
+  const min = flat.length ? Math.min(...flat) : 0;
+  const max = flat.length ? Math.max(...flat) : 1;
+
+  function cellColor(value) {
+    if (value == null) return "transparent";
+    const t = max === min ? 0.5 : (value - min) / (max - min);
+    const r = Math.round(108 + t * 60);
+    const g = Math.round(140 - t * 40);
+    const b = Math.round(255 - t * 80);
+    return `rgba(${r},${g},${b},0.35)`;
+  }
+
+  const header = heatmap.biz_types.map((b) => `<th>${b}</th>`).join("");
+  const rows = heatmap.areas
+    .map((area, i) => {
+      const cells = heatmap.matrix[i]
+        .map(
+          (v) =>
+            `<td class="heatmap-cell" style="background:${cellColor(v)}">${v != null ? fmtYen(v) : "—"}</td>`
+        )
+        .join("");
+      return `<tr><th>${area}</th>${cells}</tr>`;
+    })
+    .join("");
+
+  return `
+    <div class="table-wrap heatmap-wrap">
+      <table class="data-table heatmap">
+        <thead><tr><th>エリア \\ 業種</th>${header}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function renderRankingTable(rows) {
+  if (!rows?.length) return "<p class='shop-meta'>データなし</p>";
+  const body = rows.map(
+    (s) =>
+      `<tr>
+          <td>${s.rank}</td>
+          <td><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a></td>
+          <td>${fmt(s.review_count)}</td>
+          <td>${s.min_minutes ?? "—"}分</td>
+          <td>${fmtYen(s.min_price)}</td>
+          <td class="shop-meta">${s.genre ?? ""}</td>
+        </tr>`
+  );
+  return renderDataTable(["順位", "店名", "口コミ", "コース", "最低料金", "業種/エリア"], body);
+}
+
 function renderBakusai(data) {
   const root = document.getElementById("bakusai-content");
   const bakusai = data.bakusai;
   const cross = data.bakusai_cross || [];
+  const bChanges = data.bakusai_changes;
   if (!bakusai?.regions?.length) {
     root.innerHTML = "<p class='shop-meta'>データなし</p>";
     return;
   }
 
-  root.innerHTML = bakusai.regions
-    .map((region) => {
-      const crossRegion = cross.find((c) => c.slug === region.slug) || {};
-      const topThreads = (region.top_by_responses || [])
-        .slice(0, 8)
-        .map(
-          (t) =>
-            `<li><div><a href="${t.url}" target="_blank" rel="noopener">${t.title}</a><div class="shop-meta">${t.area || ""}</div></div><div class="shop-meta">レス ${fmt(t.responses)} · 閲覧 ${fmt(t.views)}</div></li>`
-        )
-        .join("");
+  let changesHtml = "";
+  if (bChanges?.regions?.length) {
+    const nameBySlug = Object.fromEntries(bakusai.regions.map((r) => [r.slug, r.name]));
+    changesHtml = `
+      <h3>レス増加トップ（前回比）</h3>
+      <p class="panel-desc">${bChanges.since} 以降のスレッドレス増</p>
+      <div class="changes-grid">
+        ${bChanges.regions
+          .map((c) => {
+            const movers = (c.response_movers || [])
+              .map(
+                (m) =>
+                  `<li><div><a href="${m.url}" target="_blank" rel="noopener">${m.title}</a></div><div class="shop-meta">+${fmt(m.response_delta)} レス（計 ${fmt(m.responses)}）</div></li>`
+              )
+              .join("");
+            return movers
+              ? `<article class="change-card"><h4>${nameBySlug[c.slug] || c.slug}</h4><ul class="shop-list">${movers}</ul></article>`
+              : "";
+          })
+          .join("")}
+      </div>`;
+  }
 
-      const matched = (crossRegion.matched || [])
-        .map(
-          (m) =>
-            `<li><div>${m.name}</div><div class="shop-meta">CH ${fmt(m.heaven_reviews)} 件 / 爆サイ ${fmt(m.bakusai_responses)} レス</div></li>`
-        )
-        .join("");
+  root.innerHTML =
+    changesHtml +
+    bakusai.regions
+      .map((region) => {
+        const crossRegion = cross.find((c) => c.slug === region.slug) || {};
+        const topThreads = (region.top_by_responses || [])
+          .slice(0, 8)
+          .map(
+            (t) =>
+              `<li><div><a href="${t.url}" target="_blank" rel="noopener">${t.title}</a><div class="shop-meta">${t.area || ""}</div></div><div class="shop-meta">レス ${fmt(t.responses)} · 閲覧 ${fmt(t.views)}</div></li>`
+          )
+          .join("");
 
-      const areaStats = (region.area_stats || [])
-        .slice(0, 5)
-        .map(
-          (a) =>
-            `<tr><td>${a.area}</td><td>${fmt(a.thread_count)}</td><td>${fmt(a.total_responses)}</td><td>${fmt(a.median_responses)}</td></tr>`
-        )
-        .join("");
+        const matched = (crossRegion.matched || [])
+          .map(
+            (m) =>
+              `<li><div>${m.name}</div><div class="shop-meta">CH ${fmt(m.heaven_reviews)} 件 / 爆サイ ${fmt(m.bakusai_responses)} レス</div></li>`
+          )
+          .join("");
 
-      return `
+        const gapLow = (crossRegion.heaven_high_bakusai_low || [])
+          .map(
+            (g) =>
+              `<li><div><a href="${g.heaven_url}" target="_blank" rel="noopener">${g.name}</a></div><div class="shop-meta">CH ${fmt(g.heaven_reviews)} / 爆サイ ${fmt(g.bakusai_responses)} レス · ${g.note || ""}</div></li>`
+          )
+          .join("");
+
+        const gapHot = (crossRegion.bakusai_hot_heaven_quiet || [])
+          .map(
+            (g) =>
+              `<li><div><a href="${g.url}" target="_blank" rel="noopener">${g.title}</a></div><div class="shop-meta">レス ${fmt(g.responses)} · ${g.note || ""}</div></li>`
+          )
+          .join("");
+
+        const areaStats = (region.area_stats || [])
+          .slice(0, 5)
+          .map(
+            (a) =>
+              `<tr><td>${a.area}</td><td>${fmt(a.thread_count)}</td><td>${fmt(a.total_responses)}</td><td>${fmt(a.median_responses)}</td></tr>`
+          )
+          .join("");
+
+        return `
       <article class="region-block">
         <h3>${region.name} <a href="${region.board_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:var(--muted)">掲示板↗</a></h3>
         <div class="stat-grid">
@@ -247,9 +342,19 @@ function renderBakusai(data) {
             ? `<h4>City Heaven × 爆サイ 一致店</h4><ul class="shop-list">${matched}</ul>`
             : ""
         }
+        ${
+          gapLow
+            ? `<h4>CH口コミ多 × 爆サイ話題少</h4><ul class="shop-list">${gapLow}</ul>`
+            : ""
+        }
+        ${
+          gapHot
+            ? `<h4>爆サイ話題 × CH口コミTOP20外</h4><ul class="shop-list">${gapHot}</ul>`
+            : ""
+        }
       </article>`;
-    })
-    .join("");
+      })
+      .join("");
 }
 
 function renderMetroInsights(data) {
@@ -408,6 +513,7 @@ function renderRegionSections(data) {
   root.innerHTML = data.regions
     .map((region) => {
       const topReviews = (region.top_by_reviews || [])
+        .slice(0, 10)
         .map(
           (s) => `
         <li>
@@ -491,10 +597,17 @@ function renderRegionSections(data) {
         <h3>エリア別統計（上位）</h3>
         ${renderDataTable(["エリア", "店舗数", "構成比", "相場中央値", "口コミ中央値"], areaRows)}
 
+        <h3>エリア×業種 相場ヒートマップ</h3>
+        <p class="panel-desc">セルは最低コース料金の中央値（円）。色が濃いほど高め。</p>
+        ${renderHeatmap(region.price_heatmap)}
+
+        <h3>口コミ TOP20 順位表</h3>
+        ${renderRankingTable(region.ranking_table)}
+
         <h3>コンセプト別（上位）</h3>
         ${renderDataTable(["コンセプト", "店舗数", "構成比", "相場中央値"], subgenreRows)}
 
-        <h3>口コミ件数トップ</h3>
+        <h3>口コミ件数トップ（抜粋）</h3>
         <ul class="shop-list">${topReviews || "<li>データなし</li>"}</ul>
 
         <h3>コスパ指標トップ <span style="color:var(--muted);font-size:0.85rem">口コミ数÷最低料金</span></h3>

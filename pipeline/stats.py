@@ -181,3 +181,43 @@ def genre_analysis(shops: list[dict], genres: list[dict]) -> list[dict[str, Any]
             }
         )
     return rows
+
+
+def build_price_heatmap(
+    shops: list[dict],
+    top_areas: int = 8,
+    min_count: int = 2,
+) -> dict[str, Any]:
+    """Area × business-type median price matrix for heatmap display."""
+    from collections import defaultdict
+
+    cells: dict[tuple[str, str], list[int]] = defaultdict(list)
+    area_counts: dict[str, int] = defaultdict(int)
+    biz_types: set[str] = set()
+
+    for shop in shops:
+        parsed = parse_genre_label(shop.get("genre", ""))
+        area, biz = parsed.get("area"), parsed.get("biz")
+        price = shop.get("min_price")
+        if not area or not biz or not price:
+            continue
+        area_counts[area] += 1
+        cells[(area, biz)].append(price)
+        biz_types.add(biz)
+
+    areas = [
+        name
+        for name, _ in sorted(area_counts.items(), key=lambda x: x[1], reverse=True)
+        if area_counts[name] >= min_count
+    ][:top_areas]
+    biz_list = sorted(biz_types)
+
+    matrix: list[list[int | None]] = []
+    for area in areas:
+        row: list[int | None] = []
+        for biz in biz_list:
+            prices = cells.get((area, biz), [])
+            row.append(int(statistics.median(prices)) if len(prices) >= min_count else None)
+        matrix.append(row)
+
+    return {"areas": areas, "biz_types": biz_list, "matrix": matrix}
