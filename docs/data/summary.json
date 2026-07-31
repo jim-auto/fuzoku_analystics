@@ -1,0 +1,680 @@
+{
+  "updated_at": "2026-07-31T19:15:43+09:00",
+  "source": "https://www.cityheaven.net/",
+  "disclaimer": "非公式の統計サイト。数値のみを集計し、画像・文章は転載していません。",
+  "regions_target": [
+    "tokyo",
+    "aichi",
+    "osaka"
+  ],
+  "regions": [
+    {
+      "slug": "tokyo",
+      "name": "東京都",
+      "short": "東京",
+      "shop_count": 983,
+      "girl_count": 83972,
+      "girl_per_shop": 85.4,
+      "genres": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "shop_count": 32
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "shop_count": 12
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "shop_count": 31
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "shop_count": 207
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "shop_count": 31
+        }
+      ],
+      "price_stats": {
+        "count": 302,
+        "min": 1900,
+        "median": 15000,
+        "p25": 11000,
+        "p75": 18700,
+        "max": 250000
+      },
+      "review_stats": {
+        "count": 313,
+        "median": 1033,
+        "max": 41912
+      },
+      "top_by_reviews": [
+        {
+          "name": "STELLA TOKYO(ステラ東京)",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/stella_tokyo/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 41912,
+          "min_minutes": 60,
+          "min_price": 17000
+        },
+        {
+          "name": "Chloe五反田本店　S級素人清楚系デリヘル",
+          "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
+          "genre": "デリヘル(スタンダード/五反田)",
+          "review_count": 40069,
+          "min_minutes": 70,
+          "min_price": 17000
+        },
+        {
+          "name": "ハニーコレクション",
+          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
+          "genre": "ソープ(激安/吉原)",
+          "review_count": 26862,
+          "min_minutes": 50,
+          "min_price": 14800
+        },
+        {
+          "name": "アイドル研究生",
+          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
+          "genre": "ソープ(スタンダード/吉原)",
+          "review_count": 17652,
+          "min_minutes": 70,
+          "min_price": 23000
+        },
+        {
+          "name": "HYPER TOKYO",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/hypergrace/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 17305,
+          "min_minutes": 45,
+          "min_price": 10000
+        },
+        {
+          "name": "池袋パラダイス",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
+          "genre": "ホテヘル(学園系/池袋北口・西口)",
+          "review_count": 15476,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "GINGIRA☆TOKYO　～ギンギラ東京～",
+          "url": "https://www.cityheaven.net/tokyo/A1304/A130401/gingira/",
+          "genre": "デリヘル(スタンダード/新宿・歌舞伎町)",
+          "review_count": 9709,
+          "min_minutes": 60,
+          "min_price": 18000
+        },
+        {
+          "name": "グランドオペラ東京",
+          "url": "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/",
+          "genre": "デリヘル(高級/渋谷)",
+          "review_count": 9542,
+          "min_minutes": 90,
+          "min_price": 40000
+        },
+        {
+          "name": "H",
+          "url": "https://www.cityheaven.net/tokyo/A1304/A130401/hoteheruh/",
+          "genre": "デリヘル(ホテヘル＆デリヘル/新宿・歌舞伎町)",
+          "review_count": 9523,
+          "min_minutes": 60,
+          "min_price": 17600
+        },
+        {
+          "name": "ファインモーション",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/finemotion/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 9467,
+          "min_minutes": 45,
+          "min_price": 14000
+        }
+      ],
+      "top_by_value": [
+        {
+          "name": "STELLA TOKYO(ステラ東京)",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/stella_tokyo/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 41912,
+          "min_minutes": 60,
+          "min_price": 17000
+        },
+        {
+          "name": "Chloe五反田本店　S級素人清楚系デリヘル",
+          "url": "https://www.cityheaven.net/tokyo/A1317/A131703/g-chloe/",
+          "genre": "デリヘル(スタンダード/五反田)",
+          "review_count": 40069,
+          "min_minutes": 70,
+          "min_price": 17000
+        },
+        {
+          "name": "ハニーコレクション",
+          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/honecolle/",
+          "genre": "ソープ(激安/吉原)",
+          "review_count": 26862,
+          "min_minutes": 50,
+          "min_price": 14800
+        },
+        {
+          "name": "HYPER TOKYO",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/hypergrace/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 17305,
+          "min_minutes": 45,
+          "min_price": 10000
+        },
+        {
+          "name": "池袋パラダイス",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
+          "genre": "ホテヘル(学園系/池袋北口・西口)",
+          "review_count": 15476,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "華椿",
+          "url": "https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/",
+          "genre": "ヘルス(スタンダード/巣鴨・駒込・白山)",
+          "review_count": 8623,
+          "min_minutes": 30,
+          "min_price": 8000
+        },
+        {
+          "name": "ウルトラグレイス24",
+          "url": "https://www.cityheaven.net/tokyo/A1304/A130401/ultragrace/",
+          "genre": "デリヘル(スタンダード/新宿・歌舞伎町)",
+          "review_count": 8129,
+          "min_minutes": 50,
+          "min_price": 10000
+        },
+        {
+          "name": "アイドル研究生",
+          "url": "https://www.cityheaven.net/tokyo/A1311/A131101/idol-kenkyuusei/",
+          "genre": "ソープ(スタンダード/吉原)",
+          "review_count": 17652,
+          "min_minutes": 70,
+          "min_price": 23000
+        },
+        {
+          "name": "池袋　にゃんだ☆FULL☆MIX",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/nyandaful/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 7493,
+          "min_minutes": 30,
+          "min_price": 10000
+        },
+        {
+          "name": "池袋　にゃんだ☆FULL☆MIX",
+          "url": "https://www.cityheaven.net/tokyo/A1305/A130505/nyandaful/",
+          "genre": "デリヘル(スタンダード/池袋北口・西口)",
+          "review_count": 7493,
+          "min_minutes": 30,
+          "min_price": 10000
+        }
+      ]
+    },
+    {
+      "slug": "aichi",
+      "name": "愛知県",
+      "short": "名古屋",
+      "shop_count": 463,
+      "girl_count": 24699,
+      "girl_per_shop": 53.3,
+      "genres": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "shop_count": 32
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "shop_count": 9
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "shop_count": 3
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "shop_count": 134
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "shop_count": 31
+        }
+      ],
+      "price_stats": {
+        "count": 209,
+        "min": 2200,
+        "median": 13000,
+        "p25": 10000,
+        "p75": 16000,
+        "max": 40000
+      },
+      "review_stats": {
+        "count": 209,
+        "median": 1542,
+        "max": 46190
+      },
+      "top_by_reviews": [
+        {
+          "name": "巨乳専門E－BODY（イーボディ）名古屋錦店～E＋Group～",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/e-body_n/",
+          "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
+          "review_count": 46190,
+          "min_minutes": 45,
+          "min_price": 14000
+        },
+        {
+          "name": "甘サド美少女、お貸しします。名古屋錦店〜E＋Group〜",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/amsd_nishiki/",
+          "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
+          "review_count": 18745,
+          "min_minutes": 45,
+          "min_price": 14000
+        },
+        {
+          "name": "シャブール　名古屋店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/shaboole/",
+          "genre": "デリヘル(高級/新栄・東新町)",
+          "review_count": 16945,
+          "min_minutes": 50,
+          "min_price": 24000
+        },
+        {
+          "name": "ドMな逆バニーちゃん 　栄・東新町店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
+          "genre": "ヘルス(スタンダード/新栄・東新町)",
+          "review_count": 11088,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "ドMな逆バニーちゃん 　栄・東新町店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
+          "genre": "ヘルス(スタンダード/新栄・東新町)",
+          "review_count": 11088,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "人妻in誘惑スイートルーム名古屋錦店～E＋Group～",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/rocket/",
+          "genre": "ヘルス(人妻/錦・栄・矢場町)",
+          "review_count": 10503,
+          "min_minutes": 45,
+          "min_price": 12000
+        },
+        {
+          "name": "ワンカラット〜人妻の輝き〜　名古屋店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/1ct/",
+          "genre": "デリヘル(人妻/新栄・東新町)",
+          "review_count": 10385,
+          "min_minutes": 90,
+          "min_price": 33000
+        },
+        {
+          "name": "グランドオペラ名古屋",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
+          "genre": "デリヘル(高級/新栄・東新町)",
+          "review_count": 9938,
+          "min_minutes": 90,
+          "min_price": 40000
+        },
+        {
+          "name": "ドMな奥様　名古屋・錦店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
+          "genre": "ヘルス(人妻/錦・栄・矢場町)",
+          "review_count": 8169,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "奥鉄オクテツ東海店（デリヘル市場グループ）",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230101/ot69/",
+          "genre": "デリヘル(人妻待ち合わせ/名古屋駅周辺)",
+          "review_count": 7515,
+          "min_minutes": 70,
+          "min_price": 16000
+        }
+      ],
+      "top_by_value": [
+        {
+          "name": "巨乳専門E－BODY（イーボディ）名古屋錦店～E＋Group～",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/e-body_n/",
+          "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
+          "review_count": 46190,
+          "min_minutes": 45,
+          "min_price": 14000
+        },
+        {
+          "name": "甘サド美少女、お貸しします。名古屋錦店〜E＋Group〜",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/amsd_nishiki/",
+          "genre": "ヘルス(スタンダード/錦・栄・矢場町)",
+          "review_count": 18745,
+          "min_minutes": 45,
+          "min_price": 14000
+        },
+        {
+          "name": "TEXX",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/texx/",
+          "genre": "ヘルス(手コキ・オナクラ/新栄・東新町)",
+          "review_count": 5932,
+          "min_minutes": 30,
+          "min_price": 5000
+        },
+        {
+          "name": "愛知豊橋豊川ちゃんこ",
+          "url": "https://www.cityheaven.net/aichi/A2306/A230601/chanko_ty/",
+          "genre": "デリヘル(ぽっちゃり/豊橋)",
+          "review_count": 4998,
+          "min_minutes": 50,
+          "min_price": 5000
+        },
+        {
+          "name": "ドMな奥様　名古屋・錦店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/doemunaokusama_nishiki/",
+          "genre": "ヘルス(人妻/錦・栄・矢場町)",
+          "review_count": 8169,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "人妻in誘惑スイートルーム名古屋錦店～E＋Group～",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230103/rocket/",
+          "genre": "ヘルス(人妻/錦・栄・矢場町)",
+          "review_count": 10503,
+          "min_minutes": 45,
+          "min_price": 12000
+        },
+        {
+          "name": "ドMな逆バニーちゃん 　栄・東新町店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
+          "genre": "ヘルス(スタンダード/新栄・東新町)",
+          "review_count": 11088,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "ドMな逆バニーちゃん 　栄・東新町店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/domgyakubunny_t/",
+          "genre": "ヘルス(スタンダード/新栄・東新町)",
+          "review_count": 11088,
+          "min_minutes": 50,
+          "min_price": 14000
+        },
+        {
+          "name": "愛知弥富津島愛西ちゃんこ",
+          "url": "https://www.cityheaven.net/aichi/A2302/A230202/chankoyatomi/",
+          "genre": "デリヘル(激安/津島・あま・弥富・愛西)",
+          "review_count": 3804,
+          "min_minutes": 50,
+          "min_price": 5000
+        },
+        {
+          "name": "シャブール　名古屋店",
+          "url": "https://www.cityheaven.net/aichi/A2301/A230104/shaboole/",
+          "genre": "デリヘル(高級/新栄・東新町)",
+          "review_count": 16945,
+          "min_minutes": 50,
+          "min_price": 24000
+        }
+      ]
+    },
+    {
+      "slug": "osaka",
+      "name": "大阪府",
+      "short": "大阪",
+      "shop_count": 460,
+      "girl_count": 29484,
+      "girl_per_shop": 64.1,
+      "genres": [
+        {
+          "id": "biz1",
+          "name": "ヘルス",
+          "shop_count": 18
+        },
+        {
+          "id": "biz4",
+          "name": "ソープ",
+          "shop_count": 30
+        },
+        {
+          "id": "biz5",
+          "name": "ホテヘル",
+          "shop_count": 32
+        },
+        {
+          "id": "biz6",
+          "name": "デリヘル",
+          "shop_count": 99
+        },
+        {
+          "id": "biz7",
+          "name": "エステ",
+          "shop_count": 30
+        }
+      ],
+      "price_stats": {
+        "count": 191,
+        "min": 3000,
+        "median": 14000,
+        "p25": 10000,
+        "p75": 16500,
+        "max": 66000
+      },
+      "review_stats": {
+        "count": 209,
+        "median": 840,
+        "max": 10405
+      },
+      "top_by_reviews": [
+        {
+          "name": "桃源郷クラブ",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
+          "genre": "ホテヘル(人妻/谷九・上本町)",
+          "review_count": 10405,
+          "min_minutes": 85,
+          "min_price": 9350
+        },
+        {
+          "name": "Evolution 2nd",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
+          "genre": "ヘルス(スタンダード/難波・心斎橋)",
+          "review_count": 9072,
+          "min_minutes": 50,
+          "min_price": 10000
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "genre": "ホテヘル(スタンダード/梅田・北新地)",
+          "review_count": 7199,
+          "min_minutes": 70,
+          "min_price": 15000
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "genre": "ホテヘル(スタンダード/梅田・北新地)",
+          "review_count": 7199,
+          "min_minutes": 70,
+          "min_price": 15000
+        },
+        {
+          "name": "聖リッチ女学園",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_rich/",
+          "genre": "ヘルス(イメクラ/難波・心斎橋)",
+          "review_count": 6837,
+          "min_minutes": 45,
+          "min_price": 11000
+        },
+        {
+          "name": "アムール",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/amour_namba/",
+          "genre": "ヘルス(マット/難波・心斎橋)",
+          "review_count": 6186,
+          "min_minutes": 40,
+          "min_price": 11000
+        },
+        {
+          "name": "OLの品格-クラブアッシュ-",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
+          "genre": "ヘルス(イメクラ/難波・心斎橋)",
+          "review_count": 5964,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "秘書の品格 クラブアッシュ ヴァリエ",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/club_h_valie/",
+          "genre": "ヘルス(コスプレ/日本橋)",
+          "review_count": 5828,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
+          "genre": "デリヘル(スタンダード/日本橋)",
+          "review_count": 5617,
+          "min_minutes": 75,
+          "min_price": 12000
+        },
+        {
+          "name": "Pink Collection 大阪ミナミ店～ピンクコレクション～",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/pink_colle/",
+          "genre": "デリヘル(スタンダード/日本橋)",
+          "review_count": 5617,
+          "min_minutes": 75,
+          "min_price": 12000
+        }
+      ],
+      "top_by_value": [
+        {
+          "name": "桃源郷クラブ",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270203/tougenkyou/",
+          "genre": "ホテヘル(人妻/谷九・上本町)",
+          "review_count": 10405,
+          "min_minutes": 85,
+          "min_price": 9350
+        },
+        {
+          "name": "Evolution 2nd",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/evolution-2nd/",
+          "genre": "ヘルス(スタンダード/難波・心斎橋)",
+          "review_count": 9072,
+          "min_minutes": 50,
+          "min_price": 10000
+        },
+        {
+          "name": "OLの品格-クラブアッシュ-",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_h/",
+          "genre": "ヘルス(イメクラ/難波・心斎橋)",
+          "review_count": 5964,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "秘書の品格 クラブアッシュ ヴァリエ",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/club_h_valie/",
+          "genre": "ヘルス(コスプレ/日本橋)",
+          "review_count": 5828,
+          "min_minutes": 30,
+          "min_price": 9000
+        },
+        {
+          "name": "ドＭな奥さん日本橋店",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
+          "genre": "ホテヘル(人妻/日本橋)",
+          "review_count": 4982,
+          "min_minutes": 50,
+          "min_price": 7999
+        },
+        {
+          "name": "ドＭな奥さん日本橋店",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270202/doemum_nihonbashi/",
+          "genre": "ホテヘル(人妻/日本橋)",
+          "review_count": 4982,
+          "min_minutes": 50,
+          "min_price": 7999
+        },
+        {
+          "name": "聖リッチ女学園",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/club_rich/",
+          "genre": "ヘルス(イメクラ/難波・心斎橋)",
+          "review_count": 6837,
+          "min_minutes": 45,
+          "min_price": 11000
+        },
+        {
+          "name": "アムール",
+          "url": "https://www.cityheaven.net/osaka/A2702/A270201/amour_namba/",
+          "genre": "ヘルス(マット/難波・心斎橋)",
+          "review_count": 6186,
+          "min_minutes": 40,
+          "min_price": 11000
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "genre": "ホテヘル(スタンダード/梅田・北新地)",
+          "review_count": 7199,
+          "min_minutes": 70,
+          "min_price": 15000
+        },
+        {
+          "name": "LOVEキタ兎我野店",
+          "url": "https://www.cityheaven.net/osaka/A2701/A270101/love-kitatogano/",
+          "genre": "ホテヘル(スタンダード/梅田・北新地)",
+          "review_count": 7199,
+          "min_minutes": 70,
+          "min_price": 15000
+        }
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "slug": "tokyo",
+      "name": "東京",
+      "shop_count": 983,
+      "girl_count": 83972,
+      "girl_per_shop": 85.4,
+      "median_price": 15000,
+      "genre_deli": 207,
+      "genre_soap": 12
+    },
+    {
+      "slug": "aichi",
+      "name": "名古屋",
+      "shop_count": 463,
+      "girl_count": 24699,
+      "girl_per_shop": 53.3,
+      "median_price": 13000,
+      "genre_deli": 134,
+      "genre_soap": 9
+    },
+    {
+      "slug": "osaka",
+      "name": "大阪",
+      "shop_count": 460,
+      "girl_count": 29484,
+      "girl_per_shop": 64.1,
+      "median_price": 14000,
+      "genre_deli": 99,
+      "genre_soap": 30
+    }
+  ]
+}

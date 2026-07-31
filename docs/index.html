@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東名阪 風俗エリア分析 | fuzoku analytics</title>
+  <meta name="description" content="City Heaven 公開情報を客目線で再整理。東京・名古屋・大阪の店舗数・業種・相場・口コミを比較。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div id="age-gate" class="age-gate" hidden>
+    <div class="age-gate__panel">
+      <h1>18歳未満の方はご利用いただけません</h1>
+      <p>本サイトは風俗店舗の<strong>統計情報</strong>を客目線で整理した非公式分析サイトです。画像・口コミ本文は掲載していません。</p>
+      <div class="age-gate__actions">
+        <button id="age-yes" class="btn btn--primary">18歳以上です</button>
+        <button id="age-no" class="btn btn--ghost">退出する</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div>
+        <p class="eyebrow">非公式 · 統計のみ</p>
+        <h1>東名阪 風俗エリア分析</h1>
+        <p class="subtitle">City Heaven 公開データを客目線で比較 — 東京 / 名古屋 / 大阪</p>
+      </div>
+      <p class="updated" id="updated-at">更新: —</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards" id="summary-cards"></section>
+
+    <section class="panel">
+      <h2>3都市比較</h2>
+      <div class="chart-grid">
+        <div class="chart-box"><canvas id="chart-shops"></canvas></div>
+        <div class="chart-box"><canvas id="chart-girls"></canvas></div>
+        <div class="chart-box"><canvas id="chart-price"></canvas></div>
+      </div>
+      <div class="table-wrap">
+        <table id="comparison-table">
+          <thead>
+            <tr>
+              <th>エリア</th>
+              <th>店舗数</th>
+              <th>在籍数</th>
+              <th>在籍/店</th>
+              <th>デリヘル</th>
+              <th>ソープ</th>
+              <th>相場中央値</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="region-sections"></section>
+
+    <section class="panel panel--muted">
+      <h2>免責事項</h2>
+      <ul class="disclaimer">
+        <li>本サイトは <a href="https://www.cityheaven.net/" target="_blank" rel="noopener">シティヘブンネット</a> 非公式の第三者分析です。</li>
+        <li>店舗の写真・キャッチコピー・口コミ本文は転載していません。数値の集計のみを公開します。</li>
+        <li>料金は各店舗一覧に掲載の最低コース目安です。実際の料金は店舗にご確認ください。</li>
+        <li>18歳未満（高校生を含む）の閲覧は禁止です。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">fuzoku_analystics · GitHub Pages</div>
+  </footer>
+</body>
+</html>
